@@ -1,0 +1,3288 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass USTCthesis
+\begin_preamble
+%Created by jmcui 
+%\graphicspath{{C:/Users/jmcui/Desktop/Lyxthesis/USTCthesis}}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 2.5cm
+\headheight 1.5cm
+\headsep 1.5cm
+\footskip 1.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Analysis
+\end_layout
+
+\begin_layout Section
+Data set and event selection
+\end_layout
+
+\begin_layout Standard
+The data set used in this analysis was the VPDMB data taken in Run11 at
+ Au+Au 
+\begin_inset Formula $\sqrt{s}=200GeV$
+\end_inset
+
+.
+ The FileCataLog options in getting these files are listed in the following:
+\end_layout
+
+\begin_layout Itemize
+production=P11id
+\end_layout
+
+\begin_layout Itemize
+trgsetupname=AuAu200_production_2011
+\end_layout
+
+\begin_layout Itemize
+filetype=daq_reco_MuDst
+\end_layout
+
+\begin_layout Itemize
+filename with st_physics
+\end_layout
+
+\begin_layout Itemize
+tpx =1
+\end_layout
+
+\begin_layout Itemize
+sanity =1
+\end_layout
+
+\begin_layout Itemize
+storage !=HPSS*
+\end_layout
+
+\begin_layout Standard
+* storage=NFS was used when doing the analysis, but since now all the data
+ have been moved to local disk, one has to use storage!=HPSS.
+\end_layout
+
+\begin_layout Standard
+The trigger selected in this analysis are VPDMB trigger with id = 350001,
+ 350011, 350003, 350013, 350023, 350033, 350043.
+ The minimum bias trigger in year 2011 Au+Au 200 GeV collisions was defined
+ as a coincidence in the east and west VPD detectors, and an online vertex
+ cut to select collisions happening in the center of the detector to assure
+ uniform acceptance.
+ Primary vertices, defined using TPC tracks, were required to fall within
+ 30 cm of the axial (z-axis) center of the TPC.
+\end_layout
+
+\begin_layout Standard
+The vertex selection criteria are:
+\end_layout
+
+\begin_layout Itemize
+First primary vertex
+\end_layout
+
+\begin_layout Itemize
+vertex ranking > 0
+\end_layout
+
+\begin_layout Itemize
+a valid VPD vertex
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $|Vz-VzVpd|<3cm$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $|Vz|<30cm$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:vertex"
+
+\end_inset
+
+ (up right) shows the correlation between TPC vertexZ and VPD vertexZ.
+ The clean diagonal correlation band indicate the correct vertices which
+ fire the VPDMB trigger.
+ Random distributions could also be see in a wide region which typically
+ indicate the vertex found be TPC is a pile-up vertex.
+ The cross like distribution in the random correlation regions is due to
+ the online vertexZ cut in the trigger definition.
+ In order to remove the events from the Au beam hitting the Beam pipe, 2cm
+ of the vertex radius cut applied in the data selection Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:vertex"
+
+\end_inset
+
+(up left).
+ Runs with 7 bad Rdos in TPC are excluded in this analysis because that
+ period doesn't have enough statistics to feed up the mix event buffer.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectron/Run11AuAu200/BasicQA/output/QA/QA_fig1.pdf
+	scale 70
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+(up left) TPC vertexR distribution, (up right) TPC vertexZ and the VPD vertexZ
+ correlation, (down left) TPC primary vertexX distribution, (down right)
+ difference between TPC vertexZ and the VPD vertexZ.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:vertex"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="6">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Trigger
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+refMult
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vz
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vr
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $|Vz-VpdVz|$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+#events
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Minbias
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+>=11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
++/- 30cm
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+<2cm
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+<3cm
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+419M
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Event selection
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "table:event cut"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "table:event cut"
+
+\end_inset
+
+ shows the event selection criteria.
+ In the end about 419 million Minbias triggered events were selected for
+ this analysis.
+\end_layout
+
+\begin_layout Section
+Electron identification
+\end_layout
+
+\begin_layout Standard
+With the full barrel coverage of time of flight (TOF) detector, STAR has
+ significantly improved its particle identification capability, especially
+ for electrons, which makes it possible to make di-electron measurement
+ at STAR experiment.
+\end_layout
+
+\begin_layout Standard
+STAR main detector time projection chamber (TPC) provides us track detection,
+ momentum determination, and also particle identification for charged particles
+ by measuring their ionization energy loss (dE/dx) in the TPC gas.
+ With TPC only it is difficult to separate electron from hadron because
+ the electron bands cross with hadron band in higher momentum.
+\end_layout
+
+\begin_layout Standard
+With the flight timing information measured by TOF and the track path-length
+ information from TPC, we can calculate the velocity(β) information.
+ Due to the very small electron mass, electron can be separated from the
+ slow hadron by the velocity information.
+ Combining the velocity(β) information from TOF and energy loss(dE/dx) from
+ TPC, electron can be identified up to momentum 3GeV/c.
+\end_layout
+
+\begin_layout Standard
+Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "table:pid cut"
+
+\end_inset
+
+ lists the electron selection criteria.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectron/Run11AuAu200/BasicQA/output/QA/QA_fig2.pdf
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+1/β vs momentum distribution (left) and dE/dx vs momentum distribution (right).
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:PID dEdx "
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="right" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="right" valignment="top">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Track quality cuts
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PID cuts
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+dca 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+<1cm
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ > 0.2GeV/c
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+> 0.2GeV/c
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+nHitsFit 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+>= 20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $nσ_{e},p<1.0GeV/c$
+\end_inset
+
+ 
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1.5\times(p-1)-1.2\sim1.6$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+nHitsFit/nHitsPoss 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+>=0.52
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $nσ_{e},p<1.0GeV/c$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1.2\sim1.6$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ndEdxFit 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+>15
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TOF 
+\begin_inset Formula $1/\text{β}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ 
+\begin_inset Formula $|1-1/\text{β}|<0.025$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+η 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
++/- 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TOF yLocal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ 
+\begin_inset Formula $|yLocal|<1.8cm$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Electron selection criteria
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "table:pid cut"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Select hadron sample and Electron purity
+\end_layout
+
+\begin_layout Standard
+Pure hadron (
+\begin_inset Formula $\pi$
+\end_inset
+
+, 
+\begin_inset Formula $k$
+\end_inset
+
+ and 
+\begin_inset Formula $p$
+\end_inset
+
+) sample (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:hadron sample"
+
+\end_inset
+
+) are selected by very tight 
+\begin_inset Formula $m^{2}$
+\end_inset
+
+ cut provided by TOF.
+ The electron sample is from 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ conversion (
+\begin_inset Formula $\gamma\rightarrow e^{+}+e^{-}$
+\end_inset
+
+) .
+ Then a gauss fit is done fit the pure samples to paramiterazate the distributio
+n of the 
+\begin_inset Formula $n\sigma_{e}$
+\end_inset
+
+ (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:epurity fitmean fitsigma"
+
+\end_inset
+
+).
+ After that, we use a multi gauss function (mean and sigma are fixed correspondi
+ng particle species) to fit the 
+\begin_inset Formula $n\sigma_{e}$
+\end_inset
+
+ distribution to abstain the yields for different particles.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:epurity"
+
+\end_inset
+
+ left plot shows the constant parameters of the multi gauss fit for different
+ particles.
+ Since around momentum ~ 0.5 GeV/c and 1 GeV/c, 
+\begin_inset Formula $k$
+\end_inset
+
+ and electron, proton and electron have overlap, it is hard to get a good
+ fit in these regions.
+ We use a exponential fit to extrapolate the yield in these region, and
+ take 50% deviation between extrapolate method and multi gauss fit method
+ as the systematic uncertainty.
+ Finally we get an estimation of the electron purity ~ 
+\begin_inset Formula $0.952\pm0.08$
+\end_inset
+
+ (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:epurity"
+
+\end_inset
+
+ right plot).
+\end_layout
+
+\begin_layout Standard
+After that, Pure hadron sample and electron sample are mixed together to
+ make an estimate for the hadron contamination.
+ The hadron sample is weight by 
+\begin_inset Formula $R_{h/e}\times N_{e}/N_{h}$
+\end_inset
+
+.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:hadron contamination"
+
+\end_inset
+
+ left plot shows the hadron over electron ratio after 
+\begin_inset Formula $1/\beta$
+\end_inset
+
+ and 
+\begin_inset Formula $n\sigma_{e}$
+\end_inset
+
+ cut for the input, right plot shows the hadron contamination.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectron/Run11AuAu200/BasicQA/output/QA/QA_fig3.pdf
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+hadron sample selected by TOF
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:hadron sample"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectron/Run11AuAu200/BasicQA/output/all/mean3.pdf
+	scale 40
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectron/Run11AuAu200/BasicQA/output/all/sigma3.pdf
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mean and sigma of the gauss fit of the pure hadron and electron sample.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:epurity fitmean fitsigma"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectron/Run11AuAu200/BasicQA/output/all/const3.pdf
+	scale 40
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectron/Run11AuAu200/BasicQA/output/all/eff_purity_3.pdf
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+electron purity after EID cuts.
+ The error of purity is estimated by 50% deviation of the extrapolation
+ method.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:epurity"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectron/Run11AuAu200/BasicQA/output/all/hadron2Eratio_3.pdf
+	scale 40
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectron/Run11AuAu200/System/Hadron/HardonCondemination.eps
+	scale 40
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Left plot shows the hadron over electron ratio after 
+\begin_inset Formula $1/\beta$
+\end_inset
+
+ cut and 
+\begin_inset Formula $n\sigma_{e}$
+\end_inset
+
+ cut.
+ Right plots show hadron contamination.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:hadron contamination"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Background subtraction
+\end_layout
+
+\begin_layout Standard
+Identical method with Run10 AuAu200GeV analysis (Please see Jie's analysis
+ note).
+ In this analysis, a 
+\begin_inset Formula $Centrality\times EventPlant\times Vz\times\#MaxEventInBuffer=9\times12\times10\times50$
+\end_inset
+
+ event buffer are used for the Mix Event background.
+ And the data set is splited into several period corresponding magnet and
+ # bad rdos in TPC when calculate the Mix Event background.
+ Runs with 7 bad rdos in TPC are excluded in this analysis because that
+ period doesn't have enough statistics to feed up the event buffer.
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:acc and LS/mix cen"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig: acc and LS/mix pT"
+
+\end_inset
+
+ show the background QA for different centrality bins and 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ bins.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectron/Acc_cen.pdf
+	scale 40
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectron/LMR_cen.pdf
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Acceptance factor and LikeSign/MixEvent ratio for different centrality.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:acc and LS/mix cen"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectronIO/output/Acc_pT.pdf
+	scale 40
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectronIO/output/LMR_pT.pdf
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Acceptance factor and LikeSign/MixEvent ratio for different 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ regions.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig: acc and LS/mix pT"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Systematic uncertainty
+\end_layout
+
+\begin_layout Standard
+The systematic uncertainty sources are listed below:
+\end_layout
+
+\begin_layout Enumerate
+Acceptance correction uncertainty.
+\end_layout
+
+\begin_layout Enumerate
+Normalization uncertainty.
+\end_layout
+
+\begin_layout Enumerate
+Hadron contamination uncertainty.
+\end_layout
+
+\begin_layout Enumerate
+Different background subtract method uncertainty.
+\end_layout
+
+\begin_layout Standard
+The acceptance correction uncertainty are considered coming from two sources.
+ Since the bending direction of positive and negative tracks in magnetic
+ field are different and the detector does not have a perfect symmetry,
+ so we take the difference between RFF and FF as one of the source of the
+ acceptance correction uncertainty.
+ Another source is that track's curvature is inversely correlated with track's
+ traversed momentum, which will lead to a 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ dependence of acceptance correction.
+ We take the difference between 1D(mass) and 2D(mass vs 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ ) corrected spectra as the uncertainty.
+ The difference between 2D (mass vs 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ which is used in this analysis) and 1D (mass) efficiency correction methods
+ are also combined in this systematic uncertainty.
+ The normalization uncertainty are estimated by using difference normalization
+ region (0.75~1.5 
+\begin_inset Formula $GeV/c^{2}$
+\end_inset
+
+ and 1.25~3 
+\begin_inset Formula $GeV/c^{2}$
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:syserror"
+
+\end_inset
+
+ shows the difference systematic uncertainty source contribution and their
+ sum in different mass bins.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectron/Run11AuAu200/System/spectra/System.pdf
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Systematic uncertainty for Minibias.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:syserror"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Efficiency 
+\end_layout
+
+\begin_layout Standard
+Efficiency is needed to correct the raw yield to get the final di-electron
+ spectra.
+ The efficiency correction follows the standard STAR procedure and it is
+ done within STAR acceptance.
+ First we need to get single track efficiency.
+ The single track efficiency sources are listed below:
+\end_layout
+
+\begin_layout Itemize
+TPC tracking (tracking efficiency, track quality cut efficiency).
+\end_layout
+
+\begin_layout Itemize
+TOF matching.
+\end_layout
+
+\begin_layout Itemize
+PID (
+\begin_inset Formula $n\sigma_{e}$
+\end_inset
+
+ cut, 
+\begin_inset Formula $1/\beta$
+\end_inset
+
+ cut, ndEdxFits cut)
+\end_layout
+
+\begin_layout Standard
+The TPC tracking efficiency is calculated from embedding which is done with
+ a full STAR detector geant simulation + STAR offline tracking software.
+ The tracking efficiency also include the track quality cut such like, nHitsFit,
+ nHitsFit/nHitsMax and dca cut.
+ The tracking efficiency is corrected in 3D as 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+, 
+\begin_inset Formula $\eta$
+\end_inset
+
+, 
+\begin_inset Formula $\phi$
+\end_inset
+
+ (
+\begin_inset Formula $10\times30$
+\end_inset
+
+ binning for (
+\begin_inset Formula $\eta$
+\end_inset
+
+, 
+\begin_inset Formula $\phi$
+\end_inset
+
+), and 50MeV/c 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ binning ).
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:eff tracking"
+
+\end_inset
+
+ shows the tracking efficiency and its centrality dependence (average 
+\begin_inset Formula $\eta$
+\end_inset
+
+, 
+\begin_inset Formula $\phi$
+\end_inset
+
+).
+ The systematic uncertainty for TPC tracking efficiency (shown in Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:eff tracking syserror"
+
+\end_inset
+
+)is estimated by the difference (nHitsfit and dca distribution) between
+ the real data and the embedding sample.
+ We select electron from convert photon decay as the real data sample.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectron/Run11AuAu200/Efficiency/Tracking/fig/TPC_matching_cen.pdf
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+TPC tracking efficiency and its centrality dependence.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:eff tracking"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectron/Run11AuAu200/Efficiency/Tracking/fig/SysErr.gif
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Systematic uncertainty for TPC tracking efficiency.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:eff tracking syserror"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+TOF matching efficiency is definited as the ratio of tracks with TOF hit
+ matches over the total tracks reconstructed by TPC passing the track quality
+ cut.
+ To achieve a better statistics pion sample is used for the efficiency evaluatio
+n and compared with photonic electron sample.
+ And efficiency from pion sample is corrected to match efficiency from photonic
+ electron sample in 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ distribution, and the difference between the two samples are taken as systemati
+c uncertainty (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tof eff e/pion"
+
+\end_inset
+
+).
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Tof eff"
+
+\end_inset
+
+ shows the centrality dependence of TOF matching efficiency and TOF matching
+ efficiency from pion and photonic electron sample.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectron/Run11AuAu200/Efficiency/TOF/total/centDep_tofEff.gif
+	scale 26
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectron/Run11AuAu200/Efficiency/TOF/total/Diff_phe_pi.gif
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Left plot shows the centrality dependence of TOF matching efficiency.
+ Right plot shows the difference between pion and photonic electron sample.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Tof eff"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectron/Run11AuAu200/Efficiency/TOF/total/Diff_phe_pi.gif
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectron/Run11AuAu200/Efficiency/TOF/SysErr_Tof.gif
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Difference between pion and electron sample.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:tof eff e/pion"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+TOF 
+\begin_inset Formula $1/\beta$
+\end_inset
+
+, ndEdxFits cut efficiency and 
+\begin_inset Formula $n\sigma_{e}$
+\end_inset
+
+ cut efficiency are corrected 1 dimension as momentum.
+ TOF 
+\begin_inset Formula $1/\beta$
+\end_inset
+
+ and ndEdxFits cut efficiency are calculated by pion sample.
+ TOF 
+\begin_inset Formula $1/\beta$
+\end_inset
+
+ cut efficiency is estimated by two method: 1) directly counting method;
+ 2) gaus fit method.
+ Since the 
+\begin_inset Formula $1/\beta$
+\end_inset
+
+ distribution has a non gaus shape, we use the counting method as the efficiency
+ and take the difference between two methods as systematic uncertainty (Fig
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:1/beta cut eff"
+
+\end_inset
+
+).
+ For ndEdxFits efficiency systematic uncertainty, we take difference between
+ photonic electron sample and the pion sample as systematic uncertainty
+ (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ndEdx eff syserror"
+
+\end_inset
+
+).
+ The 
+\begin_inset Formula $n\sigma_{e}$
+\end_inset
+
+ cut efficiency is estimated by photonic electron sample.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centerline{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectron/Run11AuAu200/Efficiency/PID/beta_eff/beta_eff_cen.eps
+	scale 80
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $1/\beta$
+\end_inset
+
+ cut efficiency by gaus fit method and direct counting method and its centrality
+ dependence.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:1/beta cut eff"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectron/Run11AuAu200/Efficiency/PID/ndEdxFit/ndEdxFits_Eff.gif
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+ndEdxFits cut efficiency for different centrality bins.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ndEdx eff vs cen"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectron/Efficiency_final/Efficiency/TOF_ndEdx/mag/output/ndEdx_electron_all.gif
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Left plot is comparison of ndEdxFits cut efficiency between phononic electron
+ sample and pion sample.
+ Right plot is their ratio.
+ We take the averge variation (about 1.5%) as the systematic uncertainty.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ndEdx eff syserror"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+After we have the single track efficiency, the electron pair reconstruction
+ efficiency is evaluated by virtual photon decay method.
+ We input virtual photon with a flat 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+, mass and rapidity distributions, the decay daughter are picked up according
+ the single track efficiency.
+ Finally, the pair rapidity cut and photonic electron rejection cut are
+ applied.
+ The pair efficiency is calculated by the number of pairs reconstructed
+ after apply the single track efficiency and pair cut ( pair y and photonic
+ electron rejection cut) over number virtual photon we input.
+ This is done in STAR acceptance.
+ To avoid the difference of mass and 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ distributions between real data and the flat input, the pair efficiency
+ is calculated and applied in 2D mass vs 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+.
+ For the photonic electron rejection cut efficiency, since the different
+ distributions of 
+\begin_inset Formula $\phi_{v}$
+\end_inset
+
+ between real date and virtual photon, we use a pion dalitz decay embedding
+ sample to estimate the difference and correct the pair efficiency (Fig
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:phiV eff"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+Finally, we get the pair efficiency shown by Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig: pair eff"
+
+\end_inset
+
+.
+ Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "table:eff syserror"
+
+\end_inset
+
+ list the systematic uncertainty of each conponent of single track efficiency.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+uncertainty
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+nHitsFit
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.2%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ndEdxFit
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+dca
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.4%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tof matching
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5.5%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1/\beta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.7%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+total
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.2%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Efficiency systematic uncertainty.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "table:eff syserror"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectron/Run11AuAu200/Efficiency/phiV/phiVeff.gif
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectron/Run11AuAu200/Efficiency/phiV/comparePi0vsVirtualphoton.gif
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Left plot shows photonic electron efficiency from 
+\begin_inset Formula $\pi^{0}$
+\end_inset
+
+ dalitz decay embedding sample and virtual photon MC simulation.
+ Right plot shows their difference.
+ We take the difference as a correction to the pair efficiency.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:phiV eff"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectronIO/output/eff_cen.pdf
+	scale 40
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectronIO/output/eff_pt.pdf
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Pair efficiency for different centrality bins and p
+\begin_inset Formula $_{T}$
+\end_inset
+
+ bins.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig: pair eff"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section
+Run11 result
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectronIO/output/MB.pdf
+	scale 40
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectronIO/output/0010.pdf
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Left plot shows Minibias result and its comparison with cocktail.
+ Right plot shows 0~10% centrality result and the comparison the the cocktail.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig: result mb cen"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectronIO/output/Cen_Yield_cocktail.pdf
+	scale 40
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectronIO/output/cen_ratio.pdf
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Centrality dependence.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:result cen "
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectronIO/output/pT_Yield_cocktail.pdf
+	scale 40
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectronIO/output/pT_ratio.pdf
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ dependence.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:result pT"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Comparison with Run10's Result
+\end_layout
+
+\begin_layout Subsection
+0~10% LMR Study
+\end_layout
+
+\begin_layout Standard
+Run10 and Run11 data shows some inconsistency in 0~10% centrality bin in
+ IMR region.
+ A few detailed studies were done to understand the difference:
+\end_layout
+
+\begin_layout Standard
+Since Run10 0~10% centrality result is based on Central triggered events
+ and Run11 results are based on Minbias triggered events, the inconsistency
+ may be due to the difference between two triggers.
+ So in this analysis, a sample from Run11 Minbias triggered events is selected
+ by ZDC cut (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig: zdc cut"
+
+\end_inset
+
+ shows the Zdc cut and refMult cut for selecting the sample) and the result
+ from this sample is compared with Run10 Central triggered result and Run10
+ 0~10% centrality result from Minbias trigger.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig: 0010 comp"
+
+\end_inset
+
+ shows the comparison between different data sample, the results from the
+ Minbias triggered events both Run10 and Run11 show good consistency at
+ LMR, but due to the large statistic error it is hard to conclude that the
+ results from Minbias events are inconsistent with the result from Central
+ triggered events.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectron/ZDC0010/ana/ZdcCut.eps
+	scale 50
+	noUnzip
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Zdc cut and refMult cut for selection for selecting Zdc 0~12% sample.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig: zdc cut"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename somefig/testMB010.eps
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comparison between results from different sample.
+ The ratio plot shows the ratios of results from Minbias results over Central
+ triggered results.
+ All the results from Run11 and Run10 Minbias are consistent with each other.
+ But due to the large statistics error, it is hard to conclude that the
+ Minbias result and the Central triggered results are inconsistent.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig: 0010 comp"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So more detail comparison is done to understand the inconsistency at IMR.
+ First we check the normalization of Mix-Event background.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig: normalization study"
+
+\end_inset
+
+ shows the LikeSign over Mix event LikeSign ratio (which is used to qualify
+ the normalization quality) from different data set.
+ The LikeS/MixLikeS ratio from Run10 Central trigger shows a step function
+ like structure at the normalization (1~2 GeV/c
+\begin_inset Formula $^{2}$
+\end_inset
+
+) and the variation is about 0.15%.
+ Considering the small signal over background ratio (~1/200) in this mass
+ region, the variation will change the final result by about 30% level.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig: 0010 comp normalization"
+
+\end_inset
+
+ is the comparison of Run10 results by using different normalization region
+ for Mix Event background, result only using likesign background and Run11
+ results.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Run10 Mix1
+\begin_inset Quotes erd
+\end_inset
+
+ is Run10 result by using mass region 1~2 GeV/c
+\begin_inset Formula $^{2}$
+\end_inset
+
+ as the normalization and 
+\begin_inset Quotes eld
+\end_inset
+
+Run10 Mix2
+\begin_inset Quotes erd
+\end_inset
+
+ shows the result which Mix Event background is normalized in mass region
+ 1.4~1.8 GeV/c
+\begin_inset Formula $^{2}$
+\end_inset
+
+.
+ The 
+\begin_inset Quotes eld
+\end_inset
+
+Run10 Mix2
+\begin_inset Quotes erd
+\end_inset
+
+ result is about 50% higher than the 
+\begin_inset Quotes eld
+\end_inset
+
+Run10 Mix1
+\begin_inset Quotes erd
+\end_inset
+
+ result and has better consistency with Run11 result in IMR which is expected
+ by the LikeS/MixLikeS ratio.
+ 
+\end_layout
+
+\begin_layout Standard
+Then the conclusion is that considering statistics error and systematic
+ error, the 0~10% results from Run10 and Run11 are consistent with each
+ other, but we need to reconsider the systematic error from the Mix Event
+ background normalization for Run 10 Central results and also the LikeSign
+ residue subtract method.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename somefig/LikeS2LikeS_Mix.gif
+	scale 28
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename somefig/LikeS2LikeS_Mix_zoom.gif
+	scale 28
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Left plot shows the LikeSign over Mix Event LikeSign ratio from Run10 Central
+ triggered event and Run11 Minbias 0~10% centrality.
+ The 
+\begin_inset Quotes eld
+\end_inset
+
+flat relmult
+\begin_inset Quotes erd
+\end_inset
+
+ are the Run11 Minbias sample removed the runs period with a drop the average
+ refMult.
+ Right plot shows a zoom in at the normalization 1~2 GeV/c
+\begin_inset Formula $^{2}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig: normalization study"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename somefig/Run11andRun10.gif
+	scale 40
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+shows comparison results of different normalization and different background
+ subtract method of Run 10 and results of Run11.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Run10 Mix1
+\begin_inset Quotes erd
+\end_inset
+
+ (blue circle) is Run10 result by using normalization 1~2GeV/c
+\begin_inset Formula $^{2}$
+\end_inset
+
+.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Run10 Mix2
+\begin_inset Quotes erd
+\end_inset
+
+ (sky blue open circle) shows the result which Mix Event background is normalize
+d in mass region 1.4~1.8 GeV/c
+\begin_inset Formula $^{2}$
+\end_inset
+
+.
+ The lower plot shows the ratio to 
+\begin_inset Quotes eld
+\end_inset
+
+Run10 Mix1
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig: 0010 comp normalization"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Comparison
+\end_layout
+
+\begin_layout Standard
+Jie has update his Run10 Central result corresponding the study done in
+ section 7.1.
+ A reweigh for the refmult distribution and a 0~10% refmult cut is done
+ to the Run10 Central result (Please see Jie's analysis note).
+\end_layout
+
+\begin_layout Standard
+Run10 and Run11 results are compared in different centrality and pT bins
+ and they are consistent with each other within errors.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig: Run10 vs Run11 cen"
+
+\end_inset
+
+ shows the comparison in different centrality bins.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig: Run10 vs Run11 pT"
+
+\end_inset
+
+ shows the comparison in different pT bins.
+ 
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectronIO/output/Cen_Yield_cocktail_Run11vsRun10.pdf
+	scale 40
+	rotateOrigin center
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectronIO/output/cen_ratio_Run11vsRun10_Run11vsRun10.pdf
+	scale 40
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Centrality dependence.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig: Run10 vs Run11 cen"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectronIO/output/pT_Yield_cocktail_Run11vsRun10.pdf
+	scale 40
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectronIO/output/pT_ratio_Run11vsRun10.eps
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ dependence.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig: Run10 vs Run11 pT"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Combining Run10 and Run11 result
+\end_layout
+
+\begin_layout Standard
+Run10 and Run11 results are combined statistically and systematically.
+ For the 0~10% centrality bin, since Run 10 have dominate statistics we
+ don't combine Run10 and Run11 data in this centrality in this bin to achieve
+ a better control of systematics uncertainty.
+ 
+\end_layout
+
+\begin_layout Standard
+The statistical errors are combined by standardy error propagate formula.
+\end_layout
+
+\begin_layout Itemize
+combine the yields: 
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Formula $Y_{com}=w_{Run10}\times Y_{Run10}+w_{Run11}\times Y_{Run11}$
+\end_inset
+
+ , 
+\begin_inset Formula $w_{Run10}=Evt_{Run10}/(Evt_{Run10}+Evt_{Run11})$
+\end_inset
+
+ , 
+\begin_inset Formula $w_{Run11}=Evt_{Run11}/(Evt_{Run10}+Evt_{Run11})$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Itemize
+combine statistics errors: 
+\begin_inset Formula $Err_{com}=\sqrt{Err_{Run10}^{2}\times w_{Run10}^{2}+Err_{Run11}^{2}\times w_{Run11}^{2}}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+The systematic uncertainty are combined separatly for efficiency systematic
+ uncertainty (which is correlated vs mass) and other systematic uncertainty
+ source.
+ The formulas used to calculate the combined error are list below:
+\end_layout
+
+\begin_layout Itemize
+efficiency uncertainty (relative error) uncorrelated source, summed by quadratic
+ sum: 
+\begin_inset Formula $\delta_{com}=w_{Run10}\times\delta_{Run10}+w_{Run11}\times\delta_{Run11}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Itemize
+other uncertainty source (relative error) correlated source, summed by direct
+ sum : 
+\begin_inset Formula $\sigma_{com}=w_{Run10}\times\sigma_{Run10}+w_{Run11}\times\sigma_{Run11}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Itemize
+total systematic uncertainty (relative error) : 
+\begin_inset Formula $SysErr_{com}=\sqrt{\delta_{com}^{2}+\sigma_{com}^{2}}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $w_{Run10}$
+\end_inset
+
+ and 
+\begin_inset Formula $w_{Run11}$
+\end_inset
+
+ are ratio of the statistics of Run10 and Run11 over total statistics.
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Fig:combined central"
+
+\end_inset
+
+ shows the combined results for different centrality bins and the comparison
+ with the cocktail.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:combimed pT"
+
+\end_inset
+
+ shows the combined results for transverse momentum bins and the comparison
+ with the cocktail.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectronIO/output/Cen_Yield_cocktail_Combined.pdf
+	scale 40
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectronIO/output/Cen_ratio_Combined.pdf
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+shows the combined results for different centrality bins and the comparison
+ with the cocktail.
+ Systematic errors are showed as the green box.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "Fig:combined central"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectronIO/output/pT_Yield_cocktail_Combined.pdf
+	scale 40
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/luthien/worksdir/diElectronIO/output/pT_ratio_Combined.pdf
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+shows the combined results for transverse momentum bins and the comparison
+ with the cocktail.
+ Systematics errors are showed as green box.
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:combimed pT"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Mesons
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phi$
+\end_inset
+
+ and 
+\begin_inset Formula $\omega$
+\end_inset
+
+ mesons 
+\end_layout
+
+\begin_layout Section
+\begin_inset Formula $m_{T}$
+\end_inset
+
+ spectral
+\end_layout
+
+\end_body
+\end_document

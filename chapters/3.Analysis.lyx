@@ -1,0 +1,2627 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass USTCthesis
+\begin_preamble
+%Created by jmcui 
+%\graphicspath{{C:/Users/jmcui/Desktop/Lyxthesis/USTCthesis}}
+\end_preamble
+\options doctor,twoside,adobefont
+\use_default_options false
+\master ../Main.lyx
+\begin_modules
+theorems-ams
+\end_modules
+\maintain_unincluded_children false
+\begin_local_layout
+NoStyle	Thanks
+NoStyle	ChapterSpecial
+NoStyle	Abstract
+NoStyle	EnglishAbstract
+\end_local_layout
+\language english
+\language_package babel
+\inputencoding gbk
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\font_cjk fs
+\graphics default
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle false
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 2
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index 索引
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Analysis
+\end_layout
+
+\begin_layout Section
+Data set and event selection
+\end_layout
+
+\begin_layout Standard
+The data set used in this analysis was minimum bias triggered event taken
+ in year 2010 and year 2011 Au+Au 200 GeV collisions and central triggered
+ date taken in year 2010 Au+Au 200 GeV collisions.
+ For the p+p analysis, the data set was taken in year 2012 p+p 200 GeV minimum
+ bias collision.
+ The minimum bias trigger was defined as a coincidence in the east and west
+ VPD detectors, and an online vertex cut was applied to select the collision
+ happening in the center of the detector.
+ For the central trigger, a small signal in the ZDC detectors was required
+ as well as a large multiplicity from the barrel TOF.
+ This trigger corresponds to 0-10% of the total hadronic cross section.
+\end_layout
+
+\begin_layout Standard
+Events used in this analysis were selection by the following event selection
+ criteria.
+ To insure the TPC performance, events were required to have a valid reconstruct
+ed collision vertex (primary vertex, defined by primary tracks) within 30cm
+ (for Au+Au 200 GeV collisions, Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:vertex"
+
+\end_inset
+
+ (c)) and 50cm ( for p+p 200 GeV collisions) of the TPC center alone the
+ beam pipe (z direction).
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:vertex"
+
+\end_inset
+
+ (b) shows correlation between TPC vertexZ and VPD vertexZ.
+ The clean diagonal correlation band indicate the correct vertices which
+ fire the VPDMB trigger.
+ Random distributions could also be see in a wide region which typically
+ indicate the vertex found be TPC is a pile-up vertex (the wrong vertex
+ from different bunch crossing collisions).
+ The cross like distribution in the random correlation regions is due to
+ the online vertexZ cut in the trigger definition.To suppress the pile up
+ events and to ensure that the selected event is firing the trigger, the
+ difference between event vertex z-coordinate (
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+$V_{z}$
+\end_layout
+
+\end_inset
+
+) and the 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+$V_{z}$
+\end_layout
+
+\end_inset
+
+ calculated from the VPD timing was required to be within 3cm (for Au+Au
+ 200 GeV collisions) and 6cm (for p+p 200GeV collisions).
+ In order to remove the events from the Au beam hitting the Beam pipe, 2cm
+ of the vertex radius cut was also applied in the data selection.
+ The vertex criteria is also shown in table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "table: vertex selection criteria"
+
+\end_inset
+
+.
+ The events number after event selection is shown in table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "# of Event"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Au+Au 200 GeV 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+p+p 200 GeV
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+First primary vertex
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ranking > 0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ranking > 0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $|Vr|<2cm$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $|Vz|<30cm$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $|Vz|<50cm$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $|Vz-VzVpd|<3cm$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $|Vz-VzVpd|<6cm$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+vertex selection criteria.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "table: vertex selection criteria"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Year
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Run Type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+# of events
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2010
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Au+Au 200 GeV MinBias
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+240M
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Au+Au 200 GeV Central
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+220M
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2011
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Au+Au 200 GeV MinBias
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+490M
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2012
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+p+p 200 GeV MinBias
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+375M
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Number of events after event selection.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "# of Event"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/3.Analysis/Additional/BasicQA/QA_fig1.pdf
+	scale 70
+	rotateAngle 270
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+(a) TPC vertexR distribution, (b) TPC vertexZ and the VPD vertexZ correlation,
+ (c) TPC primary vertexX distribution, (d) difference between TPC vertexZ
+ and the VPD vertexZ in Au+Au 200 GeV minimum bias collisions.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:vertex"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Centrality definition 
+\end_layout
+
+\begin_layout Standard
+The centrality in Au+Au 200 GeV collisions was defined using the uncorrected
+ charged particle multiplicity 
+\begin_inset Formula $dN/d\eta$
+\end_inset
+
+ within 
+\begin_inset Formula $|\eta|<0.5$
+\end_inset
+
+ ( also called reference multiplicity).
+ A Monte Carlo Clauber calculation was used to compared with the 
+\begin_inset Formula $dN/d\eta$
+\end_inset
+
+ distribution from data to define centrality bins.
+ The dependence on collision vertex Z-position and the luminosity has been
+ also taken in account to address the efficiency and acceptance change on
+ the measured 
+\begin_inset Formula $dN/d\eta$
+\end_inset
+
+.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:refmult"
+
+\end_inset
+
+ shows the uncorrected 
+\begin_inset Formula $dN/d\eta$
+\end_inset
+
+ distribution measured within 
+\begin_inset Formula $|Vz|<5cm$
+\end_inset
+
+ and extrapolated to zero ZDC coincidence rate for the VPDMB triggered events
+ for Au+Au 200 GeV collision in year 2010 as well as the MC Glauber simulation.
+ The discrepancy at the low multiplicity is because the VPD trigger efficiency
+ starts getting lower while fewer particles are produced.
+ The difference in low multiplicity region has been taken as a weight with
+ the ration shown in Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:refmult"
+
+\end_inset
+
+ (bottom panel) to account for the VPD inefficiency.
+ Finally, the centrality bins are defined according to the MC Glauder distributi
+on to determine the cut on the measured multiplicity.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/3.Analysis/Additional/dataset/paper_RefMult.eps
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Upper Panel: Uncorrected charge particle multiplicity distribution measured
+ within 
+\begin_inset Formula $|\eta|<0.5$
+\end_inset
+
+ and 
+\begin_inset Formula $|Vz|<5cm$
+\end_inset
+
+.
+ The red curve represents the multiplicity distribution from MC Glauber
+ calculation.
+ Bottom Panel: the ratio between MC and data.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:refmult"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Track selection and electron identification
+\end_layout
+
+\begin_layout Subsection
+Track selection
+\end_layout
+
+\begin_layout Standard
+Electron (including positrons if not specified) candidates are selected
+ from good tracks satisfied the flowing selection: 
+\end_layout
+
+\begin_layout Enumerate
+number of fit points (
+\emph on
+nHitsFit
+\emph default
+) in the TPC greater than 20 ( maximum 45) to ensure good tracking quality
+ and momentum resolution;
+\end_layout
+
+\begin_layout Enumerate
+the ratio of number of fit points over number of possible fit points in
+ TPC greater than 0.52 to avoid split tracks in the TPC;
+\end_layout
+
+\begin_layout Enumerate
+distance of closet approach (
+\emph on
+dca
+\emph default
+) to the primary vertex less then 1 cm to make sure selected tracks are
+ from the primary collision;
+\end_layout
+
+\begin_layout Enumerate
+number of 
+\emph on
+dE/dx 
+\emph default
+points used for calculation average 
+\emph on
+dE/dx 
+\emph default
+greater than 16 to ensure good 
+\emph on
+dE/dx
+\emph default
+ resolution.
+\end_layout
+
+\begin_layout Enumerate
+with a valid matching to a TOF hit and projected position on TOF module
+ with the sensitive readout volume.
+ 
+\end_layout
+
+\begin_layout Standard
+Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "table:track and pid cut"
+
+\end_inset
+
+ left part lists the detailed track quality cut.
+\end_layout
+
+\begin_layout Subsection
+Electron identification
+\end_layout
+
+\begin_layout Standard
+In additional of track detection, momentum determination, TPC also provide
+ particle identification for charged particles by measuring their ionization
+ energy loss (
+\emph on
+dE/dx
+\emph default
+) in the TPC gas.
+ Usually, a normalized 
+\emph on
+dE/dx 
+\emph default
+(also called 
+\begin_inset Formula $n\sigma$
+\end_inset
+
+) is used, which is defined:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+n\sigma_{e}=\frac{1}{R_{dE/dx}}ln\frac{\langle dE/dx\text{\rangle}{}^{Mea}}{\langle dE/dx\rangle_{e}^{Bichsel}}\label{eq:nsigmaE}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+in the formula 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:nsigmaE"
+
+\end_inset
+
+: 
+\begin_inset Formula $R_{dE/dx}$
+\end_inset
+
+ is the 
+\emph on
+dE/dx
+\emph default
+ resolution, 
+\emph on
+Mea 
+\emph default
+and 
+\emph on
+Bichsel
+\emph default
+ are measured value and theoretical value.
+ 
+\begin_inset Formula $n\sigma_{e}$
+\end_inset
+
+ follows a standard gaussian distribution.
+ 
+\end_layout
+
+\begin_layout Standard
+With TPC only, however, it is difficult to separate electron from hadrons
+ because the electron band crosses with hadron bands in higher momentum.
+ With the flight timing information measured by TOF and the track path-length
+ measured from TPC, we can calculate the velocity (β).
+ Due to the very small electron mass, electron can be separated from the
+ slow hadron by the velocity cut.
+ Combining the velocity (β) information from TOF and energy loss(
+\emph on
+dE/dx
+\emph default
+) from TPC, electron can be identified up to momentum ~3GeV/c.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:PID"
+
+\end_inset
+
+ left panel shows the inverse velocity distribution as a function of momentum,
+ while the 
+\begin_inset Formula $n\sigma_{e}$
+\end_inset
+
+ vs momentum distribution after TOF velocity cut is shown in right panel.
+ The detailed eID cuts are listed in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "table:track and pid cut"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="right" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="right" valignment="top">
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Track quality cuts
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PID cuts
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+dca 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+<1cm
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+> 0.2GeV/c
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+nHitsFit 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+>= 20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $nσ_{e},p<1.0GeV/c$
+\end_inset
+
+ 
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1.5\times(p-1)-0.8\sim2.0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+nHitsFit/nHitsPoss 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+>=0.52
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $nσ_{e},p>1.0GeV/c$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-0.8\sim2.0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ndEdxFit 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+>=16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TOF 
+\begin_inset Formula $1/\text{β}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $|1-1/\text{β}|<0.025$
+\end_inset
+
+ (Au+Au)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+η 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
++/- 1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $|1-1/\text{β}|<0.03$
+\end_inset
+
+ (p+p)
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TOF yLocal
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ 
+\begin_inset Formula $|yLocal|<1.8cm$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Electron selection criteria
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "table:track and pid cut"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/3.Analysis/Additional/PID/betavsp.eps
+	scale 35
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../fig/3.Analysis/Additional/PID/Nsigma_AuAu200.eps
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Left panel: inverse velocity 
+\begin_inset Formula $1/\beta$
+\end_inset
+
+ vs momentum distribution in 200GeV Au+Au collisions.
+ Right panel: 
+\begin_inset Formula $n\sigma_{e}$
+\end_inset
+
+ distribution as a function of momentum after TOF velocity cut 
+\begin_inset Formula $|1/\beta-1|<0.025$
+\end_inset
+
+ in 200GeV Au+Au collisions.
+ The red lines in both panel show the PID cuts.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:PID"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Hadron contamination and electron purity
+\end_layout
+
+\begin_layout Standard
+From Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:PID"
+
+\end_inset
+
+ right panel, even after the TOF cut, the slow hadron bands can still be
+ seen in 
+\begin_inset Formula $n\sigma_{e}$
+\end_inset
+
+ vs momentum.
+ We selected pure hadron (
+\begin_inset Formula $\pi$
+\end_inset
+
+, 
+\begin_inset Formula $k$
+\end_inset
+
+ and 
+\begin_inset Formula $p$
+\end_inset
+
+) sample by a very tight 
+\begin_inset Formula $m^{2}$
+\end_inset
+
+ cut provided by TOF (shown in Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig: pure sample"
+
+\end_inset
+
+ left panel).
+ The pure electron sample was from photonic conversion and 
+\begin_inset Formula $\pi^{0}$
+\end_inset
+
+ Dalitz decay (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig: pure sample"
+
+\end_inset
+
+ (right)).
+ Gaussian functions were used to parameterize the 
+\begin_inset Formula $n\sigma_{e}$
+\end_inset
+
+ distribution from the pure sample for different particle species.
+ Then, the hadron contamination and electron purity were studied by multi-gaussi
+an fit to the 
+\begin_inset Formula $n\sigma_{e}$
+\end_inset
+
+ distribution in differential momentum bins to obtain the yields for different
+ particles.
+ The mean and 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ were fixed in the fit respecting to the value obtained from the pure sample.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:muli fit ex"
+
+\end_inset
+
+ picks up the fit result in momentum bin [0.6, 0.64) GeV/c as an example.
+ The fit also included the merged 
+\begin_inset Formula $\pi$
+\end_inset
+
+ component which is from that the merging of two closed 
+\begin_inset Formula $\pi$
+\end_inset
+
+ tracks, and has a doubled 
+\emph on
+dE/dx
+\emph default
+ value compared to a normal 
+\begin_inset Formula $\pi$
+\end_inset
+
+ track.
+ In some momentum regions, the electron band crosses with the hadron bands,
+ where the multi-gaussian fit may not be reliable.
+ In this analysis, exponential functions were used to extrapolate the particle
+ yields into the cross region (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:yield and purity"
+
+\end_inset
+
+ (left), and the uncertainties from the exponential fit were taken into
+ account as systematic uncertainty.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:yield and purity"
+
+\end_inset
+
+ right panel shows the electron purity for Au+Au 200GeV minimum bias data
+ taken in year 2011.
+ Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Table:purity"
+
+\end_inset
+
+ lists electron purity for the data set used in this analysis.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/3.Analysis/Additional/BasicQA/QA_fig3.pdf
+	scale 35
+	rotateAngle 270
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../fig/3.Analysis/Additional/purity/fig5.pdf
+	scale 35
+	rotateAngle 270
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Left panel: Hadron sample selected by TOF.
+ Right panel: pure electron sample from 
+\begin_inset Formula $\pi^{0}$
+\end_inset
+
+ Daliza decay and photonic conversion.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig: pure sample"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/3.Analysis/Additional/purity/muliFit.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A multi-gaussian fit in momentum bin [0.6, 0.64) (GeV/c) in Au+Au 200GeV minimum
+ bias collisions.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:muli fit ex"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/3.Analysis/Additional/purity/mean3.pdf
+	scale 35
+	rotateAngle 270
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../fig/3.Analysis/Additional/purity/sigma3.pdf
+	scale 35
+	rotateAngle 270
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Mean (left) and sigma (right) of the gaussian distribution as a function
+ of momentum from pure samples for different particle species in Au+Au 200GeV
+ minimum bias collisions.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/3.Analysis/Additional/purity/const3.pdf
+	scale 35
+	rotateAngle 270
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/luthien/Documents/Thesis/Thesis/fig/3.Analysis/Additional/purity/eff_purity_3.pdf
+	scale 35
+	rotateAngle 270
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+(left) Yields for different particle species from multi-gaussian fit as
+ a function of momentum.
+ The grey area show the cross region.
+ And the solid lines depict the exponential fits to extrapolate the yields
+ in the cross region.
+ (right) Electron purity as a function of momentum, the green band represents
+ he uncertainty from the extrapolation and the multi-gaussian fits.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:yield and purity"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout LyX-Code
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Au+Au 200GeV
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MinBias
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sim0.946\pm0.024$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Cenrtral
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sim0.921\pm0.025$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+p+p 200GeV
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+MinBias
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sim0.980\pm0.040$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Electron purity for different data samples.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "Table:purity"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Pair reconstruction and background
+\end_layout
+
+\begin_layout Standard
+The dielectron pairs (foreground, also marked as 
+\emph on
+unlike-sign pairs
+\emph default
+) were reconstructed by randomly combining electron and position from the
+ high purity electron (position) sample from the same event.
+ The invariant mass of di-electron pairs 
+\begin_inset Formula $M_{ee}$
+\end_inset
+
+ were calculated as :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+M_{ee}=\sqrt{(E_{+}+E_{-})^{2}-(\overset{\rightarrow}{p_{+}}+\overset{\rightarrow}{p_{-}})^{2}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $E_{\pm}=\sqrt{(\overset{\rightarrow}{p_{\pm}})^{2}+m_{e}^{2}}$
+\end_inset
+
+, 
+\begin_inset Formula $m_{e}=0.511MeV/c$
+\end_inset
+
+, and 
+\begin_inset Formula $\overset{\rightarrow}{p_{\pm}}$
+\end_inset
+
+ is the momentum of electron (positron) which was measured by TPC.
+ The candidate tracks were required to satisfy cut: 
+\begin_inset Formula $p_{T}>0.2GeV/c$
+\end_inset
+
+ and 
+\begin_inset Formula $|\eta|<1$
+\end_inset
+
+ to fit into the acceptance of STAR detector, while the dielectron pairs
+ were constructed in mid-rapidity (
+\begin_inset Formula $|y_{ee}|<1$
+\end_inset
+
+).
+ Unlike-sign pairs include the dielectron signal and background, where the
+ signal is defined by dielectron pairs from hadron decay, and QGP/media
+ contribution which is what we are interested .
+ On the other hand, the background includes the following source:
+\end_layout
+
+\begin_layout Enumerate
+Combinatorial background: background come from randomly pairing, which is
+ uncorrelated.
+\end_layout
+
+\begin_layout Enumerate
+Correlated background, which is the case that two partner tracks come from
+ different parents but from the same source.
+ E.G, 
+\begin_inset Formula $\pi^{0}\rightarrow\gamma+e^{+}e^{-}$
+\end_inset
+
+, then 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ converts into another 
+\begin_inset Formula $e^{+}e^{-}$
+\end_inset
+
+ pair, when randomly combination, it is possible to pick one track from
+ 
+\begin_inset Formula $\pi^{0}$
+\end_inset
+
+ decay and another from the converted 
+\begin_inset Formula $ $
+\end_inset
+
+photon.
+ There is also contribution from Jet, e.g electrons and positrons from same
+ Jet or back to back Jet.
+ In this case, the final state particles are correlated, which is mainly
+ contributed in high momentum and high mass region.
+ In additional, the hadron contamination also has small contribution, e.g
+ 
+\begin_inset Formula $\pi$
+\end_inset
+
+, 
+\begin_inset Formula $p$
+\end_inset
+
+ from 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ decay are misidentified by electrons.
+ This contribution was considered as systematic uncertainty, and will be
+ discussed in following section.
+\end_layout
+
+\begin_layout Enumerate
+Photon conversion.
+ The invariant mass of dielectron pairs from real photon conversion should
+ be 0.
+ However, due to the primary track reconstruction algorithm, the momentum
+ of these electrons from conversion which happened away from the primary
+ vertex are biased, which lead to a finite pair invariant mass.
+ This kind of background mainly contributes in very low mass region (
+\begin_inset Formula $M_{ee}<0.2GeV/c^{2}$
+\end_inset
+
+).
+ It will be discussed in detail in follow section.
+\end_layout
+
+\begin_layout Standard
+In this analysis, we adopted two methods to reproduce the background.
+\end_layout
+
+\begin_layout Subsection
+Like-sign method
+\end_layout
+
+\begin_layout Standard
+The Like-sign method is used to calculate contributions of uncorrelated
+ and correlated background at the same time and serves as a standard of
+ the background to justify the background distribution.
+ In this analysis, we constructed like-sign background by randomly combining
+ same charge pairs 
+\begin_inset Formula $N_{++}$
+\end_inset
+
+ , 
+\begin_inset Formula $N_{--}$
+\end_inset
+
+ from the same event.
+ We used the geometric mean of the like-sign pairs 
+\begin_inset Formula $2\sqrt{N_{++}\times N_{--}}$
+\end_inset
+
+ , because it is demonstrated in this paper (cited) that when the 
+\begin_inset Formula $e^{+}$
+\end_inset
+
+ and 
+\begin_inset Formula $e^{-}$
+\end_inset
+
+ are produced in statistically independent pairs, the geometric mean fully
+ describes the background in the unlike-sign pair foreground distribution.
+\end_layout
+
+\begin_layout Standard
+The TPC detector has de-active zones, (e.g the gap between TPC sectors),
+ and in magnet field, different charged particles are bended into opposite
+ direction.
+ Therefore, the acceptance of different charged particle is different.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:pmaccTPC"
+
+\end_inset
+
+ shows the transverse momentum (
+\begin_inset Formula $p_{T}$
+\end_inset
+
+) vs azimuthal angle (
+\begin_inset Formula $\phi$
+\end_inset
+
+) distribution of negative tracks and positive tracks in magnet field.
+ The white bands show the de-active regions of TPC.
+ In Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:pmaccTPC"
+
+\end_inset
+
+, it can be clearly seen that the acceptance effect is different for negative
+ and positive charged tracks.
+ So due to the acceptance effect, the acceptance of unlike-sign pairs and
+ like-sign pairs are different (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:accdiff"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+To address this difference, mixed event method was used in this analysis.
+ Due to it does not include correlated pairs, mixed event method can be
+ used to study the detector acceptance effect.
+ The like-sign background was calculated by formula 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:LSacc"
+
+\end_inset
+
+, and the acceptance correction factor also defined there.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:accfactor"
+
+\end_inset
+
+ shows acceptance correction factor as function of 
+\begin_inset Formula $M_{ee}$
+\end_inset
+
+ in 200 GeV Au+Au and p+p minimum bias collisions.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+N_{likesign} & =2\sqrt{N_{++}\times N_{--}}\cdot F_{acc}\nonumber \\
+F_{acc} & =\frac{N_{+-}^{Mix}}{2\sqrt{N_{++}^{Mix}\times N_{--}^{Mix}}}\label{eq:LSacc}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/3.Analysis/Additional/paper_phiAcc_star.eps
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ vs 
+\begin_inset Formula $\phi$
+\end_inset
+
+ distribution for negative tracks (a) and positive tracks (b) in magnet
+ field.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:pmaccTPC"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/3.Analysis/background/Acc1.eps
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/3.Analysis/background/Acc2.eps
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A cartoon shows the acceptance difference between unlike-sign pairs and
+ like-sign pairs.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:accdiff"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/3.Analysis/background/AuAu/paper_Acc.eps
+	width 50text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../fig/3.Analysis/background/pp/paper_Acc.eps
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+(left) Acceptance correction factor in Au+Au 200 GeV collision.
+ (right) Acceptance correction factor in p+p 200GeV collision.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:accfactor"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Mixed event method
+\end_layout
+
+\begin_layout Standard
+Like-sign method as mentioned in section 3.4.1 can fully reproduce combinatorial
+ background and correlated background.
+ However, the like-sign background is leak of statistics.
+ In this analysis, the like-sign background was used in low mass region
+ where we have better statistics.
+ For higher mass region, event mixing technique was used to achieve better
+ statistical accuracy.
+ 
+\end_layout
+
+\begin_layout Standard
+Mixed event background is reproduced by mixing electron candidate tracks
+ from different event.
+ Since the two tracks are uncorrelated, mixed event method is only able
+ to reconstruct combinatorial background.
+ To ensure events mixed together have similar structure, we classified event
+ sample according magnet, centrality, Vz and event plane, and split it into
+ 
+\begin_inset Formula $Magnet\times Centrality\times EventPlane\times Vz=2\times9\times12\times10$
+\end_inset
+
+ event pools.
+ Each event pool holds 50 (100 for p+p data) events at maximum, when the
+ number of events in the event pool reach limitation, one event is randomly
+ dropped to make space for the new coming events.
+ Dr.
+ Jie Zhao did very detailed study about the number of event pools and event
+ buffer effect on mixed event background in (cite).
+ Here we chosen the number of event pools and event buffer respecting to
+ his study.
+\end_layout
+
+\begin_layout Standard
+The mixed event background should be normalized to the same amplitude of
+ like-sign background, since the like-sign background can fully reproduce
+ the real background.
+ The formula is used to calculate the normalization factor:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+A_{\pm} & =\frac{\intop_{N.R}N_{\pm\pm}(M,p_{T})dMdp_{T}}{\int_{N.R}N_{\pm\pm}^{Mix}(M,p_{T})dMdp_{T}}\nonumber \\
+B_{\pm\pm} & =\int_{0}^{\infty}A_{\pm}N_{\pm\pm}^{Mix}(M,p_{T})dMdp_{T}\\
+N_{Mix}^{Norm}(M,p_{T}) & =\frac{2\sqrt{B_{++}B_{--}}}{\int_{0}^{\infty}N_{+-}^{Mix}(M,p_{T})dMdp_{T}}N_{+-}^{Mix}(M,p_{T})\nonumber 
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+N.R 
+\emph default
+represents the normalization region.
+ The statistical uncertainty of the normalization factor is included into
+ the total statistical uncertainty.
+\end_layout
+
+\begin_layout Standard
+However, since the mixed event method can not reconstruct correlated background,
+ the shape of mixed event background is expected to be different with the
+ like-sign background.
+ The normalization region was chosen as the flat region in 
+\begin_inset Formula $(N_{likesign}-N_{likesign}^{Mix})/\sigma(N_{likesign}-N_{likesign}^{Mix})$
+\end_inset
+
+ which is shown in Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:norRegion"
+
+\end_inset
+
+.
+ To take into account the difference between the like-sign and mixed event
+ background, we used function 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:LSresidue"
+
+\end_inset
+
+ to fit the ratio of like-sign over mixed event background (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:LS/Mix"
+
+\end_inset
+
+), and subtracted it in additional as 
+\emph on
+like-sign residue
+\emph default
+ from the foreground.
+ The 68% confidence level of the fit was taken into accounted as systematic
+ uncertainty.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+f(M_{ee})=1+exp((M_{ee}-a)/b)\qquad a,b\sim free\, parameters\label{eq:LSresidue}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/3.Analysis/background/pp/paper_nRegion.eps
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../fig/3.Analysis/background/AuAu/paper_nRegion.eps
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The difference between like-sign background and mixed event background divided
+ by its standard deviation 
+\begin_inset Formula $(N_{likesign}-N_{likesign}^{Mix})/\sigma(N_{likesign}-N_{likesign}^{Mix})$
+\end_inset
+
+ in p+p collision (left) and in Au+Au collision (right).
+ the black box represent the chosen normalization region: 
+\begin_inset Formula $0.5<M_{ee}<1GeV/c^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $0<p_{T}^{ee}<2GeV/c$
+\end_inset
+
+ for p+p data and 
+\begin_inset Formula $1<M_{ee}<2GeV/c^{2}$
+\end_inset
+
+ for Au+Au data.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:norRegion"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/3.Analysis/background/AuAu/paper_ratio.eps
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The distribution of like-sign over mixed event background ratio as a function
+ of 
+\begin_inset Formula $M_{ee}$
+\end_inset
+
+.
+ The solid line depicts a fit to the raise about 1 
+\begin_inset Formula $GeV/c^{2}$
+\end_inset
+
+, while the dashed line shows 68% confidence level of the fit.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:LS/Mix"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Photon conversion
+\end_layout
+
+\begin_layout Standard
+Photon conversion is that photon hit material of detectors and convert to
+ 
+\begin_inset Formula $e^{+}e^{-}$
+\end_inset
+
+ pairs.
+ When reconstructed unlike-sign foreground, it has contribution to the very
+ low mass region (
+\begin_inset Formula $M_{ee}<0.2GeV/c^{2}$
+\end_inset
+
+).
+ Therefore, it must be subtracted from the signal.
+ The pair mass from photon conversion pairs should be 0.
+ However, momentum of electron tracks from conversion vertex away from primary
+ vertex is biased which lead to a finite pair invariant mass, because the
+ procedure of reconstruction primary tracks also included the primary vertex
+ as a fit point.
+ 
+\end_layout
+
+\begin_layout Standard
+In this analysis, we used 
+\begin_inset Formula $\phi_{V}$
+\end_inset
+
+ cut method which is similar to the method used by PHENIX (cite).
+ Considering the zero opening angle of di-electron pairs from photon conversion,
+ electron is bended inside the plate perpendicular to magnet direction.
+ Therefore, 
+\begin_inset Formula $\phi_{V}$
+\end_inset
+
+ is defined as formula 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:phiV"
+
+\end_inset
+
+, where 
+\begin_inset Formula $\vec{p}_{+}$
+\end_inset
+
+, 
+\begin_inset Formula $\vec{p}_{-}$
+\end_inset
+
+ are the momentum of 
+\begin_inset Formula $e^{+}$
+\end_inset
+
+ and 
+\begin_inset Formula $e^{-}$
+\end_inset
+
+, respectively, 
+\begin_inset Formula $\hat{z}$
+\end_inset
+
+ is the direction of magnet.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\hat{\mu} & =\frac{\vec{p}_{+}+\vec{p}_{-}}{|\vec{p}_{+}+\vec{p}_{-}|}\,,\:\hat{\nu}=\vec{p}_{+}\times\vec{p}_{-}\nonumber \\
+\hat{\omega} & =\hat{\mu}\times\hat{\nu}\,,\:\hat{\omega}_{c}=\hat{\mu}\times\hat{z}\label{eq:phiV}\\
+ & \cos\phi_{V}=\hat{\omega}\cdot\hat{\omega}_{c}\nonumber 
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A Geant simulation was done to study the distribution of 
+\begin_inset Formula $\phi_{V}$
+\end_inset
+
+ vs mass (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:phiV"
+
+\end_inset
+
+(left) (cite)).
+ And the cut used in this analysis is shown as the red solid line.
+ The pairs rejected by the cut were directly removed.
+ Simulation shows ~95% conversion pairs are removed by this cut.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/3.Analysis/Additional/pic_phiV.eps
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../fig/3.Analysis/Additional/conversion.eps
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+(left) 
+\begin_inset Formula $\phi_{V}$
+\end_inset
+
+ 
+\emph on
+vs mass
+\emph default
+ distribution from Geant simulation, the solid line depicts the cut.
+ (right) Di-electron mass spectra with photon rejection, without photon
+ rejection and conversion pairs distribution from 200GeV Au+Au data.
+ The conversion peaks from left to right are came from conversion happened
+ at beam pipe (r~4cm), TPC supporting structure (r~20cm) and TPC inner field
+ cage (r~46cm) ,  respectively.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:phiV"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

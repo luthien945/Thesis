@@ -1,0 +1,14 @@
+const int npars=6;
+double parL[npars]={1.00612, -0.0327819, 0.0827668, -0.0703977, 0.0340477, 0.000690098,  }; 
+double parH[npars]={0.946881, 0.412458, -0.890661, 1.01671, -0.522885, 0.113622,  }; 
+double flowM=0.4;
+double fhiM= 3;
+double fpar0=2.36667;
+double fpar1=0.450847;
+TF1 *fFit2 =new TF1("fFit2", "1+exp((x-[0])/[1])",flowM,fhiM);
+TF1 *fFit2L=new TF1("fFit2L","pol5",flowM,fhiM);
+TF1 *fFit2H=new TF1("fFit2H","pol5",flowM,fhiM);
+fFit2 ->SetParameter(0,fpar0);
+fFit2 ->SetParameter(1,fpar1);
+fFit2L->SetParameters(1.00612,-0.0327819,0.0827668,-0.0703977,0.0340477,0.000690098);
+fFit2H->SetParameters(0.946881,0.412458,-0.890661,1.01671,-0.522885,0.113622);
