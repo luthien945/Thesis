@@ -729,6 +729,198 @@ name "fig:refmult"
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Centrality
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left\langle N_{part}\right\rangle $
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left\langle N_{bin}\right\rangle $
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0-10%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+325.5 ± 3.7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+941.2 ± 26.3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10-40%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+174.1 ± 10.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+391.4 ± 30.3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+40-80%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+41.8 ± 7.9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+56.6 ± 13.7
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0-80%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+126.7 ± 7.7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+291.9 ± 20.5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Track selection and electron identification
 \end_layout
@@ -2025,6 +2217,20 @@ reference "eq:LSacc"
 \end_inset
 
 , and the acceptance correction factor also defined there.
+ The 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ dependence was also considered by applying a 2D (
+\begin_inset Formula $ $
+\end_inset
+
+mass vs 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+) acceptance factor correction, and the difference between 2D and 1D was
+ included in systematic uncertainty.
  Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2042,8 +2248,8 @@ reference "fig:accfactor"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-N_{likesign} & =2\sqrt{N_{++}\times N_{--}}\cdot F_{acc}\nonumber \\
-F_{acc} & =\frac{N_{+-}^{Mix}}{2\sqrt{N_{++}^{Mix}\times N_{--}^{Mix}}}\label{eq:LSacc}
+N_{likesign}(M_{ee},p_{T}) & =2\sqrt{N_{++}(M_{ee},p_{T})\times N_{--}(M_{ee},p_{T})}\cdot F_{acc}(M_{ee},p_{T})\nonumber \\
+F_{acc}(M_{ee},p_{T}) & =\frac{N_{+-}^{Mix}(M_{ee},p_{T})}{2\sqrt{N_{++}^{Mix}(M_{ee},p_{T})\times N_{--}^{Mix}(M_{ee},p_{T})}}\label{eq:LSacc}
 \end{align}
 
 \end_inset
@@ -2319,9 +2525,9 @@ reference "fig:LS/Mix"
 
 ), and subtracted it in additional as 
 \emph on
-like-sign residue
+residue 
 \emph default
- from the foreground.
+of the correlated component from the foreground.
  The 68% confidence level of the fit was taken into accounted as systematic
  uncertainty.
 \end_layout
@@ -2532,7 +2738,7 @@ reference "eq:phiV"
 \begin_inset Formula 
 \begin{align}
 \hat{\mu} & =\frac{\vec{p}_{+}+\vec{p}_{-}}{|\vec{p}_{+}+\vec{p}_{-}|}\,,\:\hat{\nu}=\vec{p}_{+}\times\vec{p}_{-}\nonumber \\
-\hat{\varpi} & =\hat{\mu}\times\hat{\nu}\,,\:\hat{\varpi}_{c}=\hat{\mu}\times\hat{z}\label{eq:phiV}\\
+\hat{\omega} & =\hat{\mu}\times\hat{\nu}\,,\:\hat{\omega}_{c}=\hat{\mu}\times\hat{z}\label{eq:phiV}\\
  & \cos\phi_{V}=\hat{\omega}\cdot\hat{\omega}_{c}\nonumber 
 \end{align}
 
@@ -2542,7 +2748,13 @@ reference "eq:phiV"
 \end_layout
 
 \begin_layout Standard
-A Geant simulation was done to study the distribution of 
+\begin_inset Formula $\phi_{V}$
+\end_inset
+
+ should be zero, if the di-electron pair is originated from photon conversions.
+ While, there is no preferred orientation for combinatorial pairs, and very
+ weak dependence for di-electron pairs from hadron decays.
+ A Geant simulation was done to study the distribution of 
 \begin_inset Formula $\phi_{V}$
 \end_inset
 
@@ -2554,7 +2766,14 @@ reference "fig:phiV"
 \end_inset
 
 (left) (cite)).
- And the cut us
+ And the cut used in this analysis is shown as the red solid line (cite).
+ The conversion pairs were directly removed by this cut.
+ This cut was only applied in very low mass (
+\begin_inset Formula $M_{ee}<0.2GeV/c^{2}$
+\end_inset
+
+).
+ Simulation shows ~95% conversion pairs are removed by this cut.
 \end_layout
 
 \begin_layout Standard
@@ -2597,7 +2816,8 @@ vs mass
  (right) Di-electron mass spectra with photon rejection, without photon
  rejection and conversion pairs distribution from 200GeV Au+Au data.
  The conversion peaks from left to right are came from conversion happened
- at beam pipe, TPC supporting structure and TPC inner field cage, respectively.
+ at beam pipe (r~4cm), TPC supporting structure (r~20cm) and TPC inner field
+ cage (r~46cm) ,  respectively.
 \end_layout
 
 \end_inset
@@ -2618,6 +2838,483 @@ name "fig:phiV"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Centrality and 
+\begin_inset Formula $p_{T}^{ee}$
+\end_inset
+
+ dependence
+\end_layout
+
+\begin_layout Standard
+In this analysis, for the Au+Au collision data, we also measured the di-electron
+ mass spectra in different centrality bins and 
+\begin_inset Formula $p_{T}^{ee}$
+\end_inset
+
+ regions.
+ The centrality and 
+\begin_inset Formula $p_{T}^{ee}$
+\end_inset
+
+ dependence of acceptance factor and correlated residue were also studied.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:acc pT cen"
+
+\end_inset
+
+ shows the acceptance factor correction (acceptance difference between unlike-si
+gn pairs and like-sign pairs ) in different centrality and 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ bins.
+ The acceptance factor shows a clear 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ dependence.
+ It is because the bending effect in magnetic field is weaker for charged
+ particles with higher 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ .
+ The acceptance between positive and negative charged tracks is smaller
+ at higher 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+.
+ The correlation background residue distribution were also studied by using
+ function 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:LSresidue"
+
+\end_inset
+
+ to fit the like-sign over mixed event background ratio in different centrality
+ and 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ regions (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:LMR cen pT"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/3.Analysis/Run11/Acc_cen.pdf
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../fig/3.Analysis/Run11/Acc_pT.pdf
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Acceptance factor in different centrality (left) and 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ (right) bins, for 200 GeV Au+Au collision data.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:acc pT cen"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/3.Analysis/Run11/LMR_cen.pdf
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../fig/3.Analysis/Run11/LMR_pT.pdf
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Like-sign over mixed event background ratio in different centrality (right)
+ and 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ (left) bins, for 200 GeV Au+Au collision data.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:LMR cen pT"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Di-electron signal
+\end_layout
+
+\begin_layout Standard
+The follow tactics was used to subtract the background from the unlike-sign
+ foregound:
+\end_layout
+
+\begin_layout Itemize
+Considering the correlated component, we subtracted the like-sign background
+ with a acceptance factor correction in mass region (
+\begin_inset Formula $M_{ee}<M_{th}$
+\end_inset
+
+, where 
+\begin_inset Formula $M_{th}=1GeV/c^{2}$
+\end_inset
+
+ for Au+Au collision, and 
+\begin_inset Formula $M_{th}=0.4GeV/c^{2}$
+\end_inset
+
+ for p+p collision), where the like-sign background has enough statistics.
+\end_layout
+
+\begin_layout Itemize
+For the mass region above 
+\begin_inset Formula $M_{th}$
+\end_inset
+
+, the normalized mixed event background was subtracted.
+ And we subtracted the correlated component (Jet contribution) by fitting
+ the ratio of like-sign over mixed event background (formula 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:LSresidue"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+After the background subtraction, we got the raw di-electron spectra without
+ efficiency correction.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:RYandSBratio"
+
+\end_inset
+
+ shows di-electron signal, foreground and background, as well as the signal
+ over background ratio.
+\end_layout
+
+\begin_layout LyX-Code
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "s"
+use_parbox 0
+use_makebox 0
+width "33col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/3.Analysis/background/AuAu/SBRatio_AuAu_MinBias.eps
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "s"
+use_parbox 0
+use_makebox 0
+width "33col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/3.Analysis/background/AuAu/SBRatio_AuAu_Cen.eps
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "s"
+use_parbox 0
+use_makebox 0
+width "33col%"
+special "none"
+height "1in"
+height_special "totalheight"
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/3.Analysis/background/pp/SBRatio_PP_MinBias.eps
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Unlike-sign foreground, background, raw di-electron spectra and signal over
+ background ratio for Au+Au minimum bias (left), central (middle) collision
+ and p+p minimum bias (collision).
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:RYandSBratio"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Efficiency and acceptance correction
+\end_layout
+
+\begin_layout Standard
+The di-electron raw signal yields was corrected for efficiency within STAR
+ acceptance of 
+\begin_inset Formula $|y_{ee}|<1$
+\end_inset
+
+, 
+\begin_inset Formula $|\eta_{e}|<1$
+\end_inset
+
+ and 
+\begin_inset Formula $p_{T}^{e}<0.2GeV/c$
+\end_inset
+
+.
+ To calculate the efficiency, we first need single electron efficiency which
+ can be separated into two parts: detector efficiency and PID efficiency.
+ Then Monte Carlo method is used to evolved the single efficiency into pair
+ efficiency.
+ We will discuss it step by step, in the following sections.
+\end_layout
+
+\begin_layout Subsection
+Single electron efficiency
+\end_layout
+
+\begin_layout Standard
+The single electron efficiency in this analysis included the TPC tracking
+ efficiency (
+\begin_inset Formula $\varepsilon_{TPC}$
+\end_inset
+
+), TOF matching efficiency (
+\begin_inset Formula $\varepsilon_{TOF}$
+\end_inset
+
+) and electron identification efficiency (
+\begin_inset Formula $\varepsilon_{PID}$
+\end_inset
+
+) as formula 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:single eff"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\varepsilon_{single}=\varepsilon_{TPC}\times\varepsilon_{TOF}\times\varepsilon_{PID}\label{eq:single eff}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The TPC tracking efficiency includes the track reconstruction efficiency
+ and the TPC acceptance loss.
+ Also the track quality cut (nHitFits, dca) efficiency are also combined
+ into TPC tracking efficiency.
+ The TPC tracking efficiency was obtained via the standard STAR embedding
+ process.
+ Monte Carlo (MC) electron tracks were generated within a certain phase
+ space definition.
+ The embedding tracks were sent into the GSTAR simulator and passed through
+ STAR detector geometry corresponding to the data set and detector response
+ simulator (TRS, TPC Response Simulator) to simulate the detector signal.
+ Then, the MC tracks were mixed with the real data which we called embedding
+ sample here.
+ The embedding sample were reconstructed by the same offline reconstruction
+ chain used to produce real data.
+ The tracking efficiency is defined by number of reconstructed MC tracks
+ which is satisfied the track quality cut divided by number of input MC
+ tracks, also see formula 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:effTPC"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\varepsilon_{TPC}=\frac{N_{rc}(nHitsFit\geqslant20,\, dca<1cm)}{N_{Mc}}\label{eq:effTPC}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To qualify whether the embedding sample can reproduce the real data, we
+ compared several track parameters from embedding sample with those from
+ the pure electron sample selected by photon conversion and 
+\begin_inset Formula $\pi^{0}$
+\end_inset
+
+ Daliza decay.
+ The difference was included into the systematic uncertainty.
 \end_layout
 
 \end_body
