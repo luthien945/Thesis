@@ -670,7 +670,26 @@ reference "fig:refmult"
  (bottom panel) to account for the VPD inefficiency.
  Finally, the centrality bins are defined according to the MC Glauder distributi
 on to determine the cut on the measured multiplicity.
- 
+ Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "table:Npart Nbin Cen"
+
+\end_inset
+
+ lists 
+\begin_inset Formula $\left\langle N_{part}\right\rangle $
+\end_inset
+
+ and 
+\begin_inset Formula $\left\langle N_{bin}\right\rangle $
+\end_inset
+
+ from the Glauber model simulation at 
+\begin_inset Formula $\sqrt{S_{NN}}=200GeV$
+\end_inset
+
+ Au+Au.
 \end_layout
 
 \begin_layout Standard
@@ -736,6 +755,7 @@ sideways false
 status open
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="5" columns="3">
 <features rotate="0" tabularvalignment="middle">
@@ -743,7 +763,7 @@ status open
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -752,7 +772,7 @@ Centrality
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -764,7 +784,7 @@ Centrality
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -778,7 +798,7 @@ Centrality
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -787,7 +807,7 @@ Centrality
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -796,7 +816,7 @@ Centrality
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -807,7 +827,7 @@ Centrality
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -816,7 +836,7 @@ Centrality
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -825,7 +845,7 @@ Centrality
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -836,7 +856,7 @@ Centrality
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -845,7 +865,7 @@ Centrality
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -854,7 +874,7 @@ Centrality
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -865,7 +885,7 @@ Centrality
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -874,7 +894,7 @@ Centrality
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -883,7 +903,7 @@ Centrality
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -904,7 +924,20 @@ Centrality
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Summary of centrality bins, average number of participants 
+\begin_inset Formula $\left\langle N_{part}\right\rangle $
+\end_inset
 
+ and number of binary collisions
+\begin_inset Formula $\left\langle N_{bin}\right\rangle $
+\end_inset
+
+ from Monte Carlo Glauber simulation at 
+\begin_inset Formula $\sqrt{S_{NN}}=200GeV$
+\end_inset
+
+ Au+Au collision.
+ 
 \end_layout
 
 \end_inset
@@ -913,6 +946,12 @@ Centrality
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "table:Npart Nbin Cen"
+
+\end_inset
+
 
 \end_layout
 
@@ -3267,6 +3306,10 @@ reference "eq:single eff"
 
 \end_layout
 
+\begin_layout Subsubsection
+TPC tracking and TOF matching efficiency
+\end_layout
+
 \begin_layout Standard
 The TPC tracking efficiency includes the track reconstruction efficiency
  and the TPC acceptance loss.
@@ -3315,6 +3358,221 @@ To qualify whether the embedding sample can reproduce the real data, we
 
  Daliza decay.
  The difference was included into the systematic uncertainty.
+\end_layout
+
+\begin_layout Standard
+The TOF efficiency (
+\begin_inset Formula $\varepsilon_{TOF}$
+\end_inset
+
+) was studied via comparing the number of track which matches TOF and the
+ total number of TPC primary tracks from real data.
+ A track match to TOF was defined as following:
+\end_layout
+
+\begin_layout Itemize
+The track is projected to the radius of TOF, and there is a valid hit in
+ the corresponding TOF cell (tofMatchFlag>0 in data structure).
+\end_layout
+
+\begin_layout Itemize
+The distance between the projection position to the TOF cell center in y
+ coordinate (Localy) is smaller than 1.8 cm.
+\end_layout
+
+\begin_layout Standard
+The definition of TOF matching efficiency is also shown as formula 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:eff TOF"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\varepsilon_{TOF}=\frac{N_{matched}(tofMatchFlag>0\,\&\&\,|LocalY|<1.8cm)}{N_{TPC}}\label{eq:eff TOF}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To achieve enough statistics to study the eff in 3 dimensions (
+\begin_inset Formula $p_{T}$
+\end_inset
+
+, 
+\begin_inset Formula $\eta$
+\end_inset
+
+, 
+\begin_inset Formula $\phi$
+\end_inset
+
+), we used pure pion sample selected by a very tight 
+\emph on
+dE/dx 
+\emph default
+cut (
+\begin_inset Formula $|n\sigma_{\pi}|<0.5$
+\end_inset
+
+)
+\begin_inset Formula $ $
+\end_inset
+
+ to study the 
+\begin_inset Formula $\eta$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi$
+\end_inset
+
+ dependence.
+ The TOF matching efficiency from pure electron sample from photon conversion
+ and 
+\begin_inset Formula $\pi^{0}$
+\end_inset
+
+ Dalitz decay was served as a standard, and the efficiency from 
+\begin_inset Formula $\pi$
+\end_inset
+
+ sample was scaled to match with the one from electron sample.
+ In this analysis, we used following function to parameterize the scale
+ factor as a function of 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+f(x)=\frac{1+ax+bx^{2}}{c+\exp\{\frac{x-d}{f}\}}\label{eq:eff tof diff}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The fit result is shown as Figure () and the difference was also included
+ in to the systematic uncertainty.
+\end_layout
+
+\begin_layout Standard
+The TPC efficiency and TOF matching efficiency were both studied and applied
+ in 3 dimensions.
+ TPC efficiency was calculated in 
+\begin_inset Formula $20\times36$
+\end_inset
+
+ 
+\begin_inset Formula $\eta$
+\end_inset
+
+, 
+\begin_inset Formula $\phi$
+\end_inset
+
+ bins and 50 MeV 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ bin, while TOF matching efficiency was studied in 
+\begin_inset Formula $20\times$
+\end_inset
+
+60 
+\begin_inset Formula $\eta$
+\end_inset
+
+, 
+\begin_inset Formula $\phi$
+\end_inset
+
+ bins and 50 MeV 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ bin.
+ The centrality dependence was also taken into account for Au+Au collision
+ by comparing the 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ dependence from different centrality with minimum bias.
+ Figure () shows the TPC efficiency and TOF matching efficiency for Au+Au
+ (left )and p+p collision (right).
+\end_layout
+
+\begin_layout Paragraph
+PID efficiency
+\end_layout
+
+\begin_layout Subsection
+Pair efficiency
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/3.Analysis/Run11/eff_cen.eps
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../fig/3.Analysis/Run11/eff_pT.eps
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+(Left) Pair efficiency for different centralities Au+Au collision and p+p
+ collision.
+ (Right) Pair efficiency in different 
+\begin_inset Formula $p_{T}^{ee}$
+\end_inset
+
+ region
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
