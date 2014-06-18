@@ -2116,8 +2116,8 @@ Correlated background, which is the case that two partner tracks come from
 \begin_inset Formula $e^{+}e^{-}$
 \end_inset
 
- pair, when randomly combination, it is possible to pick one track from
- 
+ pair, when pair is combined randomly, it is possible to pick one track
+ from 
 \begin_inset Formula $\pi^{0}$
 \end_inset
 
@@ -3457,7 +3457,7 @@ cut (
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-f(x)=\frac{1+ax+bx^{2}}{c+\exp\{\frac{x-d}{f}\}}\label{eq:eff tof diff}
+f(x)=\frac{1+ax+bx^{2}}{c+\exp\{(x-d)/f\}}\label{eq:eff tof diff}
 \end{equation}
 
 \end_inset
@@ -3520,6 +3520,43 @@ The TPC efficiency and TOF matching efficiency were both studied and applied
 PID efficiency
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../fig/3.Analysis/Efficiency/single_eff_AuAu.eps
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Pair efficiency
 \end_layout
@@ -3528,7 +3565,7 @@ Pair efficiency
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3554,11 +3591,11 @@ status open
 \begin_layout Plain Layout
 (Left) Pair efficiency for different centralities Au+Au collision and p+p
  collision.
- (Right) Pair efficiency in different 
+ (Right) 
 \begin_inset Formula $p_{T}^{ee}$
 \end_inset
 
- region
+ dependence of pair efficiency in Au+Au minimum bias collision.
 \end_layout
 
 \end_inset
