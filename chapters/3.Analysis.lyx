@@ -1600,6 +1600,7 @@ reference "fig: pure sample"
 \end_inset
 
  (right)).
+ This sample was also used laterly in the efficiency study.
  Gaussian functions were used to parameterize the 
 \begin_inset Formula $n\sigma_{e}$
 \end_inset
@@ -3403,7 +3404,7 @@ reference "eq:eff TOF"
 \end_layout
 
 \begin_layout Standard
-To achieve enough statistics to study the eff in 3 dimensions (
+To achieve enough statistics to study the efficiency in 3 dimensions (
 \begin_inset Formula $p_{T}$
 \end_inset
 
@@ -3441,7 +3442,30 @@ cut (
 \begin_inset Formula $\pi^{0}$
 \end_inset
 
- Dalitz decay was served as a standard, and the efficiency from 
+ Dalitz decay was served as a standard.
+ A weight on 
+\begin_inset Formula $\eta$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi$
+\end_inset
+
+ dimensions was applied to the electron sample to address the difference
+ in 
+\begin_inset Formula $\eta$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi$
+\end_inset
+
+ distribution with 
+\begin_inset Formula $\pi$
+\end_inset
+
+ sample.
+ The efficiency from 
 \begin_inset Formula $\pi$
 \end_inset
 
@@ -3466,8 +3490,78 @@ f(x)=\frac{1+ax+bx^{2}}{c+\exp\{(x-d)/f\}}\label{eq:eff tof diff}
 \end_layout
 
 \begin_layout Standard
-The fit result is shown as Figure () and the difference was also included
- in to the systematic uncertainty.
+The fit result is shown in figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig: TOF diff"
+
+\end_inset
+
+ and the difference was also included in to the systematic uncertainty.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/3.Analysis/Efficiency/TOF/Diff_phe_pi_rff.eps
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../fig/3.Analysis/Efficiency/TOF/SysErr_Tof.eps
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+(Left) TOF matching efficiency from 
+\begin_inset Formula $\pi$
+\end_inset
+
+ sample and photon conversion sample.
+ They difference is shown in the right panel.
+ The red line depicts a fit by function 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:eff tof diff"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig: TOF diff"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3490,10 +3584,10 @@ The TPC efficiency and TOF matching efficiency were both studied and applied
 \end_inset
 
  bin, while TOF matching efficiency was studied in 
-\begin_inset Formula $20\times$
+\begin_inset Formula $20\times60$
 \end_inset
 
-60 
+ 
 \begin_inset Formula $\eta$
 \end_inset
 
@@ -3511,13 +3605,70 @@ The TPC efficiency and TOF matching efficiency were both studied and applied
 \begin_inset Formula $p_{T}$
 \end_inset
 
- dependence from different centrality with minimum bias.
- Figure () shows the TPC efficiency and TOF matching efficiency for Au+Au
- (left )and p+p collision (right).
+ distribution from different centrality with minimum bias.
 \end_layout
 
 \begin_layout Subsubsection
 PID efficiency
+\end_layout
+
+\begin_layout Standard
+The PID efficiency included efficiency loss from 
+\begin_inset Formula $1/\beta$
+\end_inset
+
+, 
+\begin_inset Formula $n\sigma_{e}$
+\end_inset
+
+ and 
+\emph on
+ndEdxFits 
+\emph default
+cut.
+ 
+\begin_inset Formula $1/\beta$
+\end_inset
+
+ cut and 
+\emph on
+ndEdxFits
+\emph default
+ efficiency was studied by the pure 
+\begin_inset Formula $\pi$
+\end_inset
+
+ sample and the pure electron sample from real data, their difference was
+ considered as systematics uncertainty.
+ The pure electron sample was also used to study the 
+\begin_inset Formula $n\sigma_{e}$
+\end_inset
+
+ distribution for electrons as mention in section 3.3.3 which provided us
+ the 
+\begin_inset Formula $n\sigma_{e}$
+\end_inset
+
+ cut efficiency directly from the fit result.
+ 
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:single eff AuAu"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:single eff pp"
+
+\end_inset
+
+ are summary of the single tracking efficiency for Au+Au and p+p data sample.
 \end_layout
 
 \begin_layout Standard
@@ -3568,7 +3719,7 @@ name "fig:single eff AuAu"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3609,7 +3760,100 @@ name "fig:single eff pp"
 \end_layout
 
 \begin_layout Subsection
-Pair efficiency
+Pair efficiency and acceptance 
+\end_layout
+
+\begin_layout Standard
+The pair efficiency was evaluated by Monte Carlo folding method from the
+ single track efficiency.
+ We used two method folding the pair efficiency in Au+Au analysis: 
+\end_layout
+
+\begin_layout Enumerate
+virtual photon decay method, which virtual photons with 
+\begin_inset Formula $M_{ee}$
+\end_inset
+
+ and 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ distributions from the cocktail simulation and a flat 
+\begin_inset Formula $\eta$
+\end_inset
+
+, 
+\begin_inset Formula $\phi$
+\end_inset
+
+ distribution.
+ Then the virtual photon is randomly decay into electron pairs.
+\end_layout
+
+\begin_layout Enumerate
+cocktail method, where we used cocktail as input.
+ The input particles decay into electron pairs following their decay kinematics.
+ The heavy flavor quark decay process, suck like open charm decay and Drell-Yan
+ process were from PYTHIA model.
+ This method will be discussed in detail in next section.
+\end_layout
+
+\begin_layout Standard
+In relativistic heavy collision, we still can't separate the electrons from
+ heavy flavor quark decay and those produced from medium.
+ The contribution from heavy flavor remains unclear due to the possible
+ medium modification effect.
+ This two method served as two extreme approaches of decay kinematics in
+ the Au+Au collision.
+ 
+\end_layout
+
+\begin_layout Standard
+The single electron efficiency was folded in for each daughter track in
+ full 3D (
+\begin_inset Formula $p_{T}$
+\end_inset
+
+, 
+\begin_inset Formula $\eta$
+\end_inset
+
+, 
+\begin_inset Formula $\phi$
+\end_inset
+
+) momentum space.
+ The pair efficiency was calculated and applied in 2 dimension (
+\begin_inset Formula $M_{ee}$
+\end_inset
+
+ vs 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ ), within STAR acceptance (
+\begin_inset Formula $|y_{ee}|<1$
+\end_inset
+
+, 
+\begin_inset Formula $p_{T}^{e}>0.2GeV/c$
+\end_inset
+
+, 
+\begin_inset Formula $|\eta_{e}|<1$
+\end_inset
+
+).
+ The difference between the two method is small.
+ We included it in systematic uncertainty.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:pair eff"
+
+\end_inset
+
+ is a summary of the pair efficiencies used in this analysis.
 \end_layout
 
 \begin_layout Standard
@@ -3622,14 +3866,14 @@ status collapsed
 \align center
 \begin_inset Graphics
 	filename ../fig/3.Analysis/Run11/eff_cen.eps
-	width 45text%
+	width 50text%
 
 \end_inset
 
 
 \begin_inset Graphics
 	filename ../fig/3.Analysis/Run11/eff_pT.eps
-	width 45text%
+	width 50text%
 
 \end_inset
 
@@ -3655,12 +3899,18 @@ status collapsed
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:pair eff"
+
+\end_inset
+
 
 \end_layout
 
 \end_inset
 
-
+ 
 \end_layout
 
 \end_body
