@@ -2662,7 +2662,14 @@ status collapsed
 \align center
 \begin_inset Graphics
 	filename ../fig/3.Analysis/background/AuAu/paper_ratio.eps
-	width 80text%
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../fig/3.Analysis/background/pp/paper_ratio.eps
+	width 45sp
 
 \end_inset
 
@@ -3823,39 +3830,66 @@ The single electron efficiency was folded in for each daughter track in
 \end_inset
 
 ) momentum space.
- The pair efficiency was calculated in STAR acceptance (
+ The pair efficiency was calculated and applied in 2 dimension (
+\begin_inset Formula $M_{ee}$
+\end_inset
+
+ vs 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ ), within STAR acceptance (
 \begin_inset Formula $|y_{ee}|<1$
 \end_inset
 
 , 
-\begin_inset Formula $p_{T}>0.2GeV/c$
+\begin_inset Formula $p_{T}^{e}>0.2GeV/c$
 \end_inset
 
 , 
-\begin_inset Formula $|\eta_{e}|$
+\begin_inset Formula $|\eta_{e}|<1$
 \end_inset
 
-)
+).
+ The difference between the two method is small.
+ We included it in systematic uncertainty.
+ The photon conversion rejection cut efficiency was calculated by 
+\begin_inset Formula $\pi_{0}$
+\end_inset
+
+ Dalitz decay embedding sample.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:pair eff"
+
+\end_inset
+
+ is a summary of the pair efficiencies as a function of 
+\begin_inset Formula $M_{ee}$
+\end_inset
+
+ used in this analysis.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename ../fig/3.Analysis/Run11/eff_cen.eps
-	width 45text%
+	width 50text%
 
 \end_inset
 
 
 \begin_inset Graphics
 	filename ../fig/3.Analysis/Run11/eff_pT.eps
-	width 45text%
+	width 50text%
 
 \end_inset
 
@@ -3873,6 +3907,288 @@ status open
 \end_inset
 
  dependence of pair efficiency in Au+Au minimum bias collision.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:pair eff"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+In this analysis, the di-electron tranverse mass spectra were also studied
+ in Au+Au collision, which need to be corrected for the detector acceptance.
+ The acceptance correction was calculated as following:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\varepsilon_{pair}^{acc}=\frac{dN/dM_{ee}/dy(p_{T}(e)>0.2GeV/c,\,|\eta_{e}|<1,\,|y_{ee}|<1)}{dN/dM_{ee}/dy(|y_{ee}|<1)}\label{eq:eff acc}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:eff acc"
+
+\end_inset
+
+, the acceptance correction was calculated by the two methods mentioned
+ previously.
+ There is huge difference between the two method, especially in intermedia
+ mass region (IMR).
+ It is because di-electrons are mainly come from charm contribution in this
+ mass region.
+ The two methods are quite different with each other in IMR.
+ The correlation between the decay daughters is come from decay kinematics
+ itself in virtual photon method.
+ While in cocktail method, since the charm component is simulated by PYTHIA,
+ the daughter pairs also carry the strong correlation inherited from charm
+ pairs.
+ Therefore, this difference leads to large difference in the acceptance
+ for di-electron pairs.
+ We took the difference between the two methods as systematic uncertainty
+ due to leak of knowledge of this two processes in Au+Au collision.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/3.Analysis/Efficiency/Acceptance_mass.eps
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Acceptance correction calculated by virtual photon method and cocktail method
+ for Au+Au 200GeV collision.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:eff acc"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Hadronic cocktails
+\end_layout
+
+\begin_layout Section
+Systematic uncertainty
+\end_layout
+
+\begin_layout Standard
+The systematic uncertainties source are listed below:
+\end_layout
+
+\begin_layout Enumerate
+Background, including uncertainties of the acceptance factor for like-sign
+ background and the normalization for mixed event background.
+\end_layout
+
+\begin_layout Enumerate
+Like-sign residue, the uncertainty from the fit to parameterize the difference
+ between like-sign and mixed event background.
+\end_layout
+
+\begin_layout Enumerate
+Hadron contamination.
+\end_layout
+
+\begin_layout Standard
+The uncertainty from acceptance factor was come from difference between
+ 1D (
+\begin_inset Formula $p_{T}$
+\end_inset
+
+) and 2D (
+\begin_inset Formula $M_{ee}$
+\end_inset
+
+vs 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+) acceptance factor correction as mentioned in section 3.4.1.
+ The normalization uncertainty was studied by changing the normalization
+ regions around which used in the analysis, and the difference was taken
+ as systematic uncertainty.
+ For p+p collision the normalization regions was changed to 0.3~0.8 
+\begin_inset Formula $GeV/c^{2}$
+\end_inset
+
+ and 0.5~1.2 
+\begin_inset Formula $GeV/c^{2}$
+\end_inset
+
+, while in Au+Au collision it was changed to 0.75~1.75 and 1.25~3 
+\begin_inset Formula $GeV/c^{2}$
+\end_inset
+
+.
+ As mentioned in section 3.4.2, we used function 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:LSresidue"
+
+\end_inset
+
+ to parameterized the correlated residua and subtract additional from the
+ foreground.
+ The 68% confidence level of the fit was taken as systematic uncertainty
+ (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:LS/Mix"
+
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+Hadron contamination was studied by mixing pure hadron sample into electron
+ sample, we called the mixed sample.
+ The hadron sample was weighted by the ratio of hadron yield over electron
+ yield from the electron purity study (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:h/e ratio"
+
+\end_inset
+
+).
+ The particles in the mixed sample were randomly paired with each other.
+ There are three condition: e-e pairs, this is di-electron signal; e-h and
+ h-h contamination pairs.
+ And the same background analysis was done to the mixed sample.
+ Finally, we used function to parameterize yields of the contamination pairs
+ and calculated contribution to systematic uncertainty (Figure ).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/3.Analysis/Additional/purity/hadron2Eratio_3.pdf
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+hadron yield over electron yield ratio.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:h/e ratio"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/3.Analysis/SysUncertainty/HardonCondemination.eps
+	width 80col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
 \end_layout
 
 \end_inset
