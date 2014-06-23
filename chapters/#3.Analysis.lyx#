@@ -1064,7 +1064,8 @@ n\sigma_{e}=\frac{1}{R_{dE/dx}}ln\frac{\langle dE/dx\text{\rangle}{}^{Mea}}{\lan
 \end_layout
 
 \begin_layout Standard
-in the formula 
+in the Eq.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:nsigmaE"
@@ -2249,7 +2250,8 @@ reference "fig:accdiff"
 To address this difference, mixed event method was used in this analysis.
  Due to it does not include correlated pairs, mixed event method can be
  used to study the detector acceptance effect.
- The like-sign background was calculated by formula 
+ The like-sign background was calculated by Eq.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:LSacc"
@@ -2506,7 +2508,7 @@ Mixed event background is reproduced by mixing electron candidate tracks
 The mixed event background should be normalized to the same amplitude of
  like-sign background, since the like-sign background can fully reproduce
  the real background.
- The formula is used to calculate the normalization factor:
+ The following equation was used to calculate the normalization factor:
 \end_layout
 
 \begin_layout Standard
@@ -2519,10 +2521,6 @@ N_{Mix}^{Norm}(M,p_{T}) & =\frac{2\sqrt{B_{++}B_{--}}}{\int_{0}^{\infty}N_{+-}^{
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 
 \emph on
 N.R 
@@ -2751,7 +2749,8 @@ In this analysis, we used
 \begin_inset Formula $\phi_{V}$
 \end_inset
 
- is defined as formula 
+ is defined as Eq.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:phiV"
@@ -2779,9 +2778,6 @@ reference "eq:phiV"
 \end_inset
 
  is the direction of magnet.
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \begin{align}
 \hat{\mu} & =\frac{\vec{p}_{+}+\vec{p}_{-}}{|\vec{p}_{+}+\vec{p}_{-}|}\,,\:\hat{\nu}=\vec{p}_{+}\times\vec{p}_{-}\nonumber \\
@@ -2791,7 +2787,7 @@ reference "eq:phiV"
 
 \end_inset
 
-
+ 
 \end_layout
 
 \begin_layout Standard
@@ -3104,7 +3100,8 @@ For the mass region above
 
 , the normalized mixed event background was subtracted.
  And we subtracted the correlated component (Jet contribution) by fitting
- the ratio of like-sign over mixed event background (formula 
+ the ratio of like-sign over mixed event background (Eq.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:LSresidue"
@@ -3293,7 +3290,8 @@ The single electron efficiency in this analysis included the TPC tracking
 \begin_inset Formula $\varepsilon_{PID}$
 \end_inset
 
-) as formula 
+) as Eq.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:single eff"
@@ -3336,7 +3334,8 @@ The TPC tracking efficiency includes the track reconstruction efficiency
  chain used to produce real data.
  The tracking efficiency is defined by number of reconstructed MC tracks
  which is satisfied the track quality cut divided by number of input MC
- tracks, also see formula 
+ tracks, also see Eq.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:effTPC"
@@ -3393,7 +3392,8 @@ The distance between the projection position to the TOF cell center in y
 \end_layout
 
 \begin_layout Standard
-The definition of TOF matching efficiency is also shown as formula 
+The definition of TOF matching efficiency is also shown as Eq.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:eff TOF"
@@ -3497,10 +3497,6 @@ f(x)=\frac{1+ax+bx^{2}}{c+\exp\{(x-d)/f\}}\label{eq:eff tof diff}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 The fit result is shown in figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3771,6 +3767,213 @@ name "fig:single eff pp"
 \end_layout
 
 \begin_layout Subsection
+Momentum resolution
+\end_layout
+
+\begin_layout Standard
+The momentum resolution for TPC tracks was studied by embedding sample with
+ the full detector simulation.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:mom Res"
+
+\end_inset
+
+ shows the reconstructed electron 
+\begin_inset Formula $p_{T}^{rec}$
+\end_inset
+
+ probability distribution at a given input 
+\begin_inset Formula $p_{T}^{MC}$
+\end_inset
+
+.
+ The distribution was parametrized with a double Crystal-Ball function,
+ defined in Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:mom res"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+P(p_{T}^{rec},\, p_{T}^{MC})\propto\begin{cases}
+A\times(B-R)^{-n}, & R<-\alpha\\
+e^{-R^{2}/2}, & -\alpha<R<\beta\\
+C\times(D+R)^{-m}, & R>\beta
+\end{cases}\label{eq:mom res}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+A & =(\frac{n}{|\alpha|})^{n}\times e^{-\alpha^{2}/2}\nonumber \\
+B & =\frac{n}{|\alpha|}-|\alpha|\nonumber \\
+C & =(\frac{m}{|\beta|})^{m}\times e^{-\beta^{2}/2}\label{eq: mom res2}\\
+D & =\frac{m}{|\beta|}-|\beta|\nonumber \\
+R & =(\frac{p_{T}^{rec}-p_{T}^{MC}}{p_{T}^{MC}}-\mu)/\frac{\sigma_{p_{T}}}{p_{T}}\nonumber 
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $n=1.35$
+\end_inset
+
+, 
+\begin_inset Formula $\alpha=1.83$
+\end_inset
+
+, 
+\begin_inset Formula $m=3.39$
+\end_inset
+
+, 
+\begin_inset Formula $\beta=1.80$
+\end_inset
+
+, for Au+Au 200 GeV minimum bias collision in year 2011.
+ 
+\begin_inset Formula $\mu=0.0002$
+\end_inset
+
+ which is slightly shifted because the STAR tracking assumed every track
+ is pion when accounted for the energy loss.
+ 
+\begin_inset Formula $\sigma_{p_{T}}/p_{T}$
+\end_inset
+
+ was used as a measure of the 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ resolution.
+ It was assumed to follow:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+(\frac{\sigma_{p_{T}}}{p_{T}})^{2}=(a\times p_{T})^{2}+(\frac{b}{\beta})^{2};\quad\beta=\frac{p}{E}\sim\frac{p_{T}}{\sqrt{p_{T}^{2}+m^{2}}}\label{eq: mom Res3}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:mom Res"
+
+\end_inset
+
+ right panel shows 
+\begin_inset Formula $\sigma_{p_{T}}/p_{T}$
+\end_inset
+
+ distribution from the embedding.
+ Due to various distortion effect in the TPC detector under the high luminosity
+ RHIC environment, it is very challenging to precisely reproduce the momentum
+ resolution by the embedding sample.
+ We used a data-driven method: we tuned parameters a and b in Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq: mom Res3"
+
+\end_inset
+
+ to get the best match to the 
+\begin_inset Formula $J/\psi$
+\end_inset
+
+ si
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/3.Analysis/Efficiency/momRes/momShape.eps
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../fig/3.Analysis/Efficiency/momRes/PtRes.eps
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Left panel shows distribution of 
+\begin_inset Formula $p_{T}^{rec}$
+\end_inset
+
+ probability at a given input 
+\begin_inset Formula $p_{T}^{MC}$
+\end_inset
+
+ from the embedding sample with 1% momentum resolution.
+ Right panel show the momentum resolution from the embedding sample.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mom Res"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
 Pair efficiency and acceptance 
 \end_layout
 
@@ -3798,7 +4001,7 @@ virtual photon decay method, which virtual photons with
 \end_inset
 
  distribution.
- Then the virtual photon is randomly decay into electron pairs.
+ Then the virtual photon is isotropically decay into electron pairs.
 \end_layout
 
 \begin_layout Enumerate
@@ -3810,12 +4013,14 @@ cocktail method, where we used cocktail as input.
 \end_layout
 
 \begin_layout Standard
-In relativistic heavy collision, we still can't separate the electrons from
- heavy flavor quark decay and those produced from medium.
- The contribution from heavy flavor remains unclear due to the possible
- medium modification effect.
+In relativistic heavy-ion collision, we have difficulties in separating
+ the electrons from heavy flavor quark decay and those produced from medium.
+ Furthermore, the contribution from heavy flavor decays remains unclear
+ due to the possible medium modification effect in heavy-ion collision.
  This two method served as two extreme approaches of decay kinematics in
- the Au+Au collision.
+ the Au+Au collision : virtual photon method is close to the decay kinematics
+ of medium; cocktail method handles the heavy flavor decays through PYTHIA
+ model which is similar to the process in p+p collision.
  
 \end_layout
 
@@ -3835,7 +4040,7 @@ The single electron efficiency was folded in for each daughter track in
 
 ) momentum space.
  Their momentum were smeared by the momentum resolution and energy loss
- effect (see section 3.6).
+ effect (see section 3.5.2).
  The pair efficiency was calculated and applied in 2 dimension (
 \begin_inset Formula $M_{ee}$
 \end_inset
@@ -3857,8 +4062,8 @@ The single electron efficiency was folded in for each daughter track in
 \end_inset
 
 ).
- The difference between the two method is small.
- We included it in systematic uncertainty.
+ The difference between the two method is small and we included it into
+ systematic uncertainty.
  The photon conversion rejection cut efficiency was calculated by 
 \begin_inset Formula $\pi_{0}$
 \end_inset
@@ -4004,8 +4209,12 @@ name "fig:pair eff"
 \end_layout
 
 \begin_layout Standard
-In this analysis, the di-electron tranverse mass spectra were also studied
- in Au+Au collision, which need to be corrected for the detector acceptance.
+In this analysis, the di-electron transverse mass (
+\begin_inset Formula $m_{T}$
+\end_inset
+
+) spectra and their inverse slope parameters were also studied in Au+Au
+ collision, which need to be corrected for the detector acceptance.
  The acceptance correction was calculated as following:
 \end_layout
 
@@ -4017,10 +4226,6 @@ In this analysis, the di-electron tranverse mass spectra were also studied
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 In Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -4029,21 +4234,22 @@ reference "fig:eff acc"
 \end_inset
 
 , the acceptance correction was calculated by the two methods mentioned
- previously for Au+Au 200GeV collisions.
+ previously for Au+Au 200 GeV minimum bias collisions.
  There is huge difference between the two method, especially in intermedia
  mass region (IMR).
  It is because di-electrons are mainly come from charm contribution in this
  mass region.
- The two methods are quite different with each other in IMR.
- The correlation between the decay daughters is come from decay kinematics
- itself in virtual photon method.
+ The two methods treat the correlation between the daughter pairs quite
+ differently.
+ In virtual photon method, the correlation between the decay daughters is
+ come from decay kinematics itself.
  While in cocktail method, since the charm component is simulated by PYTHIA,
- the daughter pairs also carry the strong correlation inherited from charm
+ the daughter pairs carry the strong correlation inherited from charm pairs.
+ Therefore, it leads to large difference in the acceptance for di-electron
  pairs.
- Therefore, this difference leads to large difference in the acceptance
- for di-electron pairs.
  We took the difference between the two methods as systematic uncertainty
- due to leak of knowledge of this two processes in Au+Au collision.
+ in inverse slope parameters of transverse mass spectra due to leak of knowledge
+ of this two processes in heavy-ion collisions.
 \end_layout
 
 \begin_layout Standard
@@ -4360,10 +4566,6 @@ b\exp(cx) & x>x_{th}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 The efficiency uncertainties have already been discussed in section 3.5.
  Table 
 \begin_inset CommandInset ref
@@ -4977,6 +5179,51 @@ To achieve better statistics, we combined the results from year 2010 and
  The year 2010 result has already published in PRL (cite).
 \end_layout
 
+\begin_layout Subsection
+Comparison 
+\end_layout
+
+\begin_layout Standard
+Before combined the data, we compared the results from year 2010 and year
+ 2011.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig: Run10vsRun11 cen"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig: Run10vsRun11 pT"
+
+\end_inset
+
+ show the comparison of the two years results in different centralities
+ and 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ regions.
+ The efficiency correction was done separately for each year's results by
+ the same process mentioned in section 3.5.
+ The results are reported within the STAR acceptance (
+\begin_inset Formula $|y_{ee}|<1$
+\end_inset
+
+, 
+\begin_inset Formula $p_{T}^{e}>0.2GeV/c$
+\end_inset
+
+, 
+\begin_inset Formula $|\eta_{e}|<1$
+\end_inset
+
+) and show good consistency with each other within uncertainty.
+ 
+\end_layout
+
 \begin_layout Standard
 \begin_inset Float figure
 wide false
@@ -4994,7 +5241,7 @@ status collapsed
 
 \begin_inset Graphics
 	filename ../fig/3.Analysis/Run11/cen_ratio_Run11vsRun10_Run11vsRun10.pdf
-	width 45theight%
+	width 45text%
 
 \end_inset
 
@@ -5007,6 +5254,10 @@ status collapsed
 \begin_layout Plain Layout
 Comparison between Au+Au results from year 2010 and year 2011 in different
  centralities.
+ Right panel shows the ratio of year 2010's results over year 2011's result.
+ The green box depicts the systematic uncertainty for year 2010's results,
+ and the grey bar represents the systematic uncertainty for year 2011's
+ results.
 \end_layout
 
 \end_inset
@@ -5037,11 +5288,19 @@ name "fig: Run10vsRun11 cen"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\align center
 \begin_inset Graphics
 	filename ../fig/3.Analysis/Run11/pT_Yield_cocktail_Run11vsRun10.pdf
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../fig/3.Analysis/Run11/pT_ratio_Run11vsRun10.eps
 	width 45text%
 
 \end_inset
@@ -5053,8 +5312,27 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Comparison between Au+Au results from year 2010 and year 2011 in different
+ 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ bins in minimum bias collision.
+ Right panel shows the ratio of year 2010's results over year 2011's result.
+ The green box depicts the systematic uncertainty for year 2010's results,
+ and the grey bar represents the systematic uncertainty for year 2011's
+ results.
+\end_layout
+
+\end_inset
+
 
 \end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig: Run10vsRun11 pT"
 
 \end_inset
 
@@ -5067,6 +5345,206 @@ status open
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Subsection
+Combination
+\end_layout
+
+\begin_layout Standard
+Year 2010's and year 2011's results were combined statistically and systematical
+ly.
+ For the 0~10% centrality bin, since Run 10 have dominate statistics, we
+ didn't combine Run10 and Run11 data in this centrality to ensure the systematic
+s uncertainty is under control.
+ 
+\end_layout
+
+\begin_layout Standard
+The data points and their statistical errors were combined by standard error
+ propagate formula, see Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq: com stat"
+
+\end_inset
+
+, where 
+\emph on
+Y ~ yield, w ~ weight and 
+\begin_inset Formula $\delta$
+\end_inset
+
+ ~ statistic uncertainty.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+Y_{com} & =w_{10}\times Y_{10}+w_{11}\times Y_{11}\nonumber \\
+\Delta_{com} & =\sqrt{w_{10}^{2}\delta_{10}^{2}+w_{11}^{2}\delta_{11}^{2}}\nonumber \\
+w_{10} & =\frac{1/\delta_{10}^{2}}{(1/\delta_{10}^{2}+1/\delta_{11}^{2})}\label{eq: com stat}\\
+w_{11} & =\frac{1/\delta_{11}^{2}}{(1/\delta_{10}^{2}+1/\delta_{11}^{2})}\nonumber 
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We combined systematic uncertainty of efficiency (which is uncorrelated
+ vs mass) and other systematic uncertainty sources (which is correlated
+ vs mass) separately.
+ The method used to calculate the combined error are list below:
+\end_layout
+
+\begin_layout Itemize
+efficiency uncertainty (relative error) uncorrelated source, summed by quadratic
+ sum: 
+\begin_inset Formula $\sigma_{com}=\sqrt{w_{10}^{2}\sigma_{10}^{2}+w_{11}^{2}\sigma_{11}^{2}}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Itemize
+other uncertainty source (relative error) correlated source, summed by direct
+ sum : 
+\begin_inset Formula $\epsilon_{com}=w_{10}\epsilon_{10}+w_{11}\epsilon_{11}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+total systematic uncertainty : 
+\begin_inset Formula $\Sigma{}_{com}=\sqrt{\sigma_{com}^{2}+\epsilon_{com}^{2}}\times Y_{com}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The combined results are plotted in different centrality and 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ bins and compared with cocktail simulation in Fig and .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/3.Analysis/Run11/Cen_Yield_cocktail_Combined.pdf
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../fig/3.Analysis/Run11/Cen_ratio_Combined.pdf
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Combined results in different centrality bins for Au+Au 200 GeV collision
+ from year 2010 and year 2011.
+ The green bars depicts the systematic uncertainties.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:comb cen"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/3.Analysis/Run11/pT_Yield_cocktail_Combined.pdf
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../fig/3.Analysis/Run11/pT_ratio_Combined.pdf
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Combined results in different 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ bins for Au+Au 200 GeV minimum bias collision from year 2010 and year 2011.
+ The green bars depicts the systematic uncertainties.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig: comb pT"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 
