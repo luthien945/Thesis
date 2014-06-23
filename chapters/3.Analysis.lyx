@@ -3834,6 +3834,8 @@ The single electron efficiency was folded in for each daughter track in
 \end_inset
 
 ) momentum space.
+ Their momentum were smeared by the momentum resolution and energy loss
+ effect (see section 3.6).
  The pair efficiency was calculated and applied in 2 dimension (
 \begin_inset Formula $M_{ee}$
 \end_inset
@@ -4027,7 +4029,7 @@ reference "fig:eff acc"
 \end_inset
 
 , the acceptance correction was calculated by the two methods mentioned
- previously.
+ previously for Au+Au 200GeV collisions.
  There is huge difference between the two method, especially in intermedia
  mass region (IMR).
  It is because di-electrons are mainly come from charm contribution in this
@@ -4095,6 +4097,100 @@ name "fig:eff acc"
 
 \begin_layout Section
 Hadronic cocktails
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/3.Analysis/cocktail/bcCocktail.eps
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cocktail for p+p 200 GeV minibias collision.
+ (cite)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cocktailpp"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/3.Analysis/cocktail/cocktailmb_PRL.eps
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cocktail for Au+Au 200GeV minibias collision.
+ (cite)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cocktailAuAu"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -4283,7 +4379,7 @@ reference "table: sys eff"
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -4856,6 +4952,132 @@ Systematic uncertainty from data analysis for p+p 200GeV minimum bias collision.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:sys pp"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Combine the Au+Au results from year 2010 and year 2011
+\end_layout
+
+\begin_layout Standard
+To achieve better statistics, we combined the results from year 2010 and
+ year 2011 together for Au+Au 200 GeV collisions.
+ The year 2010 result has already published in PRL (cite).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/3.Analysis/Run11/Cen_Yield_cocktail_Run11vsRun10.pdf
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../fig/3.Analysis/Run11/cen_ratio_Run11vsRun10_Run11vsRun10.pdf
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comparison between Au+Au results from year 2010 and year 2011 in different
+ centralities.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig: Run10vsRun11 cen"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/3.Analysis/Run11/pT_Yield_cocktail_Run11vsRun10.pdf
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../fig/3.Analysis/Run11/pT_ratio_Run11vsRun10.eps
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comparison between Au+Au results from year 2010 and year 2011 in different
+ 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ bins in minimum bias collision.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig: Run10vsRun11 pT"
 
 \end_inset
 

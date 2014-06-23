@@ -752,7 +752,7 @@ name "fig:refmult"
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -2669,7 +2669,7 @@ status collapsed
 
 \begin_inset Graphics
 	filename ../fig/3.Analysis/background/pp/paper_ratio.eps
-	width 45sp
+	width 45text%
 
 \end_inset
 
@@ -3359,8 +3359,12 @@ reference "eq:effTPC"
 
 \begin_layout Standard
 To qualify whether the embedding sample can reproduce the real data, we
- compared several track parameters from embedding sample with those from
- the pure electron sample selected by photon conversion and 
+ compared several track parameters (
+\emph on
+nHitsFit, dca
+\emph default
+) from embedding sample with those from the pure electron sample selected
+ by photon conversion and 
 \begin_inset Formula $\pi^{0}$
 \end_inset
 
@@ -3539,7 +3543,7 @@ status collapsed
 \begin_inset Formula $\pi$
 \end_inset
 
- sample and photon conversion sample.
+ sample and photon conversion sample in Au+Au 200GeV minimum bias collision.
  They difference is shown in the right panel.
  The red line depicts a fit by function 
 \begin_inset CommandInset ref
@@ -3830,6 +3834,8 @@ The single electron efficiency was folded in for each daughter track in
 \end_inset
 
 ) momentum space.
+ Their momentum were smeared by the momentum resolution and energy loss
+ effect (see section 3.6).
  The pair efficiency was calculated and applied in 2 dimension (
 \begin_inset Formula $M_{ee}$
 \end_inset
@@ -3857,7 +3863,15 @@ The single electron efficiency was folded in for each daughter track in
 \begin_inset Formula $\pi_{0}$
 \end_inset
 
- Dalitz decay embedding sample.
+ Dalitz decay embedding sample and included into the pair efficiency, shown
+ in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:phiV eff"
+
+\end_inset
+
+.
  Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3870,6 +3884,66 @@ reference "fig:pair eff"
 \end_inset
 
  used in this analysis.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/3.Analysis/Efficiency/phiVeff.eps
+	width 50text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../fig/3.Analysis/Efficiency/comparePi0vsVirtualphoton.eps
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\phi_{V}$
+\end_inset
+
+ efficiency calculated by 
+\begin_inset Formula $\pi^{0}$
+\end_inset
+
+ Dalitz decay embedding and virtual photon method (left) and also their
+ comparison (right).
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:phiV eff"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3955,7 +4029,7 @@ reference "fig:eff acc"
 \end_inset
 
 , the acceptance correction was calculated by the two methods mentioned
- previously.
+ previously for Au+Au 200GeV collisions.
  There is huge difference between the two method, especially in intermedia
  mass region (IMR).
  It is because di-electrons are mainly come from charm contribution in this
@@ -4025,22 +4099,141 @@ name "fig:eff acc"
 Hadronic cocktails
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/3.Analysis/cocktail/bcCocktail.eps
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cocktail for p+p 200 GeV minibias collision.
+ (cite)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cocktailpp"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/3.Analysis/cocktail/cocktailmb_PRL.eps
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cocktail for Au+Au 200GeV minibias collision.
+ (cite)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cocktailAuAu"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Systematic uncertainty
 \end_layout
 
 \begin_layout Standard
-The systematic uncertainties source are listed below:
+In this analysis, the systematic uncertainty was split into two main parts:
+ from data analysis which is highly correlated with 
+\begin_inset Formula $M_{ee}$
+\end_inset
+
+ , and from efficiency which is uncorrelated with 
+\begin_inset Formula $M_{ee}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The systematic uncertainties source from data analysis are listed below:
 \end_layout
 
 \begin_layout Enumerate
 Background, including uncertainties of the acceptance factor for like-sign
- background and the normalization for mixed event background.
+ background (
+\begin_inset Formula $M_{ee}<M_{th}$
+\end_inset
+
+)and the normalization for mixed event background (
+\begin_inset Formula $M_{ee}>M_{th}$
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Enumerate
 Like-sign residue, the uncertainty from the fit to parameterize the difference
- between like-sign and mixed event background.
+ between like-sign and mixed event background in mass region 
+\begin_inset Formula $M_{ee}>M_{th}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Enumerate
@@ -4073,7 +4266,11 @@ vs
 \begin_inset Formula $GeV/c^{2}$
 \end_inset
 
-, while in Au+Au collision it was changed to 0.75~1.75 and 1.25~3 
+, while in Au+Au collision it was changed to 0.75~1.75 
+\begin_inset Formula $GeV/c^{2}$
+\end_inset
+
+ and 1.25~3 
 \begin_inset Formula $GeV/c^{2}$
 \end_inset
 
@@ -4085,8 +4282,8 @@ reference "eq:LSresidue"
 
 \end_inset
 
- to parameterized the correlated residua and subtract additional from the
- foreground.
+ to parameterized the correlated residue and subtract it additionally from
+ the foreground.
  The 68% confidence level of the fit was taken as systematic uncertainty
  (Figure 
 \begin_inset CommandInset ref
@@ -4101,7 +4298,7 @@ reference "fig:LS/Mix"
 
 \begin_layout Standard
 Hadron contamination was studied by mixing pure hadron sample into electron
- sample, we called the mixed sample.
+ sample, we called it the mixed sample.
  The hadron sample was weighted by the ratio of hadron yield over electron
  yield from the electron purity study (Figure 
 \begin_inset CommandInset ref
@@ -4114,9 +4311,466 @@ reference "fig:h/e ratio"
  The particles in the mixed sample were randomly paired with each other.
  There are three condition: e-e pairs, this is di-electron signal; e-h and
  h-h contamination pairs.
- And the same background analysis was done to the mixed sample.
- Finally, we used function to parameterize yields of the contamination pairs
- and calculated contribution to systematic uncertainty (Figure ).
+ Then the same background subtraction was done to the mixed sample.
+ Finally, we used function 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:h contamination"
+
+\end_inset
+
+ to parameterize yields of the contamination pairs and calculated its contributi
+on to systematic uncertainty (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig: h contamination"
+
+\end_inset
+
+ ).
+\end_layout
+
+\begin_layout Standard
+Finally, we combined all these source and plotted the systematic uncertainty
+ from data analysis in Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:sys AuAu"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:sys pp"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+f(x)=\begin{cases}
+a_{0}+a_{1}x+a_{2}x^{2}+a_{3}x^{3} & x<x_{th}\\
+b\exp(cx) & x>x_{th}
+\end{cases}\label{eq:h contamination}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The efficiency uncertainties have already been discussed in section 3.5.
+ Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "table: sys eff"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Au+Au
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+p+p
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+component
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Systematic Uncertainty
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Systematic Uncertainty
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TPC
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+nHitsFits (15-25)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.2%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+dca (1.5-0.5cm)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.4%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.8%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ndEdxFits
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+TOF
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+matching
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5.5%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1/\beta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.7%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.7%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+total
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.3%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8.3%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+pair total
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14.6%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16.6%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Systematic uncertainty from efficiency.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "table: sys eff"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4130,6 +4784,7 @@ status collapsed
 \begin_inset Graphics
 	filename ../fig/3.Analysis/Additional/purity/hadron2Eratio_3.pdf
 	width 80text%
+	rotateAngle 270
 
 \end_inset
 
@@ -4140,7 +4795,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-hadron yield over electron yield ratio.
+Ratio of hadron yields over electron yields as a function of momentum.
 \end_layout
 
 \end_inset
@@ -4171,13 +4826,223 @@ name "fig:h/e ratio"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../fig/3.Analysis/SysUncertainty/HardonCondemination.eps
-	width 80col%
+	filename ../fig/3.Analysis/SysUncertainty/HardonCondeminationAuAu.eps
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Yields of di-electron signal pairs, e-h and h-h contamination pairs.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig: h contamination"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/3.Analysis/SysUncertainty/sysErr_AuAu.eps
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Systematic uncertainty from data analysis for Au+Au 200GeV minimum bias
+ collision.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:sys AuAu"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/3.Analysis/SysUncertainty/sysErr_PP.eps
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Systematic uncertainty from data analysis for p+p 200GeV minimum bias collision.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:sys pp"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Combine the Au+Au results from year 2010 and year 2011
+\end_layout
+
+\begin_layout Standard
+To achieve better statistics, we combined the results from year 2010 and
+ year 2011 together for Au+Au 200 GeV collisions.
+ The year 2010 result has already published in PRL (cite).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/3.Analysis/Run11/Cen_Yield_cocktail_Run11vsRun10.pdf
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../fig/3.Analysis/Run11/cen_ratio_Run11vsRun10_Run11vsRun10.pdf
+	width 45theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comparison between Au+Au results from year 2010 and year 2011 in different
+ centralities.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig: Run10vsRun11 cen"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ../fig/3.Analysis/Run11/pT_Yield_cocktail_Run11vsRun10.pdf
+	width 45text%
 
 \end_inset
 
