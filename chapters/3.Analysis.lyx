@@ -4318,8 +4318,1500 @@ name "fig:eff acc"
 
 \end_layout
 
+\begin_layout Subsection
+Trigger efficiency and trigger bias
+\end_layout
+
+\begin_layout Standard
+The event sample selection is required by a VPD coincidence and a valid
+ primary vertex.
+ Due to the inefficiency of the VPD detector in p+p collisions, we need
+ correct the possible bias of trigger and vertex selection.
+ In this analysis, trigger bias correction factor was taken from (cite pppaper),
+ the number is 64% with 8% systematic uncertainty.
+\end_layout
+
+\begin_layout Subsection
+The total correction factors for di-electron spectra
+\end_layout
+
+\begin_layout Standard
+Finally, the di-electron continuum raw yield within STAR acceptance are
+ corrected as following:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Y(M_{ee},p_{T})=\frac{N_{raw}(M_{ee},p_{T})}{dM_{ee}dy\times\varepsilon_{pair}(M_{ee},p_{T})}\times f_{triggerbias}\label{eq:yield correction}
+\end{equation}
+
+\end_inset
+
+, where 
+\begin_inset Formula $N_{raw}$
+\end_inset
+
+ is the di-electron raw yields within STAR acceptance, 
+\begin_inset Formula $\varepsilon_{pair}$
+\end_inset
+
+ is the efficiency correction and 
+\begin_inset Formula $f_{triggerbias}$
+\end_inset
+
+ is the trigger bias factor (~64% in p+p collisions, ~1 in Au+Au collisions).
+\end_layout
+
 \begin_layout Section
 Hadronic cocktails
+\end_layout
+
+\begin_layout Standard
+The di-electron signals observed in experiment are produced from various
+ sources during the system evolution.
+ After chemical freeze out, di-electron pairs from long life meson and hadron
+ decays contribute mainly to the di-electron signal.
+ These components, which is usually called 
+\begin_inset Quotes eld
+\end_inset
+
+Hadronic cocktails
+\begin_inset Quotes erd
+\end_inset
+
+, can be well understood by measuring the corresponding decay channels.
+ In this analysis, cocktails contain contributions from decays and Dalitz
+ decays of 
+\begin_inset Formula $\pi^{0}$
+\end_inset
+
+, 
+\begin_inset Formula $\eta$
+\end_inset
+
+, 
+\begin_inset Formula $\eta'$
+\end_inset
+
+, 
+\begin_inset Formula $\rho$
+\end_inset
+
+ (only in p+p collisions), 
+\begin_inset Formula $\omega$
+\end_inset
+
+, 
+\begin_inset Formula $\phi$
+\end_inset
+
+, 
+\begin_inset Formula $J/\psi$
+\end_inset
+
+, 
+\begin_inset Formula $\psi'$
+\end_inset
+
+, 
+\begin_inset Formula $c\bar{c}$
+\end_inset
+
+, 
+\begin_inset Formula $b\bar{b}$
+\end_inset
+
+ and Drell-Yan (DY) production.
+ 
+\end_layout
+
+\begin_layout Standard
+The cocktail for p+p collision is taken from STAR published result (cite
+ pp), and the charm cross section is updated to 
+\begin_inset Formula $797\pm210(stat.)_{-295}^{+208}(sys.)μb$
+\end_inset
+
+ with respect to the newest published result from STAR (cite).
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig: cocktail Input"
+
+\end_inset
+
+ left panel shows the input hadron 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ spectra for p+p collision.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:cocktailpp"
+
+\end_inset
+
+ shows the cocktail for p+p collisions.
+\end_layout
+
+\begin_layout Standard
+We used the similar cocktail simulation methods for Au+Au 200 GeV collision
+ as we used in p+p collision (cite).
+ The cocktail simulation only contains the hadron form-factor decays in
+ the vacuum at freeze-out.
+ For the 
+\begin_inset Formula $\rho$
+\end_inset
+
+ component, we included a vacuum 
+\begin_inset Formula $\rho$
+\end_inset
+
+ calculation only when comparing data with cocktails including the vacuum
+ 
+\begin_inset Formula $\rho$
+\end_inset
+
+.
+ We assumed a flat rapidity distribution within 
+\begin_inset Formula $|y|<1$
+\end_inset
+
+ for the input hadrons.
+ Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "table:CK AuAuinput"
+
+\end_inset
+
+ lists the 
+\begin_inset Formula $dN/dy$
+\end_inset
+
+ (or cross-section), branching ratios, uncertainty and reference for all
+ input sources.
+ The hadron spectra measured by STAR and PHENIX were parameterized by the
+ simultaneous Tsallis Blast-Wave (TBW) model fit (cite).
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig: cocktail Input"
+
+\end_inset
+
+ right panel shows the TBW fit results for all input hadron spectra except
+ 
+\begin_inset Formula $J/\psi$
+\end_inset
+
+.
+ The cocktail input for 
+\begin_inset Formula $J/\psi$
+\end_inset
+
+ was taken from the measurement by the PHENIX collaboration (cite).
+ For light hadrons, the TBW fit provides good parameterizations to these
+ measure spectra.
+ The same core TBW parameters was used to predicted the spectral shapes
+ for these components without measurements (e.g.
+ low 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ 
+\begin_inset Formula $\eta$
+\end_inset
+
+, 
+\begin_inset Formula $\eta'$
+\end_inset
+
+, 
+\begin_inset Formula $\omega$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+The correlated charm, bottom and Drell-Yan contributions were studied by
+ PYTHIA simulation (cite) and scaled by the number of binary collisions
+ (
+\begin_inset Formula $N_{bin}$
+\end_inset
+
+) in Au+Au collisions.
+ We used PYTHIA 6.419 with settings: MSEL=1, PARP(91) (
+\begin_inset Formula $\left\langle k_{\perp}\right\rangle $
+\end_inset
+
+) = 1.0 GeV/
+\begin_inset Formula $c$
+\end_inset
+
+ and PARP(67) (parton shower level) = 1.0, which was tuned to match STAR
+ measured charmed meson spectrum in p+p collisions (cite).
+ The input charm cross section was also taken from the charmed meson measurement.
+\end_layout
+
+\begin_layout Standard
+The detector resolution was also taken into account by smearing the daughter
+ electron's momentum with the method discussed in section 3.5.
+ Finally, the di-electron pair mass distributions from the sources are normalize
+d by branching ratios and the measured 
+\begin_inset Formula $dN/dy$
+\end_inset
+
+.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:cocktailAuAu"
+
+\end_inset
+
+ shows the cocktails for Au+Au 200 GeV minimum collisions.
+\end_layout
+
+\begin_layout Standard
+The cocktails were also simulated in difference centrality bins (0~10%,
+ 10~40% and 40~80%).
+ The similar TBW model fit was applied to parameterize the measured spectra
+ in corresponding centrality bins.
+ For hadron without measurement, the TBW predictions were used as the input
+ 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ distributions.
+ We used the relative pion yields (
+\begin_inset Formula $R_{\pi}$
+\end_inset
+
+) with respect to minimum bias collisions (0~80% centrality bin) as scale
+ factor for the input 
+\begin_inset Formula $dN/dy$
+\end_inset
+
+ in each centrality bin.
+ The correlated charm contributions were scaled by the relative number of
+ binary collisions (
+\begin_inset Formula $R_{N_{bin}}$
+\end_inset
+
+).
+ Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "table: scale cocktail"
+
+\end_inset
+
+ summarizes all these scale factors.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="14" columns="5">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+source
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+B.R.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $dN/dy$
+\end_inset
+
+ or 
+\begin_inset Formula $\sigma$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Uncertainty
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Reference
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\pi^{0}\rightarrow\gamma ee$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1.174×10^{−2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+98.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+STAR [29, 30]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\eta\rightarrow\gamma ee$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $7×10^{−3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.86
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PHENIX [15]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\eta'\rightarrow\gamma ee$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $9\text{×}10^{\text{−}4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.31
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PHENIX [15]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\rho\rightarrow ee$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4.72×10^{−5}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.88
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+42%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+STAR [41]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\omega\rightarrow ee$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $7.28\text{×}10^{\text{−}5}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\omega\rightarrow\pi^{0}ee$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $7.7\text{×}10^{\text{−}4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.87
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+33%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+STAR [34]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\phi\rightarrow ee$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2.95\text{×}10^{\text{−}4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\phi\rightarrow\eta ee$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1.15\text{×}10^{\text{−}4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.43
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+STAR [35]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $J/\psi\rightarrow ee$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $5.94\text{×}10^{\text{−}2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2.33×10^{−3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PHENIX [36]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\psi'\rightarrow ee$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $7.72\text{×}10^{\text{−}3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3.38\text{×}10^{\text{−}4}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+27%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PHENIX [38, 39]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c\bar{c}\rightarrow ee$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1.03\text{×}10^{\text{−}1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d\sigma^{c\bar{c}}/dy=170\mu b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+35%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+STAR[37]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $b\bar{b}\rightarrow ee$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1.08\text{×}10^{\text{−}1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sigma_{pp}^{b\bar{b}}=3.7\mu b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pythia[40]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Drell-Yan
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3.36\text{×}10^{\text{−}2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sigma_{pp}^{DY}=42nb$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pythia[40]
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Inputs of various cocktail components for Au+Au 200 GeV minimum bias collisions.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "table:CK AuAuinput"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="5">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+centrality
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\pi$
+\end_inset
+
+ 
+\emph on
+
+\begin_inset Formula $dN/dy$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R_{\pi}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left\langle N_{bin}\right\rangle $
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $R_{N_{bin}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0~80%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+98.49
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $291.90\pm20.46$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0~10%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+279.2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.834
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $941.24\pm26.27$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.224
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10~40%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+131.1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.331
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $391.36\pm30.21$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.341
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+40~80%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30.45
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.309
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $56.62\pm13.62$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.194
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Scale factors for centrality dependent cocktails.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "table: scale cocktail"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/3.Analysis/cocktail/11PLUS1mesons_pp_woProton_allPt_new.eps
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../fig/3.Analysis/cocktail/AuAu200_inputpT.eps
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Left panel: the invariant yields of measured mesons fit with the Tsallis
+ functions in p+p 200 GeV collision (cite).
+ The solid lines represent the fit.
+ Right panel: invariant yields of mesons in Au+Au collision at 
+\begin_inset Formula $\sqrt{S_{NN}}=200$
+\end_inset
+
+ GeV.
+ The solid lines represent the simultaneous Tsallis Blast-Wave (TBW) fit
+ to the measure data points and TBW predictions for 
+\begin_inset Formula $\eta$
+\end_inset
+
+, 
+\begin_inset Formula $\eta'$
+\end_inset
+
+, 
+\begin_inset Formula $\omega$
+\end_inset
+
+ with the same set of fit parameters.
+ The dash lines depict the same parametrization to the measures 
+\begin_inset Formula $J/\psi$
+\end_inset
+
+ spectrum and the predicted 
+\begin_inset Formula $\psi'$
+\end_inset
+
+ spectrum as in (cite PHENIX diE).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig: cocktail Input"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4343,8 +5835,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Cocktail for p+p 200 GeV minibias collision.
- (cite)
+Cocktails for p+p 200 GeV minimum bias collision (cite).
 \end_layout
 
 \end_inset
@@ -4392,8 +5883,8 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Cocktail for Au+Au 200GeV minibias collision.
- (cite)
+Cocktails for Au+Au 200GeV minibias collision.
+ The green band depicts the systematics uncertainty.
 \end_layout
 
 \end_inset
