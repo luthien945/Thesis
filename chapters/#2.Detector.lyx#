@@ -562,7 +562,7 @@ reference "fig: STAR det"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -603,25 +603,7 @@ name "fig: STAR det"
 \end_layout
 
 \begin_layout Subsection
-STAR magnet system
-\end_layout
-
-\begin_layout Standard
-The STAR magnet system (cite) is a room temperature solenoidal magnet which
- was designed as a cylinder with a length of 6.85 m and has inner and outer
- diameter of 5.27 m and 7.32 m, respectively.
- It provides an uniform magnetic field parallel to the beam direction (Z
- direction) with a maximum value 0.5 T for charged particle momentum analysis.
- STAR magnet can work under full field, reversed full field and half field
- configuration.
-\end_layout
-
-\begin_layout Subsection
 Main tracker - Time Projection Chamber
-\end_layout
-
-\begin_layout Subsection
-Electro-Magnetic Calorimeter
 \end_layout
 
 \begin_layout Subsection
