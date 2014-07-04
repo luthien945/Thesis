@@ -562,7 +562,7 @@ reference "fig: STAR det"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -580,6 +580,7 @@ status open
 
 \begin_layout Plain Layout
 The STAR detectors.
+ HFT and MTD are new added detectors and were fully installed in 2014.
 \end_layout
 
 \end_inset
@@ -610,22 +611,236 @@ STAR magnet system
 The STAR magnet system (cite) is a room temperature solenoidal magnet which
  was designed as a cylinder with a length of 6.85 m and has inner and outer
  diameter of 5.27 m and 7.32 m, respectively.
- It provides an uniform magnetic field parallel to the beam direction (Z
- direction) with a maximum value 0.5 T for charged particle momentum analysis.
- STAR magnet can work under full field, reversed full field and half field
- configuration.
+ It provides an uniform magnetic field which parallels to the beam direction
+ (Z direction) with a maximum value 0.5 T for charged particle momentum analysis.
+ STAR magnet can work under full field (+0.5 T), reversed full field (-0.5
+ T) and half field configuration (
+\begin_inset Formula $\pm$
+\end_inset
+
+0.25 T).
 \end_layout
 
 \begin_layout Subsection
 Main tracker - Time Projection Chamber
 \end_layout
 
-\begin_layout Subsection
-Electro-Magnetic Calorimeter
+\begin_layout Standard
+The Time Projection Chamber (TPC) is the primary tracking detector and the
+ heart of STAR detector system.
+ The TPC was designed to record the tracks of particles, measure their momenta,
+ and provide particle identification by measuring their ionization energy
+ loss (
+\emph on
+dE/dx
+\emph default
+).
+ It has a large acceptance around middle rapidity (
+\begin_inset Formula $|\eta|<1.8$
+\end_inset
+
+ ) and full azimuthal coverage.
+ 
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:TPC"
+
+\end_inset
+
+ shows the STAR TPC.
+ It was built as a cylinder with a length of 4.2 m and outer diameter of
+ 4 m and inner diameter of 1 m.
+ TPC was installed inside the STAR magnet system which provides a 0.5 T uniform
+ magnetic field.
+ The beam pipe which is alone the Z direction goes through the center axis
+ of TPC and concentric with TPC.
+ The collisions happens in side the beam pipe near the center of TPC.
+\end_layout
+
+\begin_layout Standard
+Inside the TPC, it is an empty volume which is filled with P10 gas (10%
+ methane, 90% argon) regulated at 2 mbar above atmospheric pressure.
+ There is a well defined, uniform, electric field of 
+\begin_inset Formula $\thickapprox$
+\end_inset
+
+135 V/cm in the volume serve as the drift field.
+ The primary advantage of P10 gas is that electrons has a fast drift velocity
+ which peaks at a low electric field which makes the drift velocity stable
+ and insensitive to small changes in temperature and pressure.
+ The uniform drift field in TPC is defined by a thin conductive Central
+ Membrane (CM) at the center of the TPC, concentric field-cage cylinders
+ and the readout end caps (cite).
+ The central membrane is operated at 28 kV and the end caps are at ground.
+ The typical drift velocity of electrons in the STAR TPC is 5.45 cm/
+\begin_inset Formula $\mu s$
+\end_inset
+
+.
+ The transverse diffusion is 230 
+\begin_inset Formula $\mu m/\sqrt{cm}$
+\end_inset
+
+ and the longitudinal diffusion is 360 
+\begin_inset Formula $\mu m/\sqrt{cm}$
+\end_inset
+
+ with 140V/cm drift field and 0.5 T magnetic field.
+ When the charged particles travel through the gas volume, they liberate
+ electrons from the gas molecules due to ionization energy loss.
+ The released secondary electrons drift under the drift field to the ends
+ of TPC and collected by the readout system.
+ The tracks of particles are reconstructed with high precision from these
+ collected electrons clusters.
+\end_layout
+
+\begin_layout Standard
+The STAR TPC's readout system is based on Multi-Wire Proportional Chambers
+ (MWPC) with readout pads.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/2.Detector/TPC/tpcman.eps
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The STAR Time Projection Chamber (TPC) (cite).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:TPC"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/2.Detector/TPC/outer_wires.eps
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:outer_wires"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Users/luthien/Documents/Thesis/GitServer/Thesis/fig/2.Detector/TPC/padplane.eps
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:pad_plane"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
-Time Of Flight detector 
+Time Of Flight detector
+\end_layout
+
+\begin_layout Subsection
+Electro-Magnetic Calorimeter
 \end_layout
 
 \begin_layout Subsection
