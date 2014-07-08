@@ -690,17 +690,168 @@ Inside the TPC, it is an empty volume which is filled with P10 gas (10%
 \end_inset
 
  with 140V/cm drift field and 0.5 T magnetic field.
- When the charged particles travel through the gas volume, they liberate
- electrons from the gas molecules due to ionization energy loss.
- The released secondary electrons drift under the drift field to the ends
- of TPC and collected by the readout system.
- The tracks of particles are reconstructed with high precision from these
- collected electrons clusters.
+ 
 \end_layout
 
 \begin_layout Standard
 The STAR TPC's readout system is based on Multi-Wire Proportional Chambers
  (MWPC) with readout pads.
+ The readout planes are arranged as on a clock with 12 sectors around the
+ circle at each end of TPC.
+ The readout system includes four components: a pad plane and three wire
+ planes, shown in FIg.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:outer_wires"
+
+\end_inset
+
+.
+ The anode wire plane of 20 
+\begin_inset Formula $\mu m$
+\end_inset
+
+ wires with the pad plane on one side and the ground wire plane on the other
+ composes the amplification readout layer.
+ It can provide an amplification of 1000 to 3000 while the drifting electrons
+ avalanche in the high fields.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:pad_plane"
+
+\end_inset
+
+ shows the anode pad plane with one full sector.
+ To optimize the 
+\emph on
+dE/dx 
+\emph default
+resolution, the outer sector was designed to have continuous pad coverage.
+ This setup can improve statistics on the 
+\emph on
+dE/dx 
+\emph default
+measurement because the full track ionization signal is collected with more
+ ionization electrons.
+ The inner sub sectors are in the region of highest track density.
+ The design of inner pads is optimized for good two-hit resolution by using
+ smaller pads with separate pad rows instead of continuous pad coverage.
+ The third wire plane is a gating grid which is a gate to control electrons
+ from TPC drift volume to MWPC.
+ It also stops the positive ions inside MWPC from entering the drift volume
+ to preserve the uniform drift field (cite).
+\end_layout
+
+\begin_layout Standard
+When the charged particles travel through the gas volume, they liberate
+ electrons from the gas molecules due to ionization energy loss.
+ The released secondary electrons drift under the drift field to the ends
+ of TPC and collected by the readout system.
+ The signals then are digitalized and transmitted to STAR Data AcQuistion
+ system (DAQ).
+ These raw signals (ADC and TDC) are reconstructed into 3D position informations
+ of the ionization (hit positions) by a Kalman filte with a typical resolution
+ 0.5~1.0 mm.
+ The tracks of particles are reconstructed with high precision from these
+ hits informations in 3 dimension by Time Projection chamber Tracker (TPT)
+ algorithm.
+ These tracks are combined with other available tracking detector's results
+ and refit by a Kalman filter routine.
+ Then the primary collision vertex is reconstructed from these global tracks.
+ The primary vertex resolution is ∼ 350 μm with more than 1000 tracks.
+ Furthermore, tracks with the 
+\emph on
+distance of closest approach
+\emph default
+ (dca) to the primary vertex less then 3 cm is refitted by forcing the track
+ to originate from the primary vertex, these tracks are called primary tracks
+ which has improved resolution in position and momentum due to the relatively
+ high precision of primary vertex.
+ The reconstruction efficiency including the detector acceptance for primary
+ tracks depends on the particle type, track quality cuts, 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+, track multiplicity etc.
+ The typical value for the primary pions with
+\begin_inset Formula $N_{fit}$
+\end_inset
+
+ > 24 and |
+\begin_inset Formula $η$
+\end_inset
+
+| < 0.7, dca < 3.0 cm is approximate constant at 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ > 0.4 GeV/c: 
+\begin_inset Formula $>∼$
+\end_inset
+
+ 90% for Au + Au peripheral collisions and ∼ 80% for central collisions,
+ respectively.
+\end_layout
+
+\begin_layout Standard
+With the collected ionization energy loss (
+\emph on
+dE/dx
+\emph default
+) information, TPC also provides capability for particle identification.
+ The mean rate of 
+\emph on
+dE/dx 
+\emph default
+is given by the Bethe-Bloch equation 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq: Bethe-Bloch"
+
+\end_inset
+
+ (cite):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+-\frac{dE}{dx}=Kz^{2}\frac{Z}{A}\frac{1}{\beta^{2}}\left[\frac{1}{2}\ln\frac{2m_{e}c^{2}\beta^{2}\gamma^{2}T_{max}}{I^{2}}-\beta^{2}-\frac{\delta}{2}\right]\label{eq: Bethe-Bloch}
+\end{equation}
+
+\end_inset
+
+and furthermore optimized by the Bishsel functions (cite SN0439 NIM A 562
+ (2006) 154-197).
+ For each track, 
+\emph on
+dE/dx 
+\emph default
+is extracted from the deposit charge collected on the pad rows up to 45.
+ Energy loss of a charged particle for a given track length can be described
+ by the Bichsel function (cite).
+ However, the mean of the distribution is sensitive to the fluctuations
+ in the tail of the distribution.
+ Therefore, the most probable 
+\emph on
+dE/dx
+\emph default
+ is measured by removing the highest 30% of the measured clusters.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:dEdx_Bichsel"
+
+\end_inset
+
+ shows the 70% truncated mean dE/dx distribution.
+\end_layout
+
+\begin_layout Standard
+TPC is a very complicate detector.
+ To insure its performance, careful calibrations are needed .
 \end_layout
 
 \begin_layout Standard
@@ -812,7 +963,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
+The anode pad plane with one full sector.
 \end_layout
 
 \end_inset
@@ -824,6 +975,55 @@ status collapsed
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:pad_plane"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/2.Detector/TPC/dEdx.eps
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Distribution of 
+\emph on
+dE/dx
+\emph default
+ as a function of momentum.
+ The Bishcel functions are also shown for difference particle species.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:dEdx_Bichsel"
 
 \end_inset
 
