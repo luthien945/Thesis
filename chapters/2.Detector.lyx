@@ -554,8 +554,117 @@ reference "fig: STAR det"
 \end_inset
 
  shows the layout of the STAR detector systems alone with the subsystems.
- The subsystems involved in this analysis will be discussed in following
- subsection.
+ 
+\end_layout
+
+\begin_layout Standard
+Close to the beam pipe is the Heavy Flavor Tracker (HFT) which is a new
+ detector add in the STAR detector systems in 2014.
+ The HFT is designed to measure the heavy flavor production by the measurement
+ of displaced vertices and to do the direct topological identification of
+ open charm hadrons.
+ The Time Projection Chamber (TPC) is the main tracker at STAR which has
+ a coverage of 
+\begin_inset Formula $|\eta|$
+\end_inset
+
+<1 and 
+\begin_inset Formula $2\pi$
+\end_inset
+
+ in azimuthal direction.
+ The Time Of Flight (TOF) detector is surrounding the TPC which has also
+ a coverage 
+\begin_inset Formula $|\eta|$
+\end_inset
+
+<1 and 
+\begin_inset Formula $2\pi$
+\end_inset
+
+ in azimuthal direction.
+ The Barrel Electro-Magnetic Calorimeter (BEMC) located outside of the TOF
+ and covers 
+\begin_inset Formula $|\eta|<1$
+\end_inset
+
+ with complete azimuthal symmetry.
+ The Endcap Electro-Magnetic Calorimeter (EEMC) covers for 1 < |η| < 2,
+ over the full azimuthal range.
+ The EMCs are used to distinguish high momentum single photons from photon
+ pairs of π and η meson decays and electrons from charged hadrons.
+ Outside the BEMC is the magnet system which provides a uniform magnetic
+ field parallel to the beam direction and together with BEMC it also servers
+ as the electron and hadron absorber for the Muon Telescope Detector (MTD).
+ The MTD is also a new added detector, which is installed in 2014.
+ It is designed to detect high 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ muon for heavy flavor collectivity and production.
+ 
+\end_layout
+
+\begin_layout Standard
+Along the beam pipe, there are some trigger detectors: Zero Degree Calorimeter
+ (ZDC), Vertex Position Detector (VPD) and Beam-Beam Counter (BBC).
+ Two ZDCs locates on each side ~ 18 m away from the collision point.
+ The ZDCs are designed as hadronic calorimeters to detect the outgoing neutrons.
+ Dipole magnets are put before the ZDC detectors to bend away the charged
+ fragments.
+ The ZDC signals are used for monitoring the heavy ion beam luminosity and
+ for the experiments triggers.
+ The BBC subsystem covers 
+\begin_inset Formula $3.3<|\eta|<5.0$
+\end_inset
+
+ and consists of two disk shaped scintillating detectors.
+ They are placed at the endcaps of the TPC (3.5 m from TPC center).
+ Each BBC disk is made up of close packed hexagonal scintillator tiles in
+ two rings.
+ A BBC trigger corresponds to a prompt coincidence between at least one
+ (out of eighteen total) tile firing in both BBC EAST and BBC WEST within
+ a time window.
+ This BBC trigger defines a minimum bias trigger corresponding to a p-p
+ cRHIC upgrade
+\end_layout
+
+\begin_layout Subsection
+MTD
+\end_layout
+
+\begin_layout Subsection
+HFT
+\end_layout
+
+\begin_layout Standard
+ross section of 
+\begin_inset Formula $\thickapprox$
+\end_inset
+
+ 26 mb, 87% of the p-p Non-Singly Diffractive (NSD) inelastic cross section.
+ The VPD detector has two assembly which consists of two rings of readout
+ detectors (19 channels).
+ The two assemblies are mounted symmetrically with respect to the center
+ of STAR at a distance of 5.7 m and cover 
+\begin_inset Formula $4.24≤\eta≤5.1$
+\end_inset
+
+.
+ The signals from VPD are used to select minimum bias collisions, to constrain
+ the location of the primary collision vertex along the beam pipe and to
+ provide start time for STAR fast timing detectors.
+ EMCs is also used to trigger on high 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ particle events.
+\end_layout
+
+\begin_layout Standard
+The detectors involved in this analysis will be introduced in detail in
+ follow sections.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -699,7 +808,7 @@ The STAR TPC's readout system is based on Multi-Wire Proportional Chambers
  The readout planes are arranged as on a clock with 12 sectors around the
  circle at each end of TPC.
  The readout system includes four components: a pad plane and three wire
- planes, shown in FIg.
+ planes, shown in Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -760,7 +869,7 @@ When the charged particles travel through the gas volume, they liberate
  These tracks are combined with other available tracking detector's results
  and refit by a Kalman filter routine.
  Then the primary collision vertex is reconstructed from these global tracks.
- The primary vertex resolution is ∼ 350 μm with more than 1000 tracks.
+ The primary vertex resolution is ~ 350 μm with more than 1000 tracks.
  Furthermore, tracks with the 
 \emph on
 distance of closest approach
@@ -775,7 +884,7 @@ distance of closest approach
 \end_inset
 
 , track multiplicity etc.
- The typical value for the primary pions with
+ The typical value for the primary pions with 
 \begin_inset Formula $N_{fit}$
 \end_inset
 
@@ -791,7 +900,7 @@ distance of closest approach
 \begin_inset Formula $>∼$
 \end_inset
 
- 90% for Au + Au peripheral collisions and ∼ 80% for central collisions,
+ 90% for Au + Au peripheral collisions and ~ 80% for central collisions,
  respectively.
 \end_layout
 
@@ -823,7 +932,7 @@ reference "eq: Bethe-Bloch"
 
 \end_inset
 
-and furthermore optimized by the Bishsel functions (cite SN0439 NIM A 562
+and furthermore optimized by the Bichsel functions (cite SN0439 NIM A 562
  (2006) 154-197).
  For each track, 
 \emph on
@@ -846,12 +955,267 @@ reference "fig:dEdx_Bichsel"
 
 \end_inset
 
- shows the 70% truncated mean dE/dx distribution.
+ shows the 70% truncated mean dE/dx distribution as well as the expectation
+ from Bichsel functions.
+ Clearly the energy loss is different corresponding to different particle
+ species at the same momentum.
+ In Au+Au 200 GeV collision, STAR can separate 
+\begin_inset Formula $\pi$
+\end_inset
+
+ and 
+\begin_inset Formula $K$
+\end_inset
+
+ up to ~ 0.7 GeV/c and identify proton up to ~ 1.1 GeV/c.
 \end_layout
 
 \begin_layout Standard
-TPC is a very complicate detector.
- To insure its performance, careful calibrations are needed .
+
+\series bold
+\emph on
+dE/dx
+\emph default
+ calibration
+\series default
+ is performed for each run setups respect to collision type, collision energy
+ and magnetic field.
+ The calibration is done with a specified data sample selected by following
+ requirement:
+\end_layout
+
+\begin_layout Itemize
+Good clusters : used in track fit, without overlaps.
+\end_layout
+
+\begin_layout Itemize
+Good global tracks : with track length in TPC > 20 (or 40) cm.
+\end_layout
+
+\begin_layout Itemize
+Tracks with 0.4 < p < 0.5 GeV/c (~MIP for pions: 
+\begin_inset Formula $\beta\gamma=p/m=4$
+\end_inset
+
+) where 
+\begin_inset Formula $\pi$
+\end_inset
+
+ can be well separated from other particles and the 
+\begin_inset Formula $\beta\gamma$
+\end_inset
+
+ dependence of 
+\emph on
+dE/dx 
+\emph default
+is completely defined by Bichsel model.
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Formula $dE/dx$
+\end_inset
+
+ calibration process contains a lot of corrections due to the energy loss
+ in TPC is influenced by many factors, but usually it can be separated into
+ three step: a over all correction of gas gains for sectors and rows; correction
+ for gas pressure dependence; correction of track length.
+ A value 
+\emph on
+Z 
+\emph default
+is defined as flowing:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Z_{\pi}=log\left(\frac{dE/dx_{measure}}{dE/dx_{Bichsel}^{\pi}}\right)\label{eq:Zpi}
+\end{equation}
+
+\end_inset
+
+Where 
+\begin_inset Formula $dE/dx_{Bichsel}^{\pi}$
+\end_inset
+
+ is the predicted for 
+\begin_inset Formula $\pi$
+\end_inset
+
+ from Bichsel model.
+ The 
+\emph on
+
+\begin_inset Formula $Z_{\pi}$
+\end_inset
+
+ 
+\emph default
+distributions are parameterized by a 5 gaussians fit with respect to mean
+ position (
+\begin_inset Formula $μ$
+\end_inset
+
+) and width (
+\begin_inset Formula $σ$
+\end_inset
+
+) of 
+\begin_inset Formula $π$
+\end_inset
+
+, which contain contribution from 
+\begin_inset Formula $\pi$
+\end_inset
+
+, 
+\begin_inset Formula $K$
+\end_inset
+
+, 
+\begin_inset Formula $p$
+\end_inset
+
+, 
+\begin_inset Formula $d$
+\end_inset
+
+ and 
+\begin_inset Formula $e$
+\end_inset
+
+.
+ The relative positions of other particles to 
+\begin_inset Formula $\pi$
+\end_inset
+
+ are fixed.
+ And the position (
+\begin_inset Formula $μ$
+\end_inset
+
+) of 
+\begin_inset Formula $\pi$
+\end_inset
+
+ defines the calibration correction.
+ The correction parameters are defined which provide condition: 
+\begin_inset Formula $\mu=0$
+\end_inset
+
+ and variation is within 1% level.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SecRow_24_40"
+
+\end_inset
+
+ shows an example of the 5 gaussians fit for sector 24 row 40 in Run11 p+p
+ 500 GeV collisions.
+ The calibration is separated into 4 passes:
+\end_layout
+
+\begin_layout Enumerate
+pass 0: Gas gain correction for sector/row.
+ The 
+\begin_inset Formula $Z_{\pi}$
+\end_inset
+
+ distributions are parameterized in each sector and row.
+ The correction is defined to direction shift 
+\begin_inset Formula $\mu$
+\end_inset
+
+ to 0 for each sector and row which generates a correction table.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:SecRowCor"
+
+\end_inset
+
+ shows the variation vs Sector and Row before correction (before) and after
+ correction (after).
+\end_layout
+
+\begin_layout Enumerate
+pass 1: Dependence of gas gain on gas density due to pressure.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:PresureCor"
+
+\end_inset
+
+ shows the 
+\begin_inset Formula $dE/dx$
+\end_inset
+
+ variation vs gas pressure before and after the correction.
+ A linear fit is used to parameterize pressure dependence of 
+\begin_inset Formula $dE/dx$
+\end_inset
+
+ variation and to define the correction.
+\end_layout
+
+\begin_layout Enumerate
+pass 2: Dependence of the truncated mean for track's 
+\emph on
+dE/dx
+\emph default
+ and its relative error versus track length in TPC.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:TrackLengthCor"
+
+\end_inset
+
+ shows the track length dependence before correction and after correction.
+ Usually a polynomial function is used to define the correction.
+\end_layout
+
+\begin_layout Enumerate
+pass 3: Final pass to check the calibration results.
+\end_layout
+
+\begin_layout Standard
+The corrections are not independent with each other, so after each new pass,
+ the results for previous correction need to be checked.
+ If the variation is larger than 1%, another pass is need to redone previous
+ correction.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:dEdx_Calib_procedure"
+
+\end_inset
+
+ shows the procedure of 
+\emph on
+dE/dx 
+\emph default
+calibration.
+ The requirement for dE/dx resolution achievable with our calibration procedure
+ has been set as 7.5% for tracks with length in TPC equal to 76.2 cm.
+ Here take the calibration for p+p 500GeV in Run11 as an example, without
+ any correction the 
+\emph on
+dE/dx
+\emph default
+ resolution for tracks with 76.3 cm length in TPC is 7.73% and the one with
+ all corrections is 6.82% (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:dEdxRes"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
@@ -1035,12 +1399,603 @@ name "fig:dEdx_Bichsel"
 
 \end_layout
 
-\begin_layout Subsection
-Time Of Flight detector
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Users/luthien/Documents/Thesis/GitServer/Thesis/fig/2.Detector/TPC/SecRow_24_40.png
+	lyxscale 50
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Fit for sector 24 row 40.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:SecRow_24_40"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/2.Detector/TPC/pass0_SectorRow.png
+	lyxscale 50
+	width 40text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../fig/2.Detector/TPC/pass2_SecRow_mu.png
+	lyxscale 50
+	width 40text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Variation vs Sector and Row before SectorRow correction (left) and after
+ correction (right).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:SecRowCor"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Users/luthien/Documents/Thesis/GitServer/Thesis/fig/2.Detector/TPC/PresureCor.png
+	lyxscale 50
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Variation vs gas pressure before correction (left) and after correction
+ (right).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:PresureCor"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/2.Detector/TPC/TrackLengthCor.png
+	lyxscale 50
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Variation vs track length before correction and after correction.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:TrackLengthCor"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/2.Detector/TPC/dEdx_Calib.pdf
+	lyxscale 50
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The procedure of
+\emph on
+ dE/dx 
+\emph default
+calibration.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:dEdx_Calib_procedure"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/2.Detector/TPC/dEdxRes_pass0.png
+	lyxscale 50
+	width 40text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../fig/2.Detector/TPC/dEdxResPass3.png
+	lyxscale 50
+	width 40text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\emph on
+dE/dx
+\emph default
+ resolution as a function of track length without any correction (left)
+ and with all corrections (right) for p+p 500GeV in Run11.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:dEdxRes"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
-Electro-Magnetic Calorimeter
+Time Of Flight System
+\end_layout
+
+\begin_layout Standard
+The Time of Flight System is another important set of detectors used in
+ this analysis.
+ The TOF system is designed to measure the flight time of charged particles.
+ Combining with path length of tracks reconstructed by TPC, it can provide
+ the velocity of the charge particles which is used to identify charged
+ particles.
+ In Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:dEdx_Bichsel"
+
+\end_inset
+
+, the 
+\emph on
+dE/dx
+\emph default
+ binds of different particles cross with each other in some momentum regions
+ where they can not be separated by using
+\emph on
+ dE/dx 
+\emph default
+only.
+ With the installation of TOF, these holes are covered by adding the flight
+ velocity into the PID criteria.
+ Therefore, TOF greatly improves the PID capability of STAR and makes the
+ identification of electron and position from the hadron background possible
+ for the STAR detector system.
+\end_layout
+
+\begin_layout Standard
+The TOF consists of the barrel Time Of Flight detector (bTOF) and the the
+ Vertex Position Detector (VPD).
+ The bTOF is surrounding the TPC and measures the 
+\begin_inset Quotes eld
+\end_inset
+
+stop
+\begin_inset Quotes erd
+\end_inset
+
+ time (the time charged particle reach bTOF).
+ The pVPD consists of two identical detector assemblies that are positioned
+ very close to the beam pipe and outside the STAR magnet.
+ It measures the start time (the time when the collision happens).
+ 
+\end_layout
+
+\begin_layout Standard
+The bTOF is based on the Multi-gap Resistive Plate Chamber (MRPC) technology
+ which is first developed by the CERN ALICE group (cite).
+ MRPC technology is capable to provide the necessary timing resolution with
+ a relative low cost.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:MRPC"
+
+\end_inset
+
+ shows the side view of an MRPC module appropriate for STAR.
+ Basically, the MRPC is a stack of resistive plates arranged in parallel.
+ These plates are separated by nylon fishing line and form a series of uniform
+ gas gaps with a width of 0.22 mm.
+ The internal resistive plates are 20 cm long and 6.1 cm wide and 0.54 mm
+ thick, which has a resist of 
+\begin_inset Formula $8\times10^{12}\;\Omega\cdot cm$
+\end_inset
+
+.
+ The external plates are 
+\begin_inset Formula $20.6\; cm\times7.6\; cm\times1.1\; mm$
+\end_inset
+
+ with electrodes on the outer surface.
+ High voltage is applied on these electrodes to generate a uniform strong
+ electric field in each sub-gap.
+ All the internal plates are electrically floating.
+ When charged particles go through the chamber, they generates avalanches
+ in the gas gaps.
+ The resistive plates are transparent to charge induction from avalanches
+ in the gaps.
+ Thus the signal collected on the copper pickup pads is the sum of possible
+ avalanches from all gas gaps.
+ The typical size of a MRPC module is 
+\begin_inset Formula $94\: mm\times212\: mm\times12\; mm$
+\end_inset
+
+ and the active area is 
+\begin_inset Formula $61\; mm\times200\; mm$
+\end_inset
+
+, and has 6 readout pads which has an area of 
+\begin_inset Formula $63\; mm\times31.4\; mm$
+\end_inset
+
+ with 
+\begin_inset Formula $3\; mm$
+\end_inset
+
+ gaps between pads.
+\end_layout
+
+\begin_layout Standard
+One TOF tray consists of 32 MRPC modules which are installed alone the beam
+ direction.
+ Every modules contains 6 read out units (cell/channel).
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:TOFTray"
+
+\end_inset
+
+ shows the structure of a STAR-TOF tray.
+ The bTOF contains 120 trays in total and has a coverage of 
+\begin_inset Formula $2\pi$
+\end_inset
+
+ in azimuthal direction and 
+\begin_inset Formula $|\eta|<0.9$
+\end_inset
+
+ in beam direction.
+ The first prototypes of TOF were installed in year 2003.
+ 72% of the bTOF were installed in 2009 and fully installed with 
+\begin_inset Formula $2\pi$
+\end_inset
+
+ azimuthal coverage in 2010.
+ The typical time resolution of TOF system is smaller than 100 ps.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:1/beta_TOF"
+
+\end_inset
+
+ shows the inversed velocity (
+\begin_inset Formula $1/\beta$
+\end_inset
+
+) distribution as a function of momentum.
+ With the installation of TOF, the momentum range of separating 
+\begin_inset Formula $\pi$
+\end_inset
+
+ and 
+\begin_inset Formula $k$
+\end_inset
+
+ is improved from 0.7 GeV/c to 1.8 GeV/c, and proton identification range
+ is improved from 1.1 GeV/c to 3 GeV/c.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/2.Detector/TOF/MRPC.png
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Two side views of the structure of an MRPC module.
+ The upper (lower) is for long (short) side view.
+ The two plots are not at the same scale.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:MRPC"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/2.Detector/TOF/TrayModuleCell.png
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The structure of a STAR-TOF tray.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:TOFTray"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/2.Detector/TOF/1overBeta_TOF.png
+	lyxscale 50
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $1/\beta$
+\end_inset
+
+ vs momentum distributions.
+ The solid lines show the expected value for each particles
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:1/beta_TOF"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
