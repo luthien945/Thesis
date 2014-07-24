@@ -1,5 +1,5 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass USTCthesis
@@ -55,8 +55,6 @@ color: #909090;
 a.tocarrow:visited { color: #C0C0C0; }
 </style>
 EndPreamble
-
-
 Style Title
 Margin                Static
 LatexType             Command
@@ -71,22 +69,19 @@ ParSep                1
 Align                 Center
 LabelType             No_Label
 Font
-  Series 		Bold
-  Size 		Giant
+Series 		Bold
+Size 		Giant
 EndFont
 HTMLTag               h1
 HTMLTitle             true
 End
-
 Style EnglishTitle
 CopyStyle             Title
 LatexName             etitle
 Font
-  Family 	         Sans
+Family 	         Sans
 EndFont
 End
-
-
 Style EnglishAuthor
 Margin                Static
 LatexType             Command
@@ -101,70 +96,50 @@ ParSep                0.7
 Align                 Center
 LabelType             No_Label
 Font
-  Size                Large
+Size                Large
 EndFont
 End
-
 Style Author
 CopyStyle             EnglishAuthor
 LatexName             author
-
 End
-
 Style 院系
 CopyStyle             EnglishAuthor
 LatexName             depart
-
 End
-
 Style 专业
 CopyStyle             EnglishAuthor
 LatexName             major
-
 End
-
 Style Major
 CopyStyle             EnglishAuthor
 LatexName             emajor
-
 End
-
 Style 导师
 CopyStyle             EnglishAuthor
 LatexName             advisor
-
 End
-
 Style Advisor
 CopyStyle             EnglishAuthor
 LatexName             eadvisor
-
 End
-
 Style 辅助导师
 CopyStyle             EnglishAuthor
 LatexName             coadvisor
-
 End
-
 Style CoAdvisor
 CopyStyle             EnglishAuthor
 LatexName             ecoadvisor
-
 End
-
 Style 完成时间
 CopyStyle             EnglishAuthor
 LatexName             submitdate
-
 End
 Style SubmitDate
 CopyStyle             EnglishAuthor
 LatexName             esubmitdate
-
 End
 ##############################################
-
 NoStyle	Chapter
 NoStyle	Chapter*
 NoStyle	Section
@@ -198,11 +173,12 @@ NoStyle      Verse
 \end_local_layout
 \language chinese-simplified
 \language_package babel
-\inputencoding GBK
+\inputencoding gbk
 \fontencoding global
 \font_roman default
 \font_sans default
 \font_typewriter default
+\font_math auto
 \font_default_family default
 \use_non_tex_fonts true
 \font_sc false
@@ -210,7 +186,6 @@ NoStyle      Verse
 \font_sf_scale 100
 \font_tt_scale 100
 \font_cjk fs
-
 \graphics default
 \default_output_format pdf4
 \output_sync 0
@@ -230,15 +205,24 @@ NoStyle      Verse
 \pdf_pdfusetitle false
 \papersize default
 \use_geometry false
-\use_amsmath 2
-\use_esint 2
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 2
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 0
 \index 索引
 \shortcut idx
@@ -337,11 +321,7 @@ status collapsed
 \end_layout
 
 \begin_layout Author
-姓
-\begin_inset Formula $\;$
-\end_inset
-
-名
+郭毅
 \begin_inset Note Note
 status collapsed
 
@@ -355,7 +335,7 @@ status collapsed
 \end_layout
 
 \begin_layout EnglishAuthor
-Name
+Yi Guo
 \begin_inset Note Note
 status collapsed
 
@@ -411,11 +391,11 @@ Major
 \end_layout
 
 \begin_layout 导师
-导师姓名
+许怒
 \begin_inset space \qquad{}
 \end_inset
 
-第二导师姓名
+张子平
 \begin_inset Note Note
 status collapsed
 
@@ -429,11 +409,11 @@ status collapsed
 \end_layout
 
 \begin_layout Advisor
-First Prof.
+Xu Nu.
 \begin_inset space \qquad{}
 \end_inset
 
-Second Prof.
+Ziping Zhang.
 \begin_inset Note Note
 status collapsed
 
@@ -489,7 +469,7 @@ status collapsed
 \end_layout
 
 \begin_layout 完成时间
-二○一二年五月
+二○一四年十月
 \begin_inset Note Note
 status collapsed
 
@@ -503,7 +483,7 @@ status collapsed
 \end_layout
 
 \begin_layout SubmitDate
-May, 2012
+Oct, 2014
 \begin_inset Note Note
 status collapsed
 

@@ -594,8 +594,14 @@ Close to the beam pipe is the Heavy Flavor Tracker (HFT) which is a new
  The EMCs are used to distinguish high momentum single photons from photon
  pairs of π and η meson decays and electrons from charged hadrons.
  Outside the BEMC is the magnet system which provides a uniform magnetic
- field parallel to the beam direction and also servers as the hadron absorber
- for the Muon Telescope Detector (MTD).
+ field parallel to the beam direction and together with BEMC it also servers
+ as the electron and hadron absorber for the Muon Telescope Detector (MTD).
+ The MTD is also a new added detector, which is installed in 2014.
+ It is designed to detect high 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ muon for heavy flavor collectivity and production.
  
 \end_layout
 
@@ -653,7 +659,7 @@ The detectors involved in this analysis will be introduced in detail in
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -790,7 +796,7 @@ The STAR TPC's readout system is based on Multi-Wire Proportional Chambers
  The readout planes are arranged as on a clock with 12 sectors around the
  circle at each end of TPC.
  The readout system includes four components: a pad plane and three wire
- planes, shown in FIg.
+ planes, shown in Fig.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -851,7 +857,7 @@ When the charged particles travel through the gas volume, they liberate
  These tracks are combined with other available tracking detector's results
  and refit by a Kalman filter routine.
  Then the primary collision vertex is reconstructed from these global tracks.
- The primary vertex resolution is ∼ 350 μm with more than 1000 tracks.
+ The primary vertex resolution is ~ 350 μm with more than 1000 tracks.
  Furthermore, tracks with the 
 \emph on
 distance of closest approach
@@ -866,7 +872,7 @@ distance of closest approach
 \end_inset
 
 , track multiplicity etc.
- The typical value for the primary pions with
+ The typical value for the primary pions with 
 \begin_inset Formula $N_{fit}$
 \end_inset
 
@@ -914,7 +920,7 @@ reference "eq: Bethe-Bloch"
 
 \end_inset
 
-and furthermore optimized by the Bishsel functions (cite SN0439 NIM A 562
+and furthermore optimized by the Bichsel functions (cite SN0439 NIM A 562
  (2006) 154-197).
  For each track, 
 \emph on
@@ -938,7 +944,7 @@ reference "fig:dEdx_Bichsel"
 \end_inset
 
  shows the 70% truncated mean dE/dx distribution as well as the expectation
- from Bishsel functions.
+ from Bichsel functions.
  Clearly the energy loss is different corresponding to different particle
  species at the same momentum.
  In Au+Au 200 GeV collision, STAR can separate 
@@ -1189,7 +1195,15 @@ calibration.
 \emph on
 dE/dx
 \emph default
- resolution for tracks with 76.3 cm length in TPC is 7.7
+ resolution for tracks with 76.3 cm length in TPC is 7.73% and the one with
+ all corrections is 6.82% (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:dEdxRes"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
@@ -1617,7 +1631,7 @@ name "fig:dEdx_Calib_procedure"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1648,7 +1662,7 @@ status open
 dE/dx
 \emph default
  resolution as a function of track length without any correction (left)
- and with all corrections (right).
+ and with all corrections (right) for p+p 500GeV in Run11.
 \end_layout
 
 \end_inset
@@ -1672,7 +1686,7 @@ name "fig:dEdxRes"
 \end_layout
 
 \begin_layout Subsection
-Time Of Flight System
+Time Of Flight system
 \end_layout
 
 \begin_layout Standard
@@ -1815,7 +1829,7 @@ reference "fig:1/beta_TOF"
 
 \end_inset
 
- shows the inversed velocity (
+ shows the inverse velocity (
 \begin_inset Formula $1/\beta$
 \end_inset
 
@@ -1973,31 +1987,119 @@ name "fig:1/beta_TOF"
 \end_layout
 
 \begin_layout Subsection
-Electro-Magnetic Calorimeter
-\end_layout
-
-\begin_layout Subsection
 STAR trigger system
 \end_layout
 
+\begin_layout Standard
+In STAR, the collision rate for Au+Au events is about 50kHz and for high
+ luminosity p+p collision, this rate can reach up to 4MHz which is close
+ to the magnitude of the RHIC bunch crossing rate (10MHz).
+ However, the STAR DAQ system can only operate at a rate below 1800Hz which
+ is more than 3 magnitudes lower than the collision rate.
+ Thus a trigger system is needed to reduced the event rate.
+ Furthermore, only a small fraction of the collisions are physically interested.
+ The beam may hit residual gas atoms in the beam pipe and also beam pipe
+ itself, which makes a large fraction of the collisions are background.
+ These background events should be also suppressed by the trigger system.
+ The trigger system also includes triggers designed for special physics
+ purpose, such like, selecting events containing high 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ particles for heavy flavor and jet physics.
+\end_layout
+
+\begin_layout Standard
+The STAR trigger system consist of three levels.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:TriggerDataFlow"
+
+\end_inset
+
+ shows data flow through the trigger system.
+ Level 0 examines every branch crossing to determine whether there is a
+ interested interaction happened.
+ It is constrained to issue a trigger decision within 1.5 
+\begin_inset Formula $\mu s$
+\end_inset
+
+ after the interaction.
+ The signals from fast detectors are digitized and sent into Data Storage
+ and Manipulation (DSM) boards.
+ The DSM boards analyze these signals and form a decision tree which is
+ fead into Trigger Control Unit (TCU) board where the Level 0 trigger decision
+ is issued.
+ Level 1 and 2 triggers apply more complex criteria on events accepted by
+ Level 0 trigger.
+ Level 1 has a time budget ~ 100 
+\begin_inset Formula $\mu s$
+\end_inset
+
+ and Level 2 has about 5 ms.
+ When an interaction is accepted at Level 2, the trigger system notifies
+ the DAQ system and detectors.
+ A review on the STAR trigger system can be find at (cite).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/2.Detector/TriggerDataFlow.png
+	lyxscale 50
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Data flow through the trigger (cite).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:TriggerDataFlow"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
-High Level Trigger - L4 system
+High Level Trigger/L4 system
+\end_layout
+
+\begin_layout Standard
+There used to be a Level 3 trigger system base on online tracking and analysis.
+ It was abandoned since it could not catch up with STAR's DAQ system upgrade.
+ Now it has been replaced by a High Level Trigger (HLT) system.
 \end_layout
 
 \begin_layout Section
 Future upgrade
-\end_layout
-
-\begin_layout Subsection
-RHIC upgrade
-\end_layout
-
-\begin_layout Subsection
-MTD
-\end_layout
-
-\begin_layout Subsection
-HFT
 \end_layout
 
 \end_body
