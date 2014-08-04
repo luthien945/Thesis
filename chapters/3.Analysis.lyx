@@ -3319,8 +3319,8 @@ reference "eq:single eff"
 
 \end_layout
 
-\begin_layout Subsubsection
-TPC tracking and TOF matching efficiency
+\begin_layout Paragraph
+TPC tracking efficiency
 \end_layout
 
 \begin_layout Standard
@@ -3376,6 +3376,10 @@ nHitsFit, dca
 
  Daliza decay.
  The difference was included into the systematic uncertainty.
+\end_layout
+
+\begin_layout Paragraph
+TOF efficiency
 \end_layout
 
 \begin_layout Standard
@@ -3622,7 +3626,7 @@ The TPC efficiency and TOF matching efficiency were both studied and applied
  distribution from different centrality with minimum bias.
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Paragraph
 PID efficiency
 \end_layout
 

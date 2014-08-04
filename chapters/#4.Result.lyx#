@@ -503,8 +503,11 @@ parton-hadron
 
 \series bold
 \emph on
-Model II: Parton-Hadron String Dynamic (PHSD) transport model
+Model II: Parton-Hadron String Dynamic (PHSD) 
+\emph default
+transport model
 \series default
+\emph on
 .
 \end_layout
 
@@ -984,10 +987,7 @@ reference "fig:Full_Rapp_PHSD"
 \end_inset
 
 -test mentioned previously.
- In the IMR, the correlated charm contribution is dominant.
- However, we still do not have a clearly understand about charm contribution.
- It is a bit early to argue the consistency between data and models.
- 
+ In the IMR, the charm contribution is dominant 
 \end_layout
 
 \begin_layout Standard
@@ -1065,7 +1065,7 @@ status collapsed
 \begin_inset Graphics
 	filename ../fig/4.Result/AuAuResult/MinBias_pT.eps
 	lyxscale 80
-	width 100text%
+	width 80text%
 
 \end_inset
 
@@ -1122,7 +1122,7 @@ status collapsed
 \begin_inset Graphics
 	filename ../fig/4.Result/AuAuResult/pt_enhance.eps
 	lyxscale 80
-	width 100text%
+	width 80text%
 
 \end_inset
 
@@ -1165,14 +1165,14 @@ Centrality dependence
 placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename ../fig/4.Result/AuAuResult/Centrality_mass.eps
 	lyxscale 80
-	width 100text%
+	width 80text%
 
 \end_inset
 
@@ -1226,7 +1226,7 @@ status collapsed
 \begin_inset Graphics
 	filename ../fig/4.Result/AuAuResult/Centrality_enhance.eps
 	lyxscale 80
-	width 100text%
+	width 80text%
 
 \end_inset
 
