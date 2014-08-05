@@ -187,8 +187,8 @@ Di-electron production in Au+Au Collisions at 200 GeV at STAR
 
 \begin_layout Standard
 In this section, we report the results from Au+Au collision at 200 GeV.
- The results are taken from the combined year 2010 and year 2011 data (as
- described in Sec.
+ All results in this section are taken from the combined year 2010 and year
+ 2011 data (as described in Sec.
  3.8).
  The dielectron signals were obtained as described in Sec.
  3.4.5.
@@ -503,11 +503,8 @@ parton-hadron
 
 \series bold
 \emph on
-Model II: Parton-Hadron String Dynamic (PHSD) 
-\emph default
-transport model
+Model II: Parton-Hadron String Dynamic (PHSD) transport model
 \series default
-\emph on
 .
 \end_layout
 
@@ -987,7 +984,11 @@ reference "fig:Full_Rapp_PHSD"
 \end_inset
 
 -test mentioned previously.
- In the IMR, the charm contribution is dominant 
+ In the IMR, the correlated charm contribution is dominant.
+ However, we still do not have a clearly understand about the correlated
+ charm contribution.
+ It is a bit early to argue the consistency between data and models.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -995,7 +996,7 @@ reference "fig:Full_Rapp_PHSD"
 placement h
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1050,7 +1051,85 @@ name "fig:Full_Rapp_PHSD"
 \begin_inset Formula $p_{T}$
 \end_inset
 
- dependence 
+ and centrality dependence 
+\end_layout
+
+\begin_layout Standard
+To gain more insight on the underlining physics, we also studied the 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ dependence as will as the centrality of dielectron yields and compared
+ them to the hadronic cocktail simulations and model calculations.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:pT_mass"
+
+\end_inset
+
+ shows dielectron yields measured in each individual 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ region as well as the hadronic cocktail on the left plot, and the ratios
+ of data over cocktail simulation on the right plot.
+ Theoretical model calculations in each 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ window are included to compare to the measured data as well.
+ The dielectron spectra were also studied in various centrality bins (0~10%,
+ 10~40%, 40~80%).
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:cen_mass"
+
+\end_inset
+
+ shows similar plots for centrality depended dielectron spectra as the 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ depended plots in Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:pT_mass"
+
+\end_inset
+
+.
+ Please note that the correlated charm contributions, which becomes to has
+ sizable contribution from 0.5 GeV/
+\begin_inset Formula $c^{2}$
+\end_inset
+
+ and is dominant above 1 GeV/
+\begin_inset Formula $c^{2}$
+\end_inset
+
+ , were all taken from the 
+\begin_inset Formula $N_{bin}$
+\end_inset
+
+ scaled PYTHIA simulations with charm pair production cross section of 
+\begin_inset Formula $\sigma_{c\bar{c}}=0.80\pm0.36$
+\end_inset
+
+ mb.
+ In a general view, one can see the enhancement factor with respect to the
+ hadronic cocktail shows a weak 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ and centrality dependence.
+ Both theoretical models are able to reasonably describe the LMR enhancement
+ in all 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ bins and centrality bins.
 \end_layout
 
 \begin_layout Standard
@@ -1065,7 +1144,7 @@ status collapsed
 \begin_inset Graphics
 	filename ../fig/4.Result/AuAuResult/MinBias_pT.eps
 	lyxscale 80
-	width 80text%
+	width 100text%
 
 \end_inset
 
@@ -1120,59 +1199,9 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../fig/4.Result/AuAuResult/pt_enhance.eps
-	lyxscale 80
-	width 80text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:pT_enhan"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Centrality dependence
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement h
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
 	filename ../fig/4.Result/AuAuResult/Centrality_mass.eps
 	lyxscale 80
-	width 80text%
+	width 100text%
 
 \end_inset
 
@@ -1215,53 +1244,173 @@ name "fig:cen_mass"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement h
-wide false
-sideways false
-status collapsed
+To qualify the 
+\begin_inset Formula $p_{T}$
+\end_inset
 
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ../fig/4.Result/AuAuResult/Centrality_enhance.eps
-	lyxscale 80
-	width 80text%
+ and centrality dependence of the LMR excess, we separate the LMR into three
+ mass regions: 0.3~0.76 (
+\begin_inset Formula $\rho$
+\end_inset
+
+-like), 0.76~0.8 (
+\begin_inset Formula $\omega$
+\end_inset
+
+-like) and 0.98~1.05 (
+\begin_inset Formula $\phi$
+\end_inset
+
+-like) GeV/
+\begin_inset Formula $c^{2}$
+\end_inset
+
+.
+ The ratios of data w.r.t the hadronic cocktail were calculated in these three
+ mass regions for each 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ and centrality bins and were shown in Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:sum_LowMass"
 
 \end_inset
 
+ upper plot panel (a) (for 
+\begin_inset Formula $p_{T}$
+\end_inset
 
-\end_layout
+) and (b) (for centrality).
+ One can see that the hadronic cocktail can reproduce the dielectron yield
+ in the 
+\begin_inset Formula $\omega$
+\end_inset
 
-\begin_layout Plain Layout
-\begin_inset Caption Standard
+-like and 
+\begin_inset Formula $\phi$
+\end_inset
 
-\begin_layout Plain Layout
+-like regions.
+ In the 
+\begin_inset Formula $\rho$
+\end_inset
 
-\end_layout
+-like region, a significant excess is observed in each 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ and centrality bins and the ratios of date w.r.t hadronic cocktail 
+\begin_inset Formula $ $
+\end_inset
+
+show weak dependence on 
+\begin_inset Formula $N_{part}$
+\end_inset
+
+ (centrality) and 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+.
+ The bottom plot of Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:sum_LowMass"
 
 \end_inset
 
+ shows the integrated excess yields (yields subtracted with cocktail) in
+ the 
+\begin_inset Formula $\rho$
+\end_inset
 
-\end_layout
+-like region scaled by 
+\begin_inset Formula $1/N_{part}$
+\end_inset
 
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:cen_enhan"
+.
+ The 
+\begin_inset Formula $\omega$
+\end_inset
+
+-like and 
+\begin_inset Formula $\phi$
+\end_inset
+
+-like regions without cocktail subtraction scaled by 
+\begin_inset Formula $1/N_{part}$
+\end_inset
+
+ are also included in the plot as comparison.
+ The dielectron yields in the 
+\begin_inset Formula $\omega$
+\end_inset
+
+-like and 
+\begin_inset Formula $\phi$
+\end_inset
+
+-like regions show a 
+\begin_inset Formula $N_{part}$
+\end_inset
+
+ scaling while the excess yields increase faster than 
+\begin_inset Formula $N_{part}$
+\end_inset
+
+ with centralities.
+ The dashed curve is a power fit (
+\begin_inset Formula $\varpropto N_{part}^{a}$
+\end_inset
+
+) to the excess yield
+\begin_inset Formula $/N_{part}$
+\end_inset
+
+ in the 
+\begin_inset Formula $\rho$
+\end_inset
+
+-like region, the fit shows 
+\begin_inset Formula $a=0.48\pm0.11$
+\end_inset
+
+ (stat.+uncorrelated sys.), indicating the dielectron yields in the 
+\begin_inset Formula $\rho$
+\end_inset
+
+-like region are sensitive to the QCD medium dynamics, as expected from
+ 
+\begin_inset Formula $\rho$
+\end_inset
+
+ medium modifications in theoretical calculations (cite PRC [46,57]).
+ The enhancement factor and dielectron yields in the 
+\begin_inset Formula $\rho$
+\end_inset
+
+-like region for each 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ and centrality bins are summarized in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Table:pT_enhance"
 
 \end_inset
 
-
-\end_layout
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Table:cen_enhance"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Subsection
-Low mass enhancement and excess yields
+.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1299,7 +1448,67 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+Panel (a) and (b) shows the integrated dielectron yields in mass regions
+ of 0.3-0.76(
+\begin_inset Formula $\rho$
+\end_inset
 
+-like), 0.76-0.80(
+\begin_inset Formula $\omega$
+\end_inset
+
+-like) and 0.98-1.05(
+\begin_inset Formula $\phi$
+\end_inset
+
+-like) GeV/
+\begin_inset Formula $c^{2}$
+\end_inset
+
+ as a function of centrality and 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+.
+ Panel (c) shows the yields scaled by 
+\begin_inset Formula $N_{part}$
+\end_inset
+
+ for the 
+\begin_inset Formula $\rho$
+\end_inset
+
+-like with cocktail subtraction, and the 
+\begin_inset Formula $\omega$
+\end_inset
+
+-like and 
+\begin_inset Formula $\phi$
+\end_inset
+
+-like without cocktail subtraction.
+ The dashed curve is a power-law fit to the yield/
+\begin_inset Formula $N_{part}$
+\end_inset
+
+ for the 
+\begin_inset Formula $\rho$
+\end_inset
+
+-like region subtracted by cocktail.
+ Systematic uncertainties from data are shown as grey boxes, while the green
+ brackets represent the total systematic uncertainties including the cocktail
+ contribution.
+ The 
+\begin_inset Formula $\omega$
+\end_inset
+
+-like and 
+\begin_inset Formula $\phi$
+\end_inset
+
+-like data points are slightly displaced horizontally for clarity.
+ 
 \end_layout
 
 \end_inset
@@ -1308,6 +1517,475 @@ status collapsed
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:sum_LowMass"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ region (GeV/c)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yield (
+\begin_inset Formula $\times10^{-3}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yield/Cocktail
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0-0.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1.15\pm0.09\pm0.20$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1.61\pm0.12\pm0.28$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5-1.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1.58\pm0.07\pm0.27$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1.48\pm0.06\pm0.25$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0-1.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.67\pm0.03\pm0.11$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1.69\pm0.08\pm0.27$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.5-2.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.24\pm0.02\pm0.04$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2.40\pm0.15\pm0.40$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ dependence of dielectron yields in the STAR acceptance and the enhancement
+ factor with respect to the hadronic cocktail in the mass region of 0.3−0.76
+ GeV/
+\begin_inset Formula $c^{2}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "Table:pT_enhance"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Centrality
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yield (
+\begin_inset Formula $\times10^{-3}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Yield/Cocktail
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0-10%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $13.64\pm1.01\pm2.07$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1.92\pm0.14\pm0.29$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10-40%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4.82\pm0.22\pm0.71$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1.55\pm0.07\pm0.23$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+40-80%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.87\pm0.04\pm0.12$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1.42\pm0.06\pm0.20$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0-80%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3.87\pm0.13\pm0.57$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1.66\pm0.06\pm0.24$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The centrality dependence of dielectron yields in the STAR acceptance and
+ the enhancement factor with respect to the hadronic cocktail in the mass
+ region of 0.3−0.76 GeV/
+\begin_inset Formula $c^{2}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "Table:cen_enhance"
+
+\end_inset
+
 
 \end_layout
 
@@ -1318,6 +1996,85 @@ status collapsed
 
 \begin_layout Subsection
 Correlated charm contributions
+\end_layout
+
+\begin_layout Standard
+In Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:eeRCP"
+
+\end_inset
+
+, we overlay the dielectron mass spectra from minimum bias and most central
+ (0-10%) collisions.
+ The spectra are scaled by the number of participant nucleons (
+\begin_inset Formula $N_{part}$
+\end_inset
+
+) and are plotted in the upper panel, and the ratio between them is plotted
+ in the bottom panel.
+ The measured ratio starts from unity in the 
+\begin_inset Formula $\pi^{0}$
+\end_inset
+
+ and 
+\begin_inset Formula $\eta$
+\end_inset
+
+ mass region, indicating the production with 
+\begin_inset Formula $N_{part}$
+\end_inset
+
+ scaling.
+ It begins to increase in mass region 0.5-1 GeV/
+\begin_inset Formula $c^{2}$
+\end_inset
+
+ towards the 
+\begin_inset Formula $N_{bin}$
+\end_inset
+
+ scaling.
+ This is due to the fact that correlated charm contribution starts to dominate
+ in this mass region and the charm quark production at RHIC energy is expected
+ to follow the 
+\begin_inset Formula $N_{bin}$
+\end_inset
+
+ scaling.
+ The hadronic medium also has a significant contribution in this mass region
+ and is expected to increase faster than 
+\begin_inset Formula $N_{part}$
+\end_inset
+
+ (cite).
+ In the IMR region, the ratio shows a moderate deviation from the 
+\begin_inset Formula $N_{bin}$
+\end_inset
+
+ scaling (2.0
+\begin_inset Formula $\sigma$
+\end_inset
+
+ deviation for the data point at 1.8-2.8 GeV/
+\begin_inset Formula $c^{2}$
+\end_inset
+
+).
+ The difference in mass region 1-3 GeV/
+\begin_inset Formula $c^{2}$
+\end_inset
+
+ indicates a potential de-correlating effect on charm pairs while traversing
+ the QCD medium or other contribution from medium (e.g thermal radiation).
+ To qualify the difference, we preformed exponential fits to the mass spectra
+ in central and minimum bias collisions and the resulting slopes differ
+ by ~ 1.5
+\begin_inset Formula $\sigma$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -1393,6 +2150,298 @@ Low mass vector meson yields
 \end_layout
 
 \begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:meson_Allpt"
+
+\end_inset
+
+ shows the invariant mass distribution of the vector meson 
+\begin_inset Formula $\omega$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi$
+\end_inset
+
+ from 
+\begin_inset Formula $\sqrt{s_{NN}}$
+\end_inset
+
+ = 200 GeV Au+Au minimum bias collisions.
+ The signal spectra are reconstructed by subtracting the normalized mix-event
+ unlike-sign background (Sec 3.4.2) from foregound same-event unlike-sign
+ distribution.
+ Two methods were used to fit the invariant mass distributions.
+\end_layout
+
+\begin_layout Itemize
+Method I: A Breit-Wigner function plus a second order polynomial function.
+ The second order polynomial function was used to describe the residual
+ background.
+\end_layout
+
+\begin_layout Itemize
+Method II: Using mass distributions (line-shapes) directly from the cocktail
+ simulations to fit the signal.
+ As described in Sec 3.5 and 3.6, the detector momentum resolution in the
+ cocktail simulation was tune to match the 
+\begin_inset Formula $J/\psi$
+\end_inset
+
+ signal in the data.
+\end_layout
+
+\begin_layout Standard
+Firstly we used Method I and Method II to fit the data distributions with
+ all parameters left free to extract the mass position and wi.
+ And different background functions and different fit ranges were used to
+ estimated the systematics uncertainty for Method I.
+ We compared the widths and mass positions of 
+\begin_inset Formula $\omega$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi$
+\end_inset
+
+ signals from Method I with the values from PDG as well as from our full
+ GEANT simulations (from the cocktail distributions), shown in Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:meson_MW"
+
+\end_inset
+
+.
+ The mass positions 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/4.Result/meson_plot_PRC/OmeAllPt.eps
+	lyxscale 50
+	width 50text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../fig/4.Result/meson_plot_PRC/PhiAllPt.eps
+	lyxscale 50
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\omega$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi$
+\end_inset
+
+ meson invariant mass distribution from 
+\begin_inset Formula $\sqrt{s_{NN}}$
+\end_inset
+
+ = 200 GeV Au+Au minimum bias collisions after the combinatorial background
+ subtracted by using the mixed-event method.
+ The blue and red lines depict two functions used for the signals in the
+ fit.
+ A second order polynomial function is used to describe the residual correlated
+ background.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:meson_Allpt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/4.Result/meson_plot_PRC/omega_MassWidth.eps
+	lyxscale 50
+	width 50text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../fig/4.Result/meson_plot_PRC/Phi_MassWidth.eps
+	lyxscale 50
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The widths and mass positions of 
+\begin_inset Formula $\omega$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi$
+\end_inset
+
+ signals from data compared to the values from the PDG and the full GEANT
+ simulation.
+ Boxes on the data points depict the systematic uncertainties.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:meson_MW"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/4.Result/meson_plot_PRC/omega_FitRawYield.eps
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/4.Result/meson_plot_PRC/phi_FitRawYield.eps
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/4.Result/meson_plot_PRC/jpsi_FitRawYield.eps
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ dependence of the 
+\begin_inset Formula $\omega$
+\end_inset
+
+, 
+\begin_inset Formula $\phi$
+\end_inset
+
+ and 
+\begin_inset Formula $J/\psi$
+\end_inset
+
+ meson invariant mass distributions from 
+\begin_inset Formula $\sqrt{s_{NN}}$
+\end_inset
+
+ = 200 GeV Au+Au minimum bias collisions.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:meson_pt_fit"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement h
 wide false
@@ -1415,7 +2464,27 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+The 
+\begin_inset Formula $p_{T}$
+\end_inset
 
+ distributions of the 
+\begin_inset Formula $\omega$
+\end_inset
+
+, 
+\begin_inset Formula $\phi$
+\end_inset
+
+ and 
+\begin_inset Formula $J/\psi$
+\end_inset
+
+ meson invariant yields from 
+\begin_inset Formula $\sqrt{s_{NN}}$
+\end_inset
+
+= 200 GeV Au+Au minimum bias collisions.
 \end_layout
 
 \end_inset
@@ -1480,6 +2549,98 @@ status collapsed
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Teff"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/4.Result/AuAuResult/pt_enhance.eps
+	lyxscale 80
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:pT_enhan"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/4.Result/AuAuResult/Centrality_enhance.eps
+	lyxscale 80
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:cen_enhan"
 
 \end_inset
 
