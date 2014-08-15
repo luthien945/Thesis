@@ -186,12 +186,15 @@ Di-electron production in Au+Au Collisions at 200 GeV at STAR
 \end_layout
 
 \begin_layout Standard
-In this section, we report the results from Au+Au collision at 200 GeV.
+In this section, we report the results from Au+Au collisions at 
+\begin_inset Formula $\sqrt{s_{NN}}$
+\end_inset
+
+ = 200 GeV.
  All results in this section are taken from the combined year 2010 and year
  2011 data (as described in Sec.
  3.8).
- The dielectron signals were obtained as described in Sec.
- 3.4.5.
+ The dielectron signals were obtained as described in Sec 3.4.5.
  The dielectron yields were corrected for the dielectron reconstruction
  efficiency.
  All the results were measured in the STAR acceptance (
@@ -2145,6 +2148,59 @@ name "fig:eeRCP"
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/4.Result/deltaPhi.png
+	lyxscale 50
+	width 80text%
+
+\end_inset
+
+￼
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Dielectron azimuthal correlation distributions from p+p and Au+Au minimum
+ bias collision at 200 GeV.
+ The lines are from PYTHIA simulation with different assumption of the correlati
+ons of the 
+\begin_inset Formula $c\bar{c}$
+\end_inset
+
+ pairs.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:deltaPhi"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Low mass vector meson yields
 \end_layout
@@ -2250,10 +2306,6 @@ reference "fig:meson_MW"
 
 .
  The mass positions of 
-\begin_inset Formula $ $
-\end_inset
-
-
 \begin_inset Formula $\omega$
 \end_inset
 
@@ -2356,7 +2408,7 @@ name "fig:meson_Allpt"
 
 \begin_layout Standard
 \begin_inset Float figure
-placement h
+placement H
 wide false
 sideways false
 status collapsed
@@ -2699,6 +2751,225 @@ name "fig:meson_spectra"
 \end_layout
 
 \begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:mT-spectra"
+
+\end_inset
+
+ shows the invariant transverse mass spectra in Au+Au minimum bias collisions
+ at 200 GeV.
+ The yields were corrected for the STAR acceptance loss (
+\begin_inset Formula $p_{T}^{e}>0.2GeV/c$
+\end_inset
+
+, and 
+\begin_inset Formula $|\eta_{e}|<1$
+\end_inset
+
+) by the two method described in Sec 3.5.3.
+ The transverse mass spectra show approximate exponential distributions
+ in all mass windows.
+ We used the exponential function in Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:mTslope"
+
+\end_inset
+
+ to fit to measured data points up to 2.5 GeV/
+\begin_inset Formula $c^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{dN}{m_{T}dm_{T}}=\frac{1}{T(m_{0}+T)}\exp(-\frac{m_{T}-m_{0}}{T})\label{eq:mTslope}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The parameter 
+\begin_inset Formula $T$
+\end_inset
+
+ is commonly called the 
+\begin_inset Quotes eld
+\end_inset
+
+slope parameter
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Formula $T_{eff}$
+\end_inset
+
+.
+ The extracted slope parameters of inclusive dielectrons as a function of
+ dielectron mass are shown in Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Teff"
+
+\end_inset
+
+.
+ The results from mesons (
+\begin_inset Formula $\omega$
+\end_inset
+
+, 
+\begin_inset Formula $\phi$
+\end_inset
+
+ and 
+\begin_inset Formula $J/\psi$
+\end_inset
+
+) measured by their dielectron decay channel are also included.
+ The results from dielectron analysis are compared to previous RHIC hadron
+ measurements (cite) and different model calculations.
+\end_layout
+
+\begin_layout Standard
+In the 
+\begin_inset Formula $\pi^{0}$
+\end_inset
+
+ mass region, the difference between the dielectron result and the hadron
+ result is due to the decay kinematic change of 
+\begin_inset Formula $\pi^{0}$
+\end_inset
+
+ Dalitz decay.
+ In the mass region (0.3~1.1 GeV/
+\begin_inset Formula $c^{2}$
+\end_inset
+
+), the contributions to the dielectron yields are complicated.
+ We lack knowledge of the contributions from correlated charms and the 
+\begin_inset Formula $dN/dy$
+\end_inset
+
+ inputs for the cocktail simulation still have large uncertainties (
+\begin_inset Formula $\eta$
+\end_inset
+
+ and 
+\begin_inset Formula $\eta'$
+\end_inset
+
+), which makes the data point not so intuitive to interpret.
+ The results for mesons from their dielectron decay channel are consistent
+ with the previous RHIC hadron measurements.
+ In IMR (1.1~3.0 GeV/
+\begin_inset Formula $c^{2}$
+\end_inset
+
+), dielectron pair from the decay of correlated charm and from the thermal
+ radiation have significantly different acceptance loss correction factor
+ for calculating the invariant yield (Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:eff acc"
+
+\end_inset
+
+).
+ Due to the lack of knowledge of both sources, we took the averaged correction
+ factor from two sources for the central value and the variation between
+ two extreme corrections were included as the major systematic uncertainty
+ to the data points in IMR.
+ In Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Teff"
+
+\end_inset
+
+, on the data points in 1~3 GeV/
+\begin_inset Formula $c^{2}$
+\end_inset
+
+ the lower limit of the systematic uncertainty corresponds to the correction
+ factor assuming correlated charm pair decays, which is consistent with
+ the expectation from PYTHIA calculation.
+ Also included in comparison are the expected slope parameters of dielectrons
+ from model calculation including hadronic medium and QGP thermal radiation
+ contributions, which is consistent with the upper bound of the systematic
+ uncertainty.
+ Current measurements can not distinguish these two contributions in this
+ mass region.
+ Future measurement on understanding the correlated charm contribution is
+ essential to get insight into the thermal radiation.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Users/luthien/Documents/Thesis/GitServer/Thesis/fig/4.Result/AuAuResult/mTspectra_com_mb.eps
+	lyxscale 50
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Invariant transverse mass spec- tra in 0-80% minimum bias collisions.
+ The yields shown here were corrected for the STAR acceptance loss (
+\begin_inset Formula $p_{T}^{e}>0.2GeV/c$
+\end_inset
+
+, and 
+\begin_inset Formula $|\eta_{e}|<1$
+\end_inset
+
+) by using the cocktail method (Sec 3.5.3).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mT-spectra"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement h
 wide false
@@ -2721,7 +2992,31 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+The measured inclusive dielectron slope parameter 
+\begin_inset Formula $T_{eff}$
+\end_inset
 
+ as a function of mass from Au+Au minimum bias data, shown as solid black
+ triangles.
+ The gray boxes indicated the uncertainty due to the acceptance correction
+ factor.
+ The blue triangles represent the slope parameters for mesons (
+\begin_inset Formula $\omega$
+\end_inset
+
+, 
+\begin_inset Formula $\phi$
+\end_inset
+
+ and 
+\begin_inset Formula $J/\psi$
+\end_inset
+
+) measured by their dielectron decay channel.
+ The green brackets depict the systematic uncertainties.
+ The results from dielectron analysis are compared to previous RHIC hadron
+ measurements.
+ Also several model calculations are included as the solid lines.
 \end_layout
 
 \end_inset
@@ -2742,6 +3037,167 @@ name "fig:Teff"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Summary and outlook
+\end_layout
+
+\begin_layout Standard
+To summarize, we have reported STAR measurements of dielectron yields at
+ midrapidity in p+p and Au+Au collisions at 200 GeV within the STAR acceptance
+ (
+\begin_inset Formula $p_{T}^{e}>0.2GeV/c$
+\end_inset
+
+, 
+\begin_inset Formula $|\eta^{e}|<1$
+\end_inset
+
+ and 
+\begin_inset Formula $|y_{ee}|$
+\end_inset
+
+<1).
+ The dielectron spectra of p+p 200GeV collisions based on data taken in
+ year 2012 have ~7 times more statistics than the STAR previous published
+ results (cite), which provide a better baseline for Au+Au collisions.
+ The Au+Au results are from the combined year2010 and year2011 data.
+\end_layout
+
+\begin_layout Standard
+The measured dielectron yields in Au+Au 200 GeV minimum bias collisions
+ show an enhancement with respect to the hadronic cocktail calculations
+ in the mass region below 
+\begin_inset Formula $M_{\phi}$
+\end_inset
+
+.
+ The integrated enhancement factor in mass range 0.3~7.6 GeV/
+\begin_inset Formula $c^{2}$
+\end_inset
+
+ and full 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ is 
+\begin_inset Formula $1.66\pm0.06(stat.)\pm0.24(sys.)\pm0.41(cocktail)$
+\end_inset
+
+.
+ The enhancement factor is much smaller than the measure from PHENIX.
+ Further measurement in differential 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ and centrality bins shows this enhancement has a mild 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ and centrality dependence with respect to the hadronic cocktail.
+\end_layout
+
+\begin_layout Standard
+We compared our results to theory model calculations including a macroscopic
+ many-body effective model and a microscopic transport model.
+ Both models included in-medium modification of the 
+\begin_inset Formula $\rho$
+\end_inset
+
+ based on the broadening of its spectra function through the interactions
+ with the hadronic medium.
+ Both of the two models can reproduce the low mass excess observed in our
+ date reasonably will in all 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ and centrality region.
+ A power-law fit to the excess yield in 
+\begin_inset Formula $\rho$
+\end_inset
+
+-like region vs.
+ 
+\begin_inset Formula $N_{part}$
+\end_inset
+
+ shows a power of 
+\begin_inset Formula $1.48\pm0.11$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+We also reported the measurement of 
+\begin_inset Formula $\omega$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi$
+\end_inset
+
+ meson production through the dielectron decay channel in Au+Au 200 GeV
+ collisions.
+ The measured mass position and the widths of signal distribution are well
+ reproduced by the full GEANT simulation.
+ The measured 
+\begin_inset Formula $\phi$
+\end_inset
+
+ invariant spectrum through the dielectron decay channel is consistent with
+ the previous measurement through hadron (
+\begin_inset Formula $K^{+}K^{-}$
+\end_inset
+
+) decay channel.
+\begin_inset Formula $ $
+\end_inset
+
+ The 
+\begin_inset Formula $\omega$
+\end_inset
+
+ spectrum can also be well reproduced by the Tsallis Blast-Wave model prediction
+ which uses the same set of parameters from the simultaneous fit to all
+ available light hadrons measurements.
+\end_layout
+
+\begin_layout Standard
+In the intermedia mass region (1.1~3 GeV/
+\begin_inset Formula $c^{2}$
+\end_inset
+
+), our understanding of the dielectron production is limited both statistically
+ and systematically.
+ We have little control on contributions from the correlated charm decays
+ which is dominant dielectron source in this mass region.
+ The data in minimum bias collisions can be well reproduced by the 
+\begin_inset Formula $N_{bin}$
+\end_inset
+
+ scaled p+p contribution from PYTHIA calculation.
+ However, when comparing the mass spectra between minimum bias and the central
+ collisions, the data shows a difference about 1.5
+\begin_inset Formula $\sigma$
+\end_inset
+
+ in slopes of exponential fit in mass region 1~3 GeV/
+\begin_inset Formula $c^{2}$
+\end_inset
+
+.
+ This could be an indication of the possible modification of the correlated
+ charm contribution or other contributing source from the medium in Au+Au
+ collision.
+ Due to the same reason, currently the data don't allow to disentangle the
+ contributions from thermal radiation and correlated charm decay in 
+\begin_inset Formula $m_{T}$
+\end_inset
+
+ slope measurement.
 \end_layout
 
 \end_body

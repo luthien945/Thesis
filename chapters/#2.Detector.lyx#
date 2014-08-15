@@ -1991,8 +1991,8 @@ STAR trigger system
 \end_layout
 
 \begin_layout Standard
-In STAR, the collision rate for Au+Au events is about 50kHz and for high
- luminosity p+p collision, this rate can reach up to 4MHz which is close
+At STAR, the collision rate for Au+Au events is about 50 kHz, and for high
+ luminosity p+p collisions, this rate can reach up to 4MHz which is close
  to the magnitude of the RHIC bunch crossing rate (10MHz).
  However, the STAR DAQ system can only operate at a rate below 1800Hz which
  is more than 3 magnitudes lower than the collision rate.
@@ -2093,9 +2093,135 @@ High Level Trigger/L4 system
 \end_layout
 
 \begin_layout Standard
-There used to be a Level 3 trigger system base on online tracking and analysis.
- It was abandoned since it could not catch up with STAR's DAQ system upgrade.
- Now it has been replaced by a High Level Trigger (HLT) system.
+The High Level Trigger (HLT) system replaced the old Level 3 trigger system
+ which was abandoned since it could not catch up with STAR's DAQ system
+ upgrade.
+ Similar with the old Level 3 trigger system, HLT is trigger system base
+ on online tracking and analysis.
+ In Sec 2.2.4, we introduced the multi-level trigger system based on fast
+ hardwares with simple trigger algorithms.
+ It rejects most of the background events and reduce the event rate down
+ to a level under STAR DAQ system limitation.
+ At this points, for events selected by this trigger system, signals from
+ all detectors are digitized and passed to STAR DAQ system for further processin
+g.
+ The HLT system is implemented after that.
+ Similar as the offline event reconstruction process, it collects informations
+ of subsystems from DAQ system, reconstructs events in real time, then it
+ issues a trigger decision base on real time PID and analyze.
+ It will select events with great physics interest, such as heavy fragmentation,
+ di-electrons, exotics and UPC collisions.
+\end_layout
+
+\begin_layout Standard
+The prototype of STAR HLT was tested in 2009 and implied in 2010.
+ It worked as a tag system which tags events that pass through certain analyze
+ algorithm.
+ During the RHIC Beam Energy Scan (BES) program, it was used as an event
+ monitor.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:HLT_old"
+
+\end_inset
+
+ shows the architecture of the HLT system used during year 2009~2012.
+ It consists of two sub level, the Sector Level 3 (SL3) and the Global Level
+ three (GL3).
+ SL3 shares half of the computing power on 24 TPX computers, where cluster
+ finding and track reconstruction are performed, sector by sector.
+ After that, tracks from all sectors as well as informations from other
+ subsystem are sent to GL3 machines, where they are assembled and analyzed
+ to make a real time event selection.
+ Currently, BEMC and TOF are included in HLT.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Users/luthien/Documents/Thesis/GitServer/Thesis/fig/2.Detector/HLT_old.png
+	lyxscale 50
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Architecture of the STAR high-level trigger.
+ Solid lines connect the currently used subsystems and dashed lines connect
+ subsystems that will be included in the future.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:HLT_old"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To keep up with the speed of DAQ system, a few techniques and approach have
+ been implemented in HLT to increasing the processing speed.
+ We introduced the TPC hit map to combined the calculation and correction
+ for TPC hits in one step.
+ It contains a grid map divided by all 24 sectors, all 45 pad rows, one
+ for every 30 pads and one for every 40 time bucket.
+ Points on the grid contains all the corrections the same as offline reconstruct
+ion.
+ Points between grids are calculated as weighted average of adjacent grids.
+ With the TPC hit map, the CPU time of hits reconstruction is reduced from
+ ~ 1 s per event to ~20 ms per event.
+ Tracking reconstruction in HLT is done sector by sector in parallel, so
+ 24 times of speed-up is naturally achieved.
+ The STAR HLT tracker is based on conformal mapping (cite) and a follow-your-nos
+e approach on finding next-hit-on-track.
+ These approaches greatly reduces the track time with little loss on efficiency
+ and track resolution (at 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+>1 GeV/c efficiency w.r.t offline is 90% and momentum difference w.r.t offline
+ is less than 2%).
+ The TOF and BEMC calibration tables for HLT was made following the same
+ procedure as offline.
+ The EMC pedestal and gain table are the same as the one used by STAR's
+ lower level triggers.
+ The TPC 
+\emph on
+dE/dx 
+\emph default
+calibration is made by adjusting the 
+\emph on
+dE/dx 
+\emph default
+gain obtained from the previous run, for inner and outer sector separately.
+ The calibration for TPC hit positions are folded into the TPC hit map
 \end_layout
 
 \begin_layout Section

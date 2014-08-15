@@ -289,7 +289,7 @@ local layouts 中定义 一些格式（标题，作者，院系等)，
 \end_layout
 
 \begin_layout Title
-论文模板
+相对论重离子碰撞实验中双电子的产生
 \begin_inset Note Note
 status collapsed
 
@@ -303,11 +303,11 @@ status collapsed
 \end_layout
 
 \begin_layout EnglishTitle
-USTC Thesis 
-\begin_inset Newline newline
+Dielectron production in 
+\begin_inset Formula $\sqrt{s}$
 \end_inset
 
-Template
+ = 200 GeV p+p and Au+Au collisions at RHIC 
 \begin_inset Note Note
 status collapsed
 
@@ -349,7 +349,7 @@ status collapsed
 \end_layout
 
 \begin_layout 院系
-院系
+近代物理系(4系)
 \begin_inset Note Note
 status collapsed
 
@@ -363,7 +363,7 @@ status collapsed
 \end_layout
 
 \begin_layout 专业
-专业 
+粒子物理与核物理 
 \begin_inset Note Note
 status collapsed
 

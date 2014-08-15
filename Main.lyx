@@ -278,7 +278,7 @@ status open
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "Ref"
+bibfiles "MyRef"
 options "ustcbib"
 
 \end_inset

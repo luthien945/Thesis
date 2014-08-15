@@ -4277,7 +4277,7 @@ reference "fig:eff acc"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4310,10 +4310,6 @@ name "fig:eff acc"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 

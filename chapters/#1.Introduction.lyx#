@@ -748,9 +748,8 @@ The conservation of chiral symmetry leads to a direct deduction that the
 
  MeV).
  This can not be explained by the slight symmetry breaking due to the finite
- current quark masses, which should lead to a mass difference much smaller
- than the particle mass.
- However, the mass difference between 
+ current quark masses, because this should lead to a mass difference much
+ smaller than the particle mass, however, the mass difference between 
 \begin_inset Formula $\rho$
 \end_inset
 
@@ -927,12 +926,8 @@ name "fig:sbsc"
 
 \end_layout
 
-\begin_layout Subsection
-Deconfinement and QGP
-\end_layout
+\begin_layout Standard
 
-\begin_layout Subsection
-Restoration of the chiral symmetry
 \end_layout
 
 \begin_layout Section
