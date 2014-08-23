@@ -2017,6 +2017,16 @@ reference "fig:eeRCP"
 
 ) and are plotted in the upper panel, and the ratio between them is plotted
  in the bottom panel.
+ In the upper plot, charm contribution based on difference assumption on
+ the correlations are also include as two dash lines.
+ The dashed line depicts the correlated charm from PYTHIA, while the dot-dashed
+ line assumes a fully randomized azimuthal correlation between charm pairs
+ and the 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ suppression factor on single electron spectrum from RHIC measurement is
+ also included (cite).
  The measured ratio starts from unity in the 
 \begin_inset Formula $\pi^{0}$
 \end_inset
@@ -2111,14 +2121,6 @@ status collapsed
 
 ).
  The solid line represents the hadronic cocktail for central collisions.
- The dashed line depicts the correlated charm from PYTHIA, while the dot-dashed
- line assumes a fully randomized azimuthal correlation between charm pairs
- and the 
-\begin_inset Formula $p_{T}$
-\end_inset
-
- suppression factor on single electron spectrum from RHIC is also included
- (cite).
  (b) The ratio of 
 \begin_inset Formula $N_{part}$
 \end_inset
@@ -2149,6 +2151,62 @@ name "fig:eeRCP"
 \end_layout
 
 \begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:deltaPhi"
+
+\end_inset
+
+ shows the dielectron azimuthal correlation distributions in IMR from p+p
+ and Au+Au minimum bias collision at 200 GeV.
+ The lines depict the PYTHIA simulation based on three different assumptions
+ of correlation between charm pair:
+\end_layout
+
+\begin_layout Enumerate
+Correlated 
+\begin_inset Formula $c\bar{c}$
+\end_inset
+
+, which is the default set used in the cocktail simulation.
+ The correlation between 
+\begin_inset Formula $c\bar{c}$
+\end_inset
+
+ pairs is similar as p+p collisions.
+\end_layout
+
+\begin_layout Enumerate
+Decorrelated 
+\begin_inset Formula $\Delta\phi$
+\end_inset
+
+, only the azimuthal correlation between daughter electrons and positrons
+ are broken which corresponds the case that there is no azimuthal correlation
+ between the parent 
+\begin_inset Formula $c\bar{c}$
+\end_inset
+
+ pairs.
+\end_layout
+
+\begin_layout Enumerate
+Random 
+\begin_inset Formula $e\bar{e}$
+\end_inset
+
+, the correlation between daughters are broken completely.
+ 
+\end_layout
+
+\begin_layout Standard
+Current measurements can be distinguished by different PYTHIA simulations
+ due to large statistical uncertainties.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
@@ -2170,8 +2228,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Dielectron azimuthal correlation distributions from p+p and Au+Au minimum
- bias collision at 200 GeV.
+Dielectron azimuthal correlation distributions in IMR from p+p and Au+Au
+ minimum bias collision at 200 GeV.
  The lines are from PYTHIA simulation with different assumption of the correlati
 ons of the 
 \begin_inset Formula $c\bar{c}$

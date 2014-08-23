@@ -1,0 +1,37 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.5.8)  23 AUG 2014 16:12
+entering extended mode
+ \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**MyRef.bib
+(./MyRef.bib
+LaTeX2e <2011/06/27>
+Babel <3.9k> and hyphenation patterns for 78 languages loaded.
+
+./MyRef.bib:12: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 @
+      article{PhysRevC.79.015202,
+? 
+./MyRef.bib:12: Emergency stop.
+ ...                                              
+                                                  
+l.12 @
+      article{PhysRevC.79.015202,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+ 
+Here is how much of TeX's memory you used:
+ 7 strings out of 493308
+ 255 string characters out of 6137817
+ 52434 words of memory out of 5000000
+ 3564 multiletter control sequences out of 15000+600000
+ 3640 words of font info for 14 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 5i,0n,4p,71b,14s stack positions out of 5000i,500n,10000p,200000b,80000s
+./MyRef.bib:12:  ==> Fatal error occurred, no output PDF file produced!

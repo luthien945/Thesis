@@ -50,7 +50,7 @@ NoStyle	Thanks
 NoStyle	Bibliography
 NoStyle	ChapterSpecial
 \end_local_layout
-\language english
+\language chinese-simplified
 \language_package babel
 \inputencoding gbk
 \fontencoding global
@@ -144,7 +144,7 @@ NoStyle	ChapterSpecial
 status open
 
 \begin_layout Plain Layout
-双轻子， 
+中国科学技术大学,学位论文，
 \begin_inset ERT
 status open
 
@@ -177,7 +177,7 @@ The mission of an ultra relativistic heavy ion program is to study QCD matter
  at finite temperature and density in the laboratory.
  Probes explored in experiments are mostly hadrons which have been used
  to demonstrate the formation of a strongly-coupled Quark Gluon Plasma (sQGP)
- in high energy heavy ion collision at RHIC and LHC.
+ in high enery heavy ion collision at RHIC and LHC.
  Dileptons as an electromagnetic probe, escape the interacting system without
  suffering further strong interactions after production.
  In additional, dilepton can be produced on the various stages of entire
@@ -188,96 +188,21 @@ The mission of an ultra relativistic heavy ion program is to study QCD matter
 \end_layout
 
 \begin_layout EnglishAbstract
-Traditionally, due to different physics of interest, dielectron kinematic
- phase space is divided into 3 mass regions.
- In the Low Mass Region - LMR (
+Tranditionally, due to different physics of interest, dielectron kinematic
+ phase space is divided into: the Low Mass Region - LMR (
 \begin_inset Formula $M_{ll}<M_{\phi}$
 \end_inset
 
-), dileptons are produced via multiple hadron-hadron scattering by coupling
- to vector mesons.
- In the Intermediate Mass Region - IMR (
-\begin_inset Formula $M_{\phi}<M_{ll}<M_{J/\psi}$
-\end_inset
-
-), dilepton production are dominated by contributions from the thermal radiation
- and contributions from semilepton decay of the correlated charmed meson.
- Drell-Yan process and the decay heavy quarkonia contribute mainly for the
- dilepton source in the High mass Region - HMR (
-\begin_inset Formula $M_{ll}>M_{J/\psi}$
-\end_inset
-
-).
-\end_layout
-
-\begin_layout EnglishAbstract
-In this thesis, I will report the measurement on dielectron production in
- p+p and Au+Au collisions at 
-\begin_inset Formula $\sqrt{s}$
-\end_inset
-
- = 200 GeV for the STAR experiment.
- The larger data set collected during year 2010~2012, as well as the complicatio
-n of barrel Time-Of-Flight (TOF) installation in year 2010, provides electron/po
-sition samples with high statistics and purity which makes it possible for
- dielectron measurement at the STAR experiment.
- The dielectron results from 200 GeV p+p collision has greatly improved
- (~7 times more) statistics comparing to the previous published result from
- STAR 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "PhysRevC.86.024906"
-
-\end_inset
-
-.
- The results from Au+Au collision at 
-\begin_inset Formula $\sqrt{s_{NN}}$
-\end_inset
-
- = 200 GeV are compared with hadronic decay cocktail and model calculations.
- We observed an enhancement factor of 
-\lang american
-
-\begin_inset Formula $1.66\pm0.06(stat.)\pm0.24(sys.)\pm0.41(cocktail)$
-\end_inset
-
-
-\lang english
- in mass region 0.3~0.76 GeV/
-\begin_inset Formula $c^{2}$
-\end_inset
-
- when comparing to the hadronic cocktail without 
-\begin_inset Formula $\rho$
-\end_inset
-
- contribution.
- The enhancement is smaller than the PHENIX results.
- The model calculation based on in-medium broadening of 
-\begin_inset Formula $\rho$
-\end_inset
-
- spectra function can reproduce the enhancement.
- I will also report the study of possible modification of the correlated
- charm and the measurements of 
-\begin_inset Formula $\omega$
-\end_inset
-
- and 
-\begin_inset Formula $\phi$
-\end_inset
-
- production though their dielectron decay channel.
- 
+), dileptons are produced via multiple hadron-hadron scattering by couplint
+ to vector mesons
 \end_layout
 
 \begin_layout EnglishAbstract
 \begin_inset Flex eKeywords
-status collapsed
+status open
 
 \begin_layout Plain Layout
-Dilepton，vector meson, 
+Dilepton
 \end_layout
 
 \begin_layout Plain Layout
@@ -371,7 +296,7 @@ hspace{1em}图}%加入目录
 
 \begin_layout Standard
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset FloatList algorithm

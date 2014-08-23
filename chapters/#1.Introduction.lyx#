@@ -491,11 +491,7 @@ The world average result of
 
  where QCD becomes strongly coupled.
  People introduced Lattice QCD to calculated QCD in this case.
- This lead to another feature of QCD: confinement, which means the force
- between quarks increasing as they are being separated.
- When the energy is high enough, another quark pair is created.
- Thus the quarks are bound into hadrons which lead to the consistent failure
- of free quark searches.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -746,10 +742,11 @@ The conservation of chiral symmetry leads to a direct deduction that the
 \begin_inset Formula $m_{a_{1}}=1260$
 \end_inset
 
- MeV).
- This can not be explained by the slight symmetry breaking due to the finite
- current quark masses, because this should lead to a mass difference much
- smaller than the particle mass, however, the mass difference between 
+ MeV) which should be degenerate if the chiral symmetry is conserved.
+ In additional, this can not be explained by the slight symmetry breaking
+ due to the finite current quark masses, which should lead to a mass difference
+ much smaller than the particle mass.
+ However, the mass difference between 
 \begin_inset Formula $\rho$
 \end_inset
 
@@ -775,7 +772,7 @@ and
 \begin_inset Formula $f_{\pi}$
 \end_inset
 
- is a constant ~ 93 MeV determined from experiment.
+ is a constant ~ 93 MeV which measures the strength of the symmetry breaking.
  If we take the divergence of eq.
  
 \begin_inset CommandInset ref
@@ -792,8 +789,9 @@ reference "eq:pi_wd"
 
 \end_inset
 
-Comparing to the hadronic scales, the pion mass is vanishing, thus the axial
- current is approximately conserved.
+, comparing to the hadronic scales, the pion mass is vanishing, thus the
+ axial current is approximately conserved which supports for the conservation
+ of chiral symmetry.
  
 \end_layout
 
@@ -818,36 +816,48 @@ reference "fig:sbsc"
  If we chosen as one direction as the ground state, the axial rotation symmetry
  is obviously spontaneously broken, since the Lagrangian is invariant but
  the vacuum is not.
- According to the Goldstone theorem (cite), the spontaneous breaking of
- chiral symmetry of QCD leads to the existence of eight massless Goldstone
- bosons (
-\begin_inset Formula $\pi^{\pm}$
+ 
+\end_layout
+
+\begin_layout Standard
+The QCD vacuum of quark-antiquark condensate 
+\begin_inset Formula $\left\langle 0\left|\bar{q}q\right|0\right\rangle $
 \end_inset
 
-, 
-\begin_inset Formula $\pi^{0}$
+ can be related to 
+\begin_inset Formula $f_{\pi}$
 \end_inset
 
-, 
-\begin_inset Formula $K^{\pm}$
+ by the Gell-Mann-Oakes-Renner relation (GOR):
+\begin_inset Formula 
+\begin{equation}
+m_{\pi}^{2}f_{\pi}^{2}=-2\bar{m}\left\langle 0\left|\bar{q}q\right|0\right\rangle 
+\end{equation}
+
 \end_inset
 
-, 
-\begin_inset Formula $K^{0}$
+where 
+\begin_inset Formula $\bar{m}$
 \end_inset
 
-, 
-\begin_inset Formula $\bar{K^{0}}$
+ is the average mass of up and down quarks.
+ If taking 
+\begin_inset Formula $\bar{m}$
 \end_inset
 
-, and 
-\begin_inset Formula $\eta$
+ = 6 MeV, then the vacuum of quark antiquark condensate is about 
+\begin_inset Formula $\left\langle 0\left|\bar{q}q\right|0\right\rangle \approx(-250MeV)^{3}$
 \end_inset
 
- ), which correspond the invariant of the field under axial-vector rotations.
- And the massive particles correspond the excitations alone the radial direction.
+.
+ The non-zero vacuum spontaneously breaks the chiral symmetry of QCD.
+ Since chiral symmetry is a global symmetry, its spontaneous breaking must
+ be accompanied by (almost) massless Goldstone bosons.
+ In case of two quark flavors, the three charge states of the pion servers
+ as the Goldstone bosons, with a mass (about 140 MeV) which is much smaller
+ comparing to all the other hadrons.
  The assumption of spontaneously broken axial-vector symmetry also explains
- the mass difference between 
+ the large mass splitting between 
 \begin_inset Formula $\rho$
 \end_inset
 
@@ -867,7 +877,7 @@ key "PhysRevLett.18.507"
 
 \end_inset
 
- which is in good agreement with the measured masses.
+.
 \end_layout
 
 \begin_layout Standard
@@ -926,21 +936,317 @@ name "fig:sbsc"
 
 \end_layout
 
-\begin_layout Standard
-
-\end_layout
-
-\begin_layout Section
-Relativistic heavy ion collision
+\begin_layout Subsection
+Deconfinement and QGP
 \end_layout
 
 \begin_layout Standard
-Relativistic heavy ion collisions are excellent tools to study the strongly
- interacting matter creating 
+Another important feature of QCD is confinement which lead to the absence
+ of direct observation of isolated quarks and gluons in the experiment.
+ The confinement is because gluons who carry the force have color charge
+ and thus can interact with itself.
+ Due to the property of the running QCD coupling constant 
+\begin_inset Formula $\alpha_{s}$
+\end_inset
+
+, when two quarks are separated from each other, the force between them
+ grows stronger as the distance increasing.
+ When the energy is enough, a new quark/anti-quark pair is created from
+ the vacuum.
+ As result of this, the quarks and gluons are confined inside hadrons, and
+ when quarks is created in high energy experiment, instead of seeing the
+ individual quarks, only cluster of color neutral hadrons are observed.
+ This process is called hadronization.
+ On the other hand, when the system is at extreme temperature or high energy
+ density, such like the universe in a few microsecond after the 
+\begin_inset Quotes eld
+\end_inset
+
+Big Bang
+\begin_inset Quotes erd
+\end_inset
+
+, due to the asymptotic freedom, the interaction between partons (quarks/anti-qu
+arks and gluons) is very weak and the partons can travel over larger distances
+ of the size of a nucleon (~1 fm).
+ The quarks and gluons are deconfined and form a thermalized state known
+ as Quark-Gluon Plasma (QGP) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevLett.34.1353"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The lattice QCD calculations expect a phase transition from the hadronic
+ phase into the QGP phase.
+ The
+\emph on
+ Polyakov loop operator,
+\begin_inset Formula 
+\begin{equation}
+L=\frac{1}{3}{\rm tr}\left(\mathcal{P}e^{ig\intop_{0}^{\beta}A_{4}(x,\tau)d\tau}\right)
+\end{equation}
+
+\end_inset
+
+
+\emph default
+is believed as a observable for the phase transition.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ptxs"
+
+\end_inset
+
+ left shows the Polyakov loop operator expectation value 
+\begin_inset Formula $\left\langle L\right\rangle $
+\end_inset
+
+ and its temperature derivative as a function of the lattice coupling 
+\begin_inset Formula $\beta=6/g^{2}$
+\end_inset
+
+.
+ At small temperature, a vanishing thermal expectation value 
+\begin_inset Formula $\left\langle L\right\rangle $
+\end_inset
+
+ of Polyakov loop operator indicates infinite energy for a free quark, or
+ in another word, quark is confined.
+ At high temperature, 
+\begin_inset Formula $\left\langle L\right\rangle $
+\end_inset
+
+ increase rapidly to a nonzero value, its derivative shows a sharp peak
+ at a critical coupling 
+\begin_inset Formula $\beta_{cr}$
+\end_inset
+
+.
+ This indicates that quark is deconfined at the corresponding critical temperatu
+re 
+\begin_inset Formula $T_{cr}$
+\end_inset
+
+.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Phase_diagram"
+
+\end_inset
+
+ shows the phase diagram of strongly interacting matter in temperature vs.
+ baryon chemical potential plane (
+\begin_inset Formula $T$
+\end_inset
+
+, 
+\begin_inset Formula $\mu_{B}$
+\end_inset
+
+).
+ The lattice QCD calculations tell us the phase transition alone the temperature
+ axis (
+\begin_inset Formula $\mu_{B}$
+\end_inset
+
+ = 0), with a crossover transition from hadron resonance gas to a QGP phase
+ at a temperature about 154 MeV.
+ On other hand, QCD based models indicate that the crossover transition
+ ends at a critical point at high 
+\begin_inset Formula $\mu_{B}$
+\end_inset
+
+ and becomes first order transition 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevD.78.074507,PhysRevC.79.015202"
+
+\end_inset
+
+.
+ However, the locations of the phase boundary and the critical point in
+ this framework depend on model assumptions.
+ One of the main aim of high-energy heavy-ion collision experiments is to
+ explore the QCD phase diagram, to locate the position of critical point,
+ and to determine the QCD phase boundary.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/1.Introduction/phase_transition_xsymmtry.png
+	lyxscale 50
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Left panel: the expectation value of Polyakov loop 
+\begin_inset Formula $\left\langle L\right\rangle $
+\end_inset
+
+ and its temperature derivative (Polyakov loop susceptibility 
+\begin_inset Formula $\chi_{L}$
+\end_inset
+
+) as a function of the lattice coupling 
+\begin_inset Formula $\beta=6/g^{2}$
+\end_inset
+
+ which is related to the temperature 
+\begin_inset Formula $T$
+\end_inset
+
+ (larger 
+\begin_inset Formula $\beta$
+\end_inset
+
+ correspond to larger 
+\begin_inset Formula $T$
+\end_inset
+
+).
+ Right panel: the chiral condensate (the scalar quark density) 
+\begin_inset Formula $\left\langle \bar{\psi}\psi\right\rangle $
+\end_inset
+
+ and the negative of its temperature derivative (chiral susceptibility 
+\begin_inset Formula $\chi_{m}$
+\end_inset
+
+) as a function of temperature.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevD.50.6954,Heinz:fk"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ptxs"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/1.Introduction/QCD_Phase_diagram.png
+	lyxscale 50
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+A conjectured QCD phase diagram with boundaries that define various states
+ of QCD matter.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "STAR-Collaboration:2014qf"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Phase_diagram"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Restoration of the chiral symmetry
 \end_layout
 
 \begin_layout Section
 Dielectron production in high energy heavy ion collisions
+\end_layout
+
+\begin_layout Standard
+The heavy ion collision is believed to be the best way to study properties
+ of QCD matter in laboratory.
+ Since 1970's, world wide effort has been put into this region.
+ Several large-scale experiments have been conducted.
+ Relativistic heavy ion collider (RHIC) built in Brookhaven National Laboratory
+ is the first accelerator-collider dedicated to heavy ion collisions.
+ 
+\end_layout
+
+\begin_layout Standard
+Probes explored in experiments are mostly hadrons which have been used to
+ demonstrate the formation of a strongly-coupled Quark Gluon Plasma (sQGP)
+ in high energy heavy ion collision at RHIC and LHC.
+ Dileptons as an electromagnetic probe, escape the interacting system without
+ suffering further strong interactions after production.
+ In additional, dilepton can be produced on the various stages of entire
+ system evolution.
+ They are therefore expected to be an outstanding probes to study the property
+ of the medium created in high energy heavy ion collisions.
+ 
 \end_layout
 
 \begin_layout Section

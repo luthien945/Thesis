@@ -2221,11 +2221,71 @@ calibration is made by adjusting the
 dE/dx 
 \emph default
 gain obtained from the previous run, for inner and outer sector separately.
- The calibration for TPC hit positions are folded into the TPC hit map
+ The calibration for TPC hit positions are folded into the TPC hit map based
+ on offline calibration tables.
+\end_layout
+
+\begin_layout Standard
+During year from 2010 to 2012, the STAR HLT has delivered several important
+ physics results by selecting events containing heavy fragments, di-electrons
+ and high 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ tracks.
+ It played a very important role in the finding 
+\begin_inset Formula $\bar{^{4}He}$
+\end_inset
+
+ in 
+\begin_inset Formula $\sqrt{s_{NN}}$
+\end_inset
+
+ = 200 GeV Au+Au collisions by triggering on events containing charge-2
+ particles.
+ This discovery has been published in 
+\emph on
+Nature (cite).
 \end_layout
 
 \begin_layout Section
 Future upgrade
+\end_layout
+
+\begin_layout Standard
+In 2014, two new detectors was added into the STAR detector system.
+ Installed in the most outside of STAR is the Muon Telescope Detector (MTD),
+ which is a 
+\begin_inset Formula $\mu$
+\end_inset
+
+ detector.
+ MTD is based on long-MRPC technology, covers 45% acceptance (
+\begin_inset Formula $|\eta|<0.5$
+\end_inset
+
+) in 
+\begin_inset Formula $\eta$
+\end_inset
+
+ direction and 
+\begin_inset Formula $2\pi$
+\end_inset
+
+ in azimuthal direction.
+ It uses the BEMC and the magnet steel as the absorber of electrons and
+ hadrons.
+ The first prototype was installed in STAR in year 2007, and showed good
+ performance in the following runs.
+ In 2014, MTD has been fully installed and significant data set was taken
+ with it.
+ Another detector installed in 2014 is Heavy Flavor Tracker (HFT).
+ The HFT is an inner vertex detector which was installed between the beam
+ pipe and TPC.
+ It consists of two layers of pixels located at mean radius of 1.5 cm and
+ 5 cm from the center of beam pipe and the Silicon Strip Detectors (SSD)
+ to fill the gap between the innermost pixel detector and the TPC.
+ 
 \end_layout
 
 \end_body
