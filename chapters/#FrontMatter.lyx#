@@ -50,7 +50,7 @@ NoStyle	Thanks
 NoStyle	Bibliography
 NoStyle	ChapterSpecial
 \end_local_layout
-\language chinese-simplified
+\language english
 \language_package babel
 \inputencoding gbk
 \fontencoding global
@@ -136,28 +136,74 @@ NoStyle	ChapterSpecial
 \end_layout
 
 \begin_layout Abstract
-中国科学技术大学的博士/硕士论文模板
+相对论重离子碰撞实验的主要目的是研究有限温度和密度下QCD物质的性质。近年来，RHIC和LHC的实验通过对末态强子的测量结果表明，在高能重离子碰撞中形成了一种新
+的物质形态——强耦合的夸克胶子等离子体（sQGP)。双轻子作为一种电磁探针，由于其不参与强相互作用，因此在产生之后，它们能不受影响的穿过高能重离子碰撞形成的介质
+。同时，双轻子能够在系统演化的各个阶段产生，使它们成为研究高能重离子碰撞中产生的介质性质的优秀探针。
+\end_layout
+
+\begin_layout Abstract
+由于关注的物理不同，双轻子的动力学相空间一般被分为3个不变质量质量区间。低质量区间（
+\begin_inset Formula $M_{ll}<M_{\phi}$
+\end_inset
+
+），双轻子的产生主要来源于介子在强子介质中的多次散射。在中间质量区间（
+\begin_inset Formula $M_{\phi}<M_{ll}<M_{J/\psi}$
+\end_inset
+
+），双轻子的主要来源于QGP物质的热辐射，以及重味夸克介子的半轻子衰变。在高质量区间（
+\begin_inset Formula $M_{ll}>M_{J/\psi}$
+\end_inset
+
+），双轻子主要来源于Drell-Yan过程和重味夸克偶素的衰变。
+\end_layout
+
+\begin_layout Abstract
+本文主要讨论STAR实验组在
+\begin_inset Formula $\sqrt{s}$
+\end_inset
+
+ = 200 GeV下得质子质子对撞和金金对撞中对双电子产生的测量。STAR实验在2010至2012年间积累了大量的实验数据，同时桶部飞行时间探测器（TOF）的
+安装完成大大增强了STAR探测器鉴别电子（正电子）的能力，使得在STAR实验中测量双轻子成为可能。通过分析2012年采集数据的到的双电子质量普极大地提高了质子质
+子对撞中双轻子不变质量谱的精度（与STAR实验之前的测量
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevC.86.024906"
+
+\end_inset
+
+比较，统计量提高了7倍左右）。通过在200GeV金金碰撞中双轻子不变质量谱与强子衰变模拟和模型计算的比较，我们发现，在质量区间0.3~0.76 GeV/
+\begin_inset Formula $c^{2}$
+\end_inset
+
+ 中，双轻子的产生相对于不包含
+\begin_inset Formula $\rho$
+\end_inset
+
+介子贡献的强子衰变模拟结果有 
+\begin_inset Formula $1.66\text{\pm0.06(stat.)\pm0.24(sys.)\pm0.41(cocktail)}$
+\end_inset
+
+ 倍的增强。这个增强因子比PHENIX实验观测到的结果要小。基于
+\begin_inset Formula $\rho$
+\end_inset
+
+介子在介质中质量谱展宽的模型计算可以很好的解释我们观测到的增强。同时本文也会讨论可能存在的相关量重味夸克在介质中的修正效应和对
+\begin_inset Formula $\omega$
+\end_inset
+
+  
+\begin_inset Formula $\phi$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Abstract
 \begin_inset Flex Keywords
-status open
+status collapsed
 
 \begin_layout Plain Layout
-中国科学技术大学,学位论文，
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-LaTeX{}~
-\end_layout
-
-\end_inset
-
-模板
+双轻子，
 \end_layout
 
 \end_inset
@@ -177,7 +223,7 @@ The mission of an ultra relativistic heavy ion program is to study QCD matter
  at finite temperature and density in the laboratory.
  Probes explored in experiments are mostly hadrons which have been used
  to demonstrate the formation of a strongly-coupled Quark Gluon Plasma (sQGP)
- in high enery heavy ion collision at RHIC and LHC.
+ in high energy heavy ion collision at RHIC and LHC.
  Dileptons as an electromagnetic probe, escape the interacting system without
  suffering further strong interactions after production.
  In additional, dilepton can be produced on the various stages of entire
@@ -188,13 +234,88 @@ The mission of an ultra relativistic heavy ion program is to study QCD matter
 \end_layout
 
 \begin_layout EnglishAbstract
-Tranditionally, due to different physics of interest, dielectron kinematic
- phase space is divided into: the Low Mass Region - LMR (
+Traditionally, due to different physics of interest, dielectron kinematic
+ phase space is divided into 3 mass regions.
+ In the Low Mass Region - LMR (
 \begin_inset Formula $M_{ll}<M_{\phi}$
 \end_inset
 
-), dileptons are produced via multiple hadron-hadron scattering by couplint
- to vector mesons
+), dileptons are produced via multiple hadron-hadron scattering by coupling
+ to vector mesons.
+ In the Intermediate Mass Region - IMR (
+\begin_inset Formula $M_{\phi}<M_{ll}<M_{J/\psi}$
+\end_inset
+
+), dilepton production are dominated by contributions from the thermal radiation
+ and contributions from semilepton decay of the correlated charmed meson.
+ Drell-Yan process and the decay heavy quarkonia contribute mainly for the
+ dilepton source in the High mass Region - HMR (
+\begin_inset Formula $M_{ll}>M_{J/\psi}$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout EnglishAbstract
+In this thesis, I will report the measurement on dielectron production in
+ p+p and Au+Au collisions at 
+\begin_inset Formula $\sqrt{s}$
+\end_inset
+
+ = 200 GeV for the STAR experiment.
+ The larger data set collected during year 2010~2012, as well as the complicatio
+n of barrel Time-Of-Flight (TOF) installation in year 2010, provides electron/po
+sition samples with high statistics and purity which makes it possible for
+ dielectron measurement at the STAR experiment.
+ The dielectron results from 200 GeV p+p collision has greatly improved
+ (~7 times more) statistics comparing to the previous published result from
+ STAR 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevC.86.024906"
+
+\end_inset
+
+.
+ The results from Au+Au collision at 
+\begin_inset Formula $\sqrt{s_{NN}}$
+\end_inset
+
+ = 200 GeV are compared with hadronic decay cocktail and model calculations.
+ We observed an enhancement factor of 
+\lang american
+
+\begin_inset Formula $1.66\pm0.06(stat.)\pm0.24(sys.)\pm0.41(cocktail)$
+\end_inset
+
+
+\lang english
+ in mass region 0.3~0.76 GeV/
+\begin_inset Formula $c^{2}$
+\end_inset
+
+ when comparing to the hadronic cocktail without 
+\begin_inset Formula $\rho$
+\end_inset
+
+ contribution.
+ The enhancement is smaller than the PHENIX results.
+ The model calculation based on in-medium broadening of 
+\begin_inset Formula $\rho$
+\end_inset
+
+ spectra function can reproduce the enhancement.
+ I will also report the study of possible modification of the correlated
+ charm and the measurements of 
+\begin_inset Formula $\omega$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi$
+\end_inset
+
+ production though their dielectron decay channel.
+ 
 \end_layout
 
 \begin_layout EnglishAbstract
@@ -202,23 +323,7 @@ Tranditionally, due to different physics of interest, dielectron kinematic
 status open
 
 \begin_layout Plain Layout
-Dilepton
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
- 
-\backslash
-LaTeX{} Template
-\end_layout
-
-\end_inset
-
-
+Dilepton，vector meson, 
 \end_layout
 
 \end_inset
@@ -296,7 +401,7 @@ hspace{1em}图}%加入目录
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset FloatList algorithm

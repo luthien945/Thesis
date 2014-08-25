@@ -849,13 +849,13 @@ where
 \begin_inset Formula $\left\langle 0\left|\bar{q}q\right|0\right\rangle \approx(-250MeV)^{3}$
 \end_inset
 
-.
+ per light flavor.
  The non-zero vacuum spontaneously breaks the chiral symmetry of QCD.
  Since chiral symmetry is a global symmetry, its spontaneous breaking must
  be accompanied by (almost) massless Goldstone bosons.
- In case of two quark flavors, the three charge states of the pion servers
- as the Goldstone bosons, with a mass (about 140 MeV) which is much smaller
- comparing to all the other hadrons.
+ In case of two light quark flavors, the three charge states of the pion
+ servers as the Goldstone bosons, with a mass (about 140 MeV) which is much
+ smaller comparing to all the other hadrons.
  The assumption of spontaneously broken axial-vector symmetry also explains
  the large mass splitting between 
 \begin_inset Formula $\rho$
@@ -1223,17 +1223,28 @@ Restoration of the chiral symmetry
 \end_layout
 
 \begin_layout Section
-Dielectron production in high energy heavy ion collisions
+Dilepton production in high energy heavy ion collisions
 \end_layout
 
 \begin_layout Standard
 The heavy ion collision is believed to be the best way to study properties
- of QCD matter in laboratory.
- Since 1970's, world wide effort has been dedicated in this region.
+ of QCD matter in laboratory, since increasing the mass number of the incident
+ particles is more efficient than increasing beam energy.
+ During the past 20 years, world wide effort has been dedicated in this
+ region.
  Several large-scale experiments have been conducted.
  Relativistic heavy ion collider (RHIC) built in Brookhaven National Laboratory
  is the first accelerator-collider dedicated to heavy ion collisions.
- 
+ During the first few years of its operation, plenty measurements support
+ the existence of a new matter form: a strongly coupling Quark Gluon Plasma
+ (sQGP).
+ Currently the physics program at RHIC was changing to studying the property
+ of strongly interacting matter created in high energy heavy ion collisions
+ and searching for phase boundary and critical point of the QGP phase diagram.
+ At CERN, the Large Hadron Collider (LHC) also contributes in the heavy
+ ion collisions program.
+ It is pushing the colliding energy up to 5.5 TeV, where the energy density
+ and temperature is much higher than the requirement of QGP formation.
 \end_layout
 
 \begin_layout Standard
@@ -1247,6 +1258,169 @@ Probes explored in experiments are mostly hadrons which have been used to
  They are therefore expected to be an outstanding probes to study the property
  of the medium created in high energy heavy ion collisions.
  
+\end_layout
+
+\begin_layout Standard
+Traditionally, due to different physics of interest, the dilepton kinematic
+ phase space is divided into the Low Mass Region - LMR (
+\begin_inset Formula $M_{ll}<M_{\phi}$
+\end_inset
+
+), the Intermediate Mass Region - IMR (
+\begin_inset Formula $M_{\phi}<M_{ll}<M_{J/\psi}$
+\end_inset
+
+) and the High Mass Region - HMR (
+\begin_inset Formula $M_{ll}>M_{J/\psi}$
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+At the initial stage of the system, the initial hard pQCD process Drell-Yan
+ production (
+\begin_inset Formula $q\bar{q}\rightarrow l^{+}l^{-}$
+\end_inset
+
+) can produce high mass dilepton and is thus expected to dominate in the
+ HMR.
+ Moreover, direct photons form the initial hard scattering can allow for
+ bremsstrahlung emission of soft virtual photons which convert into low
+ mass and high transverse momentum (
+\begin_inset Formula $p_{T}$
+\end_inset
+
+) dielectrons (
+\begin_inset Quotes eld
+\end_inset
+
+internal conversion
+\begin_inset Quotes erd
+\end_inset
+
+).
+ These dilepton, in principle, can be calculated within the pQCD frame.
+\end_layout
+
+\begin_layout Standard
+The system is expected to quickly reach the partonic sQGP phase where dileptons
+ can be produced in thermal radiation via multiple parton-parton scattering.
+ Theoretical calculations suggest that at top RHIC energy, QGP thermal dilepton
+ production will become dominant in the IMR while thermal dileptons with
+ higher masses originate from earlier stages 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevC.63.054907"
+
+\end_inset
+
+.
+ This indicates that investigating the thermal dilepton production in 
+\begin_inset Formula $M_{ll}$
+\end_inset
+
+ & 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ allows for probing the medium properties at different stages of the space-time
+ evolution.
+ Measuring thermal dilepton collective flow and polarization can reveal
+ information about the degrees of freedom of deconfinement and equilibrium
+ of the strongly interacting matter created in heavy ion collisions
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Deng2011581,PhysRevC.75.054909,Shuryak:qy"
+
+\end_inset
+
+.
+ Thermal radiation can produce real photons accompanied by low mass and
+ high 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ dileptons.
+ Study of these dileptons compared to that from initial hard scattering,
+ one can learn the direct real photon production from the thermal QGP medium.
+ 
+\end_layout
+
+\begin_layout Standard
+The system expands, cools and enters into the hadronic phase.
+ Dileptons emitted from the hadronic medium are governed by the coupling
+ of vector mesons (
+\begin_inset Formula $\rho,\:\omega,\:\phi$
+\end_inset
+
+ etc) to the medium via hadron-hadron interaction and are expected to dominate
+ LMR production 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "R.-Rapp:2000uq"
+
+\end_inset
+
+.
+ Their mass spectra are determined by the chiral properties of QCD which
+ is spontaneously broken in vacuum.
+ Theoretical calculations suggest that the vector meson spectral functions
+ will be modified in the hot and dense hadronic medium, which may be connected
+ to the restoration of chiral symmetry.
+ Among them, the 
+\begin_inset Formula $\rho$
+\end_inset
+
+ meson is expected to most modified, due to its short life time ~ 1.3 fm
+ comparing to the lift time of hadronic medium (~ 10 fm) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Pisarski1982155"
+
+\end_inset
+
+.
+ Two scenarios have been proposed for the change of vector meson spectral
+ functions when chiral symmetry is restored: a shift of the pole mass 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Brown1996333"
+
+\end_inset
+
+ and a broadening of the mass spectral function 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Rapp:1999kx"
+
+\end_inset
+
+.
+ Measurements of dielectron continuum in the low mass region will shed light
+ on the vector meson production mechanism, and hence the medium chiral propertie
+s in heavy ion collisions.
+\end_layout
+
+\begin_layout Standard
+Finally, when all particles decouple from the system long-lived 
+\begin_inset Formula $\pi^{0}$
+\end_inset
+
+, 
+\begin_inset Formula $\eta$
+\end_inset
+
+, 
+\begin_inset Formula $D\bar{D}$
+\end_inset
+
+ etc.
+ can decay into lepton pairs and be measured by the detector system.
+ Their contributions can be calculated based on the measured or predicted
+ invariant yields of parent mesons.
+ Usually, their contributions are called hadronic decay cocktail.
 \end_layout
 
 \begin_layout Section
