@@ -1,5 +1,5 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass USTCthesis
@@ -22,11 +22,12 @@ NoStyle	EnglishAbstract
 \end_local_layout
 \language chinese-simplified
 \language_package babel
-\inputencoding GBK
+\inputencoding gbk
 \fontencoding global
 \font_roman default
 \font_sans default
 \font_typewriter default
+\font_math auto
 \font_default_family default
 \use_non_tex_fonts true
 \font_sc false
@@ -34,7 +35,6 @@ NoStyle	EnglishAbstract
 \font_sf_scale 100
 \font_tt_scale 100
 \font_cjk fs
-
 \graphics default
 \default_output_format pdf4
 \output_sync 0
@@ -54,15 +54,24 @@ NoStyle	EnglishAbstract
 \pdf_pdfusetitle false
 \papersize default
 \use_geometry false
-\use_amsmath 2
-\use_esint 2
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 2
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 0
 \index 索引
 \shortcut idx
@@ -87,39 +96,541 @@ NoStyle	EnglishAbstract
 
 \begin_layout Chapter
 \start_of_appendix
-修改记录
-\end_layout
-
-\begin_layout Itemize
-12/28-2012 修正字体选项，出现字体问题时下载Adobefont 安装即可
-\end_layout
-
-\begin_layout Itemize
-04/11-2012 修正最初版本的一些bug；去掉模板中冗余的些命令；整理使用技巧一章
-\end_layout
-
-\begin_layout Chapter
-存在问题
+χ2 test of the model calculation for the Low-Mass dielectron spectra
 \end_layout
 
 \begin_layout Standard
-由于本人精力有限，现在的模板bug还很多，希望有兴趣者积极参改进工作。可以给我发信说明一下索取SVN上传密码：jmcui@mail.ustc.edu.cn
+In order to quantify how different model compare with the measured data
+ in Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:excess-1"
+
+\end_inset
+
+, a χ2 test are performed.
+ but in our measured data, the total uncertainty contain three part: (1)statisti
+cal uncertainty, (2)systematic uncertainty and (3)the cocktail uncertainty.
+ Here the uncertainty(1) are independent for each data point, uncertainty(2)
+ and (3) are correlated for each data point, so we used a new χ2 calculation
+ method 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevC.77.064907"
+
+\end_inset
+
+, which list below: 
+\begin_inset Formula 
+\begin{equation}
+\chi^{2}=\sum_{i=1}^{n}\frac{[y_{i}+\varepsilon_{b}\sigma_{b_{i}}-\mu_{i}(\vec{p})]^{2}}{\widetilde{\sigma}_{i}^{2}}+\varepsilon_{b}^{2}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $y_{i}$
+\end_inset
+
+ is the measured data point, 
+\begin_inset Formula $\sigma_{i}$
+\end_inset
+
+ are independent uncertainty, 
+\begin_inset Formula $\mu_{i}$
+\end_inset
+
+ are the model value.
+ 
+\begin_inset Formula $\sigma_{b_{i}}$
+\end_inset
+
+ are the correlated uncertainty,
+\begin_inset Formula $\varepsilon_{b}$
+\end_inset
+
+ are the fraction variation of the 
+\begin_inset Formula $\sigma_{b_{i}}$
+\end_inset
+
+, and 
+\begin_inset Formula $\widetilde{\sigma}_{i}$
+\end_inset
+
+ is the uncertainty scaled by the multiplicative shift in 
+\begin_inset Formula $y_{i}$
+\end_inset
+
+ such that the fractional uncertainty is unchanged under shifts.
+ In our calculation, the statistical uncertainty are consider as independent
+ for each data point, systematic uncertainty and cocktail uncertainty are
+ consider as the correlated uncertainty, which is defined following:
+\begin_inset Formula 
+\begin{equation}
+\widetilde{\sigma}_{i}=\sigma_{i}(\frac{y_{i}+\varepsilon_{b}\sigma_{b_{i}}}{y_{i}})
+\end{equation}
+
+\end_inset
+
+The scan results are shown in Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:chi2FIt"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:chi2FIt-1"
+
+\end_inset
+
+.
+ The minimum 
+\begin_inset Formula $\chi^{2}$
+\end_inset
+
+ and corresponding 
+\begin_inset Formula $\varepsilon_{b}$
+\end_inset
+
+ are listed in table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "Table:chi-test_excess-1"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-目前主要待改进的问题有，这些需要修改cls模板文件实现：
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/AppentixA/chi2_Fit_Vacuum.gif
+	lyxscale 30
+	width 33text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../fig/AppentixA/chi2_Fit_Broaden.gif
+	lyxscale 30
+	width 33text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../fig/AppentixA/chi2_Fit_PHSD.gif
+	lyxscale 30
+	width 33text%
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Itemize
-章节标题之间的距离还不符合要求，需要细调
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\chi^{2}$
+\end_inset
+
+ vs 
+\begin_inset Formula $\varepsilon_{b}$
+\end_inset
+
+ from vacuum 
+\begin_inset Formula $\rho$
+\end_inset
+
+ (left), in-medium 
+\begin_inset Formula $\rho$
+\end_inset
+
+ (middle), PHID (right) at mass range 0.3−1.0GeV /
+\begin_inset Formula $c^{2}$
+\end_inset
+
+
 \end_layout
 
-\begin_layout Itemize
-页眉标题与页眉横线的距离需要细调
+\end_inset
+
+
 \end_layout
 
-\begin_layout Itemize
-封面的密级没有设置
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:chi2FIt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/AppentixA/chi2_Fit_Vacuum2.gif
+	lyxscale 30
+	width 33text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /Users/luthien/Documents/Thesis/GitServer/Thesis/fig/AppentixA/chi2_Fit_Broaden2.gif
+	lyxscale 30
+	width 33text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../fig/AppentixA/chi2_Fit_PHSD2.gif
+	lyxscale 30
+	width 33text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\chi^{2}$
+\end_inset
+
+ vs 
+\begin_inset Formula $\varepsilon_{b}$
+\end_inset
+
+ from vacuum 
+\begin_inset Formula $\rho$
+\end_inset
+
+ (left), in-medium 
+\begin_inset Formula $\rho$
+\end_inset
+
+ (middle), PHID (right) at mass range 0.8−1.0GeV /
+\begin_inset Formula $c^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:chi2FIt-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Float table
+placement h
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang american
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang american
+Model:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\varepsilon_{b}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang american
+\begin_inset Formula $\chi^{2}/ndf$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang american
+\begin_inset Formula $p$
+\end_inset
+
+-value
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang american
+Rapp: vaccum 
+\begin_inset Formula $\rho$
+\end_inset
+
+ +QGP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.668
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang american
+41.0/8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang american
+\begin_inset Formula $2.1×10^{−6}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang american
+Rapp: broadened 
+\begin_inset Formula $\rho$
+\end_inset
+
+ +QGP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang american
+8.2/8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang american
+0.41
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang american
+PHSD: broadened 
+\begin_inset Formula $\rho$
+\end_inset
+
+ +QGP
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.596
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang american
+16.4/8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang american
+0.037
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang american
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang american
+\begin_inset Formula $\chi^{2}/ndf$
+\end_inset
+
+ for model calculations compare to the excess data in mass region: 0.3-1.0
+ GeV/
+\begin_inset Formula $c^{2}.$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang american
+\begin_inset CommandInset label
+LatexCommand label
+name "Table:chi-test_excess-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

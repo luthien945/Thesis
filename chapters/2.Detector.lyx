@@ -401,7 +401,14 @@ Luminosity lifetime
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Performance specifications of RHIC (cite).
+Performance specifications of RHIC 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Adler2003433"
+
+\end_inset
+
+.
 \end_layout
 
 \end_inset
@@ -445,7 +452,14 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The layout of RHIC complex (cite).
+The layout of RHIC complex
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hahn2003245"
+
+\end_inset
+
+.
 \end_layout
 
 \end_inset
@@ -489,7 +503,14 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Acceleration scenario for gold ions (cite).
+Acceleration scenario for gold ions
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Adler2003433"
+
+\end_inset
+
+.
 \end_layout
 
 \end_inset
@@ -705,9 +726,16 @@ STAR magnet system
 \end_layout
 
 \begin_layout Standard
-The STAR magnet system (cite) is a room temperature solenoidal magnet which
- was designed as a cylinder with a length of 6.85 m and has inner and outer
- diameter of 5.27 m and 7.32 m, respectively.
+The STAR magnet system 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ackermann2003624"
+
+\end_inset
+
+ is a room temperature solenoidal magnet which was designed as a cylinder
+ with a length of 6.85 m and has inner and outer diameter of 5.27 m and 7.32
+ m, respectively.
  It provides an uniform magnetic field which parallels to the beam direction
  (Z direction) with a maximum value 0.5 T for charged particle momentum analysis.
  STAR magnet can work under full field (+0.5 T), reversed full field (-0.5
@@ -771,7 +799,14 @@ Inside the TPC, it is an empty volume which is filled with P10 gas (10%
  and insensitive to small changes in temperature and pressure.
  The uniform drift field in TPC is defined by a thin conductive Central
  Membrane (CM) at the center of the TPC, concentric field-cage cylinders
- and the readout end caps (cite).
+ and the readout end caps 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Anderson2003659"
+
+\end_inset
+
+.
  The central membrane is operated at 28 kV and the end caps are at ground.
  The typical drift velocity of electrons in the STAR TPC is 5.45 cm/
 \begin_inset Formula $\mu s$
@@ -838,7 +873,14 @@ measurement because the full track ionization signal is collected with more
  The third wire plane is a gating grid which is a gate to control electrons
  from TPC drift volume to MWPC.
  It also stops the positive ions inside MWPC from entering the drift volume
- to preserve the uniform drift field (cite).
+ to preserve the uniform drift field 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Anderson2003679"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -909,7 +951,14 @@ reference "eq: Bethe-Bloch"
 
 \end_inset
 
- (cite):
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Eidelman20041"
+
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Standard
@@ -920,15 +969,28 @@ reference "eq: Bethe-Bloch"
 
 \end_inset
 
-and furthermore optimized by the Bichsel functions (cite SN0439 NIM A 562
- (2006) 154-197).
+and furthermore optimized by the Bichsel functions 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bichsel2006154"
+
+\end_inset
+
+.
  For each track, 
 \emph on
 dE/dx 
 \emph default
 is extracted from the deposit charge collected on the pad rows up to 45.
  Energy loss of a charged particle for a given track length can be described
- by the Bichsel function (cite).
+ by the Bichsel function 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bichsel2006154"
+
+\end_inset
+
+.
  However, the mean of the distribution is sensitive to the fluctuations
  in the tail of the distribution.
  Therefore, the most probable 
@@ -1227,7 +1289,14 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The STAR Time Projection Chamber (TPC) (cite).
+The STAR Time Projection Chamber (TPC) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Anderson2003659"
+
+\end_inset
+
+.
 \end_layout
 
 \end_inset
@@ -1690,8 +1759,8 @@ Time Of Flight system
 \end_layout
 
 \begin_layout Standard
-The Time of Flight System is another important set of detectors used in
- this analysis.
+The Time of Flight System (TOF) is another important set of detectors used
+ in this analysis.
  The TOF system is designed to measure the flight time of charged particles.
  Combining with path length of tracks reconstructed by TPC, it can provide
  the velocity of the charge particles which is used to identify charged
@@ -1722,8 +1791,14 @@ only.
 \end_layout
 
 \begin_layout Standard
-The TOF consists of the barrel Time Of Flight detector (bTOF) and the the
- Vertex Position Detector (VPD).
+The TOF consists of the barrel Time Of Flight detector (bTOF) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "https://drupal.star.bnl.gov/STAR/files/future/proposals/tof-5-24-2004.pdf:kq"
+
+\end_inset
+
+ and the the Vertex Position Detector (VPD).
  The bTOF is surrounding the TPC and measures the 
 \begin_inset Quotes eld
 \end_inset
@@ -1741,7 +1816,14 @@ stop
 
 \begin_layout Standard
 The bTOF is based on the Multi-gap Resistive Plate Chamber (MRPC) technology
- which is first developed by the CERN ALICE group (cite).
+ which is first developed by the CERN ALICE group 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "CerronZeballos1996132"
+
+\end_inset
+
+.
  MRPC technology is capable to provide the necessary timing resolution with
  a relative low cost.
  Figure 
@@ -2040,7 +2122,14 @@ reference "fig:TriggerDataFlow"
  and Level 2 has about 5 ms.
  When an interaction is accepted at Level 2, the trigger system notifies
  the DAQ system and detectors.
- A review on the STAR trigger system can be find at (cite).
+ A review on the STAR trigger system can be find at 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bieser2003766"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -2065,7 +2154,14 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Data flow through the trigger (cite).
+Data flow through the trigger 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bieser2003766"
+
+\end_inset
+
+.
 \end_layout
 
 \end_inset
@@ -2199,8 +2295,14 @@ ion.
  ~ 1 s per event to ~20 ms per event.
  Tracking reconstruction in HLT is done sector by sector in parallel, so
  24 times of speed-up is naturally achieved.
- The STAR HLT tracker is based on conformal mapping (cite) and a follow-your-nos
-e approach on finding next-hit-on-track.
+ The STAR HLT tracker is based on conformal mapping 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Adler2003778"
+
+\end_inset
+
+ and a follow-your-nose approach on finding next-hit-on-track.
  These approaches greatly reduces the track time with little loss on efficiency
  and track resolution (at 
 \begin_inset Formula $p_{T}$
@@ -2245,7 +2347,14 @@ During year from 2010 to 2012, the STAR HLT has delivered several important
  particles.
  This discovery has been published in 
 \emph on
-Nature (cite).
+Nature 
+\begin_inset CommandInset citation
+LatexCommand cite
+key ":2011qf"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section

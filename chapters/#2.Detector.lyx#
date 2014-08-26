@@ -401,7 +401,14 @@ Luminosity lifetime
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Performance specifications of RHIC (cite).
+Performance specifications of RHIC 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Adler2003433"
+
+\end_inset
+
+.
 \end_layout
 
 \end_inset
@@ -445,7 +452,14 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-The layout of RHIC complex (cite).
+The layout of RHIC complex
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hahn2003245"
+
+\end_inset
+
+.
 \end_layout
 
 \end_inset
@@ -489,7 +503,14 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Acceleration scenario for gold ions (cite).
+Acceleration scenario for gold ions
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Adler2003433"
+
+\end_inset
+
+.
 \end_layout
 
 \end_inset
@@ -705,9 +726,16 @@ STAR magnet system
 \end_layout
 
 \begin_layout Standard
-The STAR magnet system (cite) is a room temperature solenoidal magnet which
- was designed as a cylinder with a length of 6.85 m and has inner and outer
- diameter of 5.27 m and 7.32 m, respectively.
+The STAR magnet system 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ackermann2003624"
+
+\end_inset
+
+ is a room temperature solenoidal magnet which was designed as a cylinder
+ with a length of 6.85 m and has inner and outer diameter of 5.27 m and 7.32
+ m, respectively.
  It provides an uniform magnetic field which parallels to the beam direction
  (Z direction) with a maximum value 0.5 T for charged particle momentum analysis.
  STAR magnet can work under full field (+0.5 T), reversed full field (-0.5
@@ -771,7 +799,14 @@ Inside the TPC, it is an empty volume which is filled with P10 gas (10%
  and insensitive to small changes in temperature and pressure.
  The uniform drift field in TPC is defined by a thin conductive Central
  Membrane (CM) at the center of the TPC, concentric field-cage cylinders
- and the readout end caps (cite).
+ and the readout end caps 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Anderson2003659"
+
+\end_inset
+
+.
  The central membrane is operated at 28 kV and the end caps are at ground.
  The typical drift velocity of electrons in the STAR TPC is 5.45 cm/
 \begin_inset Formula $\mu s$
@@ -838,7 +873,14 @@ measurement because the full track ionization signal is collected with more
  The third wire plane is a gating grid which is a gate to control electrons
  from TPC drift volume to MWPC.
  It also stops the positive ions inside MWPC from entering the drift volume
- to preserve the uniform drift field (cite).
+ to preserve the uniform drift field 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Anderson2003679"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -909,7 +951,14 @@ reference "eq: Bethe-Bloch"
 
 \end_inset
 
- (cite):
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Eidelman20041"
+
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Standard

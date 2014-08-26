@@ -849,13 +849,13 @@ where
 \begin_inset Formula $\left\langle 0\left|\bar{q}q\right|0\right\rangle \approx(-250MeV)^{3}$
 \end_inset
 
-.
+ per light flavor.
  The non-zero vacuum spontaneously breaks the chiral symmetry of QCD.
  Since chiral symmetry is a global symmetry, its spontaneous breaking must
  be accompanied by (almost) massless Goldstone bosons.
- In case of two quark flavors, the three charge states of the pion servers
- as the Goldstone bosons, with a mass (about 140 MeV) which is much smaller
- comparing to all the other hadrons.
+ In case of two light quark flavors, the three charge states of the pion
+ servers as the Goldstone bosons, with a mass (about 140 MeV) which is much
+ smaller comparing to all the other hadrons.
  The assumption of spontaneously broken axial-vector symmetry also explains
  the large mass splitting between 
 \begin_inset Formula $\rho$
@@ -1349,14 +1349,14 @@ key "Deng2011581,PhysRevC.75.054909,Shuryak:qy"
 \end_layout
 
 \begin_layout Standard
-When the system expands, cools and enters into the hadronic phase, dileptons
- are produced via multiple hadron-hadron scattering by coupling to vector
- mesons (
+The system expands, cools and enters into the hadronic phase.
+ Dileptons emitted from the hadronic medium are governed by the coupling
+ of vector mesons (
 \begin_inset Formula $\rho,\:\omega,\:\phi$
 \end_inset
 
- etc).
- They are expected do dominate the LMR dielectron production
+ etc) to the medium via hadron-hadron interaction and are expected to dominate
+ LMR production 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "R.-Rapp:2000uq"
@@ -1364,11 +1364,24 @@ key "R.-Rapp:2000uq"
 \end_inset
 
 .
- Their mass spectra are correlated to the chiral properties of the medium
- which is spontaneously broken in vacuum.
+ Their mass spectra are determined by the chiral properties of QCD which
+ is spontaneously broken in vacuum.
  Theoretical calculations suggest that the vector meson spectral functions
  will be modified in the hot and dense hadronic medium, which may be connected
  to the restoration of chiral symmetry.
+ Among them, the 
+\begin_inset Formula $\rho$
+\end_inset
+
+ meson is expected to most modified, due to its short life time ~ 1.3 fm
+ comparing to the lift time of hadronic medium (~ 10 fm) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Pisarski1982155"
+
+\end_inset
+
+.
  Two scenarios have been proposed for the change of vector meson spectral
  functions when chiral symmetry is restored: a shift of the pole mass 
 \begin_inset CommandInset citation
@@ -1385,12 +1398,6 @@ key "Rapp:1999kx"
 \end_inset
 
 .
- The 
-\begin_inset Formula $\rho$
-\end_inset
-
- meson, due to its short life time ~ 1.3 fm comparing to the lift time of
- hadronic medium (~ 10 fm).
  Measurements of dielectron continuum in the low mass region will shed light
  on the vector meson production mechanism, and hence the medium chiral propertie
 s in heavy ion collisions.
@@ -1420,16 +1427,741 @@ Finally, when all particles decouple from the system long-lived
 Previous experiments and measurements
 \end_layout
 
+\begin_layout Standard
+Dilepton measurements in heavy ion collisions have been pursued for decades
+ in different collision system from low to relativistic energies
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevLett.75.1272"
+
+\end_inset
+
+.
+ In this section, I will make a brief review of several important experiment
+ measurements from SPS and RHIC.
+\end_layout
+
 \begin_layout Subsection
 CERES/NA45
+\end_layout
+
+\begin_layout Standard
+NA45 collaboration a fixed-target heavy ion collisions experiment at the
+ CERN Super Proton Synchrotron (SPS).
+ It is also well know by the number of the detector - Cherenkov Ring Electron
+ Spectrometer (CERES).
+ A detailed description of the CERES/NA45 experiment can be found in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Baur199487"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:NA45"
+
+\end_inset
+
+ shows the dielectron mass spectra measured by CERES in different collision
+ system.
+ In p-A collisions (p-Be, p-Au at 450 AGeV) the production of dielectron
+ can be well explained by the hadronic cocktail simulations 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevLett.75.1272"
+
+\end_inset
+
+.
+ The results from the S-Au collision system, however, shows a statistically
+ significant enhancement w.r.t the hadronic cocktail simulation.
+ Further measurements in 40 and 158 AGeV Pb-Au collisions shows similar
+ results 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Agakichiev1998405,PhysRevLett.91.042301"
+
+\end_inset
+
+.
+ The centrality and transverse momentum dependence of the enhancement was
+ studied in Pb-Au collision at 158 AGeV.
+ The experiment results demonstrates that the enhancement is mostly in low
+ 
+\begin_inset Formula $p_{T}$
+\end_inset
+
+ region and shows a strong centrality dependence.
+ These observation of the enhancement has risen great interests in theorists.
+ A common agreement is that one observes direct thermal radiation from the
+ fireball, dominated by two pion annihilation 
+\begin_inset Formula $\pi^{+}\pi^{-}\rightarrow\rho\rightarrow e^{+}e^{-}$
+\end_inset
+
+ with an intermediate 
+\begin_inset Formula $\rho$
+\end_inset
+
+ vector meson.
+ Due to the short life time and its direct connect to the chiral symmetry
+ restoration, the 
+\begin_inset Formula $\rho$
+\end_inset
+
+ is expected to be significant modified (comparing to 
+\begin_inset Formula $\omega$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi$
+\end_inset
+
+) in the hot and dense medium.
+ And there are two main theoretical alternatives to describe the modification:
+ 1) 
+\begin_inset Quotes eld
+\end_inset
+
+Brown-Rho scaling
+\begin_inset Quotes erd
+\end_inset
+
+ which is directly connected to the chiral symmetry properties of the medium,
+ which lead to a dropping of the 
+\begin_inset Formula $\rho$
+\end_inset
+
+ pole mass comparing to the vacuum value; 2) the multi-scattering with hadrons
+ in medium, spreading the width of the 
+\begin_inset Formula $\rho$
+\end_inset
+
+ spectra function.
+ The experiment results in Pb-Au collision at 40 AGeV (shown in Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:NA45_Pb_Au"
+
+\end_inset
+
+) clearly role out the vacuum unmodified 
+\begin_inset Formula $\rho$
+\end_inset
+
+.
+ The data agrees with the two in-medium scenarios, however, due to limited
+ statistics, it fails to distinguish between them.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/1.Introduction/N45_pBe.png
+	lyxscale 30
+	width 33text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../fig/1.Introduction/NA45_pAu.png
+	lyxscale 30
+	width 33text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../fig/1.Introduction/NA45_sAu.png
+	lyxscale 30
+	width 33text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Inclusive 
+\begin_inset Formula $e^{+}e^{-}$
+\end_inset
+
+ mass spectra in 450 GeV p-Be collisions (left), p-Au collisions (middle),
+ and 200GeV/nucleon S-Au collisions from CERES/NA45 experiments 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevLett.75.1272"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:NA45"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/1.Introduction/NA45_Pb_Au_40AGeV.png
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Inclusive dielectron mass spectrum, compared to the hadron decay cocktail
+ (thin solid; individual contributions thin dotted) and to theoretical model
+ calculations: vacuum unmodified 
+\begin_inset Formula $\rho$
+\end_inset
+
+ (thick dashed); in-medium dropping 
+\begin_inset Formula $\rho$
+\end_inset
+
+ mass (thick dash-dotted); in-medium broadening 
+\begin_inset Formula $\rho$
+\end_inset
+
+ width ((thick solid).
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevLett.91.042301"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:NA45_Pb_Au"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
 NA60
 \end_layout
 
+\begin_layout Standard
+NA60 is another experiment on SPS at CERN.
+ It inherited the muon spectrometer and zero degree calorimeter from NA50
+ and equipped with a high-granularity silicon pixel telescope vertex detector.
+ NA60 is a muon detector and measured the dimuon spectra which don't have
+ large background contributed from Dalitz decay from 
+\begin_inset Formula $\pi^{0}$
+\end_inset
+
+.
+ Benefited from the new vertex detectors, NA60 can identify the offset the
+ muon tracks with respect to the collision vertex.
+ The dimuon contributed from charmed meson decay thus can be separated from
+ prompt muon pairs.
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:NA60dimuon"
+
+\end_inset
+
+ left panel shows the centrality-integrated dimuon measurement from NA60
+ In-In collisions at 158 AGeV.
+ The high data quality allows to isolate the dimuon excess from total data
+ by subtracting the hadronic cocktail from the known decay sources.
+ All hadron source except 
+\begin_inset Formula $\rho$
+\end_inset
+
+ are included in the cocktail simulation.
+ The excess results are compared with the in medium modified 
+\begin_inset Formula $\rho$
+\end_inset
+
+ model calculations.
+ The high precision data role out the vacuum 
+\begin_inset Formula $\rho$
+\end_inset
+
+ and dropping 
+\begin_inset Formula $\rho$
+\end_inset
+
+ pole mass scenarios 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Brown200285"
+
+\end_inset
+
+, and the broadening model 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "R.-Rapp:2000uq"
+
+\end_inset
+
+ can explain the data very well.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/1.Introduction/NA60_dimuon_spec.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../fig/1.Introduction/NA60_dimuon.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+(Left) Background-subtracted mass spectrum before (dots) and after subtraction
+ of the known decay sources (triangles).
+ (Right) Excess dimuons compared to theoretical predictions, renormalized
+ to the data in the mass interval M < 0.9 GeV.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Arnaldi:2009fk"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:NA60dimuon"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Another important results from NA60 are shown in Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:NA60_Teff"
+
+\end_inset
+
+.
+ The inverse slope parameters 
+\begin_inset Formula $T_{eff}$
+\end_inset
+
+ of the 
+\begin_inset Formula $m_{T}$
+\end_inset
+
+ spectra are plotted as a function of dimuon mass in the right panel.
+ In low mass region (
+\begin_inset Formula $M_{ll}<1GeV/c^{2}$
+\end_inset
+
+), 
+\begin_inset Formula $T_{eff}$
+\end_inset
+
+ shows a monotonic rise with mass towards to the 
+\begin_inset Formula $\rho$
+\end_inset
+
+ pole mass, which is a strong indication for radial flow of a hadronic source.
+ The measurements from hadrons also conforms this conclusion.
+ Around the 
+\begin_inset Formula $\phi$
+\end_inset
+
+ mass, the 
+\begin_inset Formula $T_{eff}$
+\end_inset
+
+ distribution shows a sudden drop about 50 MeV.
+ This provides a first indication of thermal leptons from a partonic source
+ as argued by the NA60 collaboration 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevLett.100.022302"
+
+\end_inset
+
+.
+ In the left panel of Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:NA60_Teff"
+
+\end_inset
+
+, Acceptance-corrected invariant mass spectrum of the excess dimuons are
+ compared with three sets of thermal model results 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevLett.100.162301,vanHees2008339,PhysRevC.80.014902"
+
+\end_inset
+
+, which provide further support the conclusion of the transition from hadronic
+ source to partonic source from low mass to intermediate mass.
+ In the region above 1 GeV, all three models explicitly differentiate between
+ partonic and hadronic processes.
+ In case of 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevLett.100.162301,PhysRevC.80.014902"
+
+\end_inset
+
+, partonic source dominate and can full describe the data up to 2.5 GeV.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/1.Introduction/NA60_Teff.png
+	lyxscale 50
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Left Panel: Acceptance-corrected invariant mass spectrum of the excess dimuons,
+ comparing with three different sets of thermal-model calculations.
+ Right Panel: Inverse slope parameter 
+\begin_inset Formula $T_{eff}$
+\end_inset
+
+ of the 
+\begin_inset Formula $m_{T}$
+\end_inset
+
+ spectra as a function of dimuon mass.
+ Charm contribution is removed.
+ Hadron results are shown for comparison.
+ Figures are taken from 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "NA60-Collaboration:fj"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:NA60_Teff"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 PHENIX
+\end_layout
+
+\begin_layout Standard
+PHENIX (Pioneering High Energy Nuclear Interaction Experiment) is one of
+ the two major detector system at RHIC.
+ It is designed to mainly study leptons and photon production from heavy
+ ion collisions.
+ The PHENIX systems consists of two central arm spectrometers, each arm
+ covers the pseudo-rapidity range 
+\begin_inset Formula $|\eta|$
+\end_inset
+
+ < 0.35 and an azimuthal angle of 
+\begin_inset Formula $\pi/2$
+\end_inset
+
+.
+ The PHENIX collaboration reports the measurements of inclusive mass spectrum
+ of 
+\begin_inset Formula $e^{+}e^{-}$
+\end_inset
+
+ pairs in p+p collision and Au+Au collisions at 
+\begin_inset Formula $\sqrt{s}$
+\end_inset
+
+ = 200 GeV, which are shown in Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:PHENIX_fullmass"
+
+\end_inset
+
+.
+ The 
+\begin_inset Formula $e^{+}e^{-}$
+\end_inset
+
+ mass spectra in p+p collision can be describe by the hadronic cocktail
+ simulation, while, the results from Au+Au collision shows huge enhancement
+ in LMR when comparing to the hadronic cocktail.
+ The integral enhancement observed in Au+Au collision is 
+\begin_inset Formula $4.7\pm0.4(stat.)\pm1.5(sys.)$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevC.81.034911"
+
+\end_inset
+
+ in mass region 0.15~0.75 GeV/
+\begin_inset Formula $c^{2}$
+\end_inset
+
+.
+ The LMR excess in 200 GeV Au+Au collisions are also compared with in-medium
+ model calculations in Fig , however none of them can explain the large
+ enhancement.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/1.Introduction/PHENIX_PP.png
+	lyxscale 50
+	width 45text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../fig/1.Introduction/PHENIX_AuAu.png
+	lyxscale 50
+	width 45col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Inclusive mass spectrum of 
+\begin_inset Formula $e^{+}e^{-}$
+\end_inset
+
+ pairs in the PHENIX acceptance in minimum-bias p+p collision (left) and
+ Au+Au collisions (right) at 
+\begin_inset Formula $\sqrt{s}$
+\end_inset
+
+ = 200 GeV.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevC.81.034911"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:PHENIX_fullmass"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/1.Introduction/PHENIX_LowMass.png
+	lyxscale 50
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Invariant mass spectra of e+e− pairs in Au+Au collisions in the LMR.
+ The data are compared to hadronic cocktail (left upper) and three model
+ calculations.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevC.81.034911"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:PHENIX_Low"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

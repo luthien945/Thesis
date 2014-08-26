@@ -1,0 +1,256 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass USTCthesis
+\begin_preamble
+%Created by jmcui 
+%\graphicspath{{C:/Users/jmcui/Desktop/Lyxthesis/USTCthesis}}
+\end_preamble
+\options doctor,twoside,adobefont
+\use_default_options false
+\master ../Main.lyx
+\begin_modules
+theorems-ams
+\end_modules
+\maintain_unincluded_children false
+\begin_local_layout
+NoStyle	Thanks
+NoStyle	ChapterSpecial
+NoStyle	Abstract
+NoStyle	EnglishAbstract
+\end_local_layout
+\language chinese-simplified
+\language_package babel
+\inputencoding gbk
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\font_cjk fs
+\graphics default
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle false
+\papersize default
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 2
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index 索引
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+\start_of_appendix
+χ2 test of the model calculation for the Low-Mass dielectron spectra
+\end_layout
+
+\begin_layout Standard
+In order to quantify how different model compare with the measured data
+ in Fig 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:excess-1"
+
+\end_inset
+
+, a χ2 test are performed.
+ but in our measured data, the total uncertainty contain three part: (1)statisti
+cal uncertainty, (2)systematic uncertainty and (3)the cocktail uncertainty.
+ Here the uncertainty(1) are independent for each data point, uncertainty(2)
+ and (3) are correlated for each data point, so we used a new χ2 calculation
+ method 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevC.77.064907"
+
+\end_inset
+
+, which list below: 
+\begin_inset Formula 
+\begin{equation}
+\chi^{2}=\sum_{i=1}^{n}\frac{[y_{i}+\varepsilon_{b}\sigma_{b_{i}}-\mu_{i}(\vec{p})]^{2}}{\widetilde{\sigma}_{i}^{2}}+\varepsilon_{b}^{2}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $y_{i}$
+\end_inset
+
+ is the measured data point, 
+\begin_inset Formula $\sigma_{i}$
+\end_inset
+
+ are independent uncertainty, 
+\begin_inset Formula $\mu_{i}$
+\end_inset
+
+ are the model value.
+ 
+\begin_inset Formula $\sigma_{b_{i}}$
+\end_inset
+
+ are the correlated uncertainty,
+\begin_inset Formula $\varepsilon_{b}$
+\end_inset
+
+ are the fraction variation of the 
+\begin_inset Formula $\sigma_{b_{i}}$
+\end_inset
+
+, and 
+\begin_inset Formula $\widetilde{\sigma}_{i}$
+\end_inset
+
+ is the uncertainty scaled by the multiplicative shift in 
+\begin_inset Formula $y_{i}$
+\end_inset
+
+ such that the fractional uncertainty is unchanged under shifts.
+ In our calculation, the statistical uncertainty are consider as independent
+ for each data point, systematic uncertainty and cocktail uncertainty are
+ consider as the correlated uncertainty, which is defined following:
+\begin_inset Formula 
+\begin{equation}
+\widetilde{\sigma}_{i}=\sigma_{i}(\frac{y_{i}+\varepsilon_{b}\sigma_{b_{i}}}{y_{i}})
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/AppentixA/chi2_Fit_Vacuum.gif
+	lyxscale 30
+	width 33text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../fig/AppentixA/chi2_Fit_Broaden.gif
+	lyxscale 30
+	width 33text%
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../fig/AppentixA/chi2_Fit_PHSD.gif
+	lyxscale 30
+	width 33text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Formula $\chi^{2}$
+\end_inset
+
+ vs 
+\begin_inset Formula $\varepsilon_{b}$
+\end_inset
+
+ from vacuum 
+\begin_inset Formula $\rho$
+\end_inset
+
+ (left), in-medium 
+\begin_inset Formula $\rho$
+\end_inset
+
+ (middle), PHID (right) at mass range 0.3−1.0GeV /
+\begin_inset Formula $c^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:chi2FIt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

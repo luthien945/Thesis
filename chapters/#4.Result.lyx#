@@ -112,8 +112,14 @@ reference "fig:ppspectra"
 
  shows the dielectron invariant mass spectra from 200 GeV p+p collisions
  taken in year 2012.
- The cocktail is taken from the STAR published result (cite), and the charm
- cross section is updated to 
+ The cocktail is taken from the STAR published result 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevC.86.024906"
+
+\end_inset
+
+, and the charm cross section is updated to 
 \begin_inset Formula $797±210\,(stat.)\,_{-295}^{+208}\,(sys.)$
 \end_inset
 
@@ -121,10 +127,25 @@ reference "fig:ppspectra"
 \begin_inset Formula $μb$
 \end_inset
 
- with respect to the newest published result from STAR (cite).
+ with respect to the newest published result from STAR 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevD.86.072013"
+
+\end_inset
+
+.
  The cocktail simulation can reproduce the new preliminary result very well.
  With a full TOF coverage and more data taken, year 2012 result has greatly
- improved statistics which is ~7 times more than STAR published result (cite).
+ improved statistics which is ~7 times more than STAR previously published
+ result 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevC.86.024906"
+
+\end_inset
+
+.
  The large statistics new results at p+p 200 GeV provide a better baseline
  for Au+Au collisions.
 \end_layout
@@ -341,7 +362,14 @@ In the LMR region, an enhancement of
 
  contribution.
  The enhancement observed here is significantly lower than what has been
- reported from the dielectron measurement from PHENIX experiment (cite).
+ reported from the dielectron measurement from PHENIX experiment 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevC.81.034911"
+
+\end_inset
+
+.
  
 \end_layout
 
@@ -386,9 +414,23 @@ n to the vector meson (
 \begin_inset Formula $\left\langle q\bar{q}\right\rangle $
 \end_inset
 
- condensate (cite PRC [8]).
+ condensate 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Brown1996333"
+
+\end_inset
+
+.
  (b) broadening of the spectral function due to mean body collisions in
- the vector-meson dominance (cite PRC [9,43]).
+ the vector-meson dominance 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Rapp:1999kx,PhysRevC.64.035202"
+
+\end_inset
+
+.
  Both scenarios will introduce an enhancement in the mass region below the
  
 \begin_inset Formula $\rho$
@@ -401,7 +443,14 @@ n to the vector meson (
 \end_inset
 
  spectral function instead of a dropping of its pole mass hypothesis at
- the SPS energy (cite).
+ the SPS energy 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevLett.96.162302"
+
+\end_inset
+
+.
  It is expected that the hadronic medium at top RHIC energy is similar to
  that created at the SPS energy.
 \end_layout
@@ -418,7 +467,14 @@ ons at the finite
 \begin_inset Formula $T-\mu_{B}$
 \end_inset
 
- environment (cite PRC [44]).
+ environment 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevLett.64.2242"
+
+\end_inset
+
+.
  The QGP contribution is expected to become sizable at 
 \begin_inset Formula $M>1.5\, GeV/c^{2}$
 \end_inset
@@ -441,7 +497,14 @@ Model I: from Rapp's group.
 \end_layout
 
 \begin_layout Standard
-We chose one model calculation from Rapp (cite PRC [46]), which is a 
+We chose one model calculation from Rapp 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "R.-Rapp:2013th"
+
+\end_inset
+
+, which is a 
 \emph on
 macroscopic effective many-body theory model
 \emph default
@@ -473,7 +536,14 @@ macroscopic effective many-body theory model
 \end_inset
 
  spectral function is mostly due to the interactions with baryons rather
- than mesons (cite PRC[45,47,48]).
+ than mesons 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "R.-Rapp:hl,PhysRevC.85.024906,Vujanovic2013557c,Gojko-Vujanovic:fv"
+
+\end_inset
+
+.
  Thus total baryon density of the medium is one critical factor in determining
  the dielectron yield in heavy ion collisions.
 \end_layout
@@ -484,7 +554,7 @@ The QGP contribution is calculated via perturbative
 \end_inset
 
  annihilation with some improved corrections.
- It has beed demonstrated in these calculations the dilepton rates from
+ It has been demonstrated in these calculations the dilepton rates from
  the hadronic medium and from partonic medium should be equivalent at 
 \begin_inset Formula $T_{c}$
 \end_inset
@@ -497,7 +567,14 @@ parton-hadron
 \begin_inset Quotes erd
 \end_inset
 
- duality (cite PRC [45]).
+ duality 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "R.-Rapp:hl"
+
+\end_inset
+
+.
  The final resulting dielectron yields from observation are calculated via
  the integral over the whole space-time evolution for this medium.
 \end_layout
@@ -519,14 +596,28 @@ microscopic transport dynamic model.
 \emph default
 It is consisted of the off-shell evaluation of vector mesons and the explicit
  partonic phase contributions in the early stage of the medium evaluation
- as well as the dynamics of hadronization (cite PRC[49]).
+ as well as the dynamics of hadronization 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cassing2009215,Bratkovskaya2011162"
+
+\end_inset
+
+.
  The model allows for a microscopic study of various dilepton production
  channels in non-equilibriumous medium.
  In the hadronic sector, the PHSD is equivalent to the HSD transport approach
  that has been used for the description of pA and AA collisions from SIS
  to RHIC energies.
  It fairly reproduces the measured hadron yields, rapidity distributions
- and transverse momentum spectra (cite PRC[50]).
+ and transverse momentum spectra 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cassing199965,Bratkovskaya1997413"
+
+\end_inset
+
+.
  The PHSD model incorporates off-shell dynamics for vector mesons and a
  set of vector-meson spectral functions that covers possible scenarios for
  their in-medium modifications.
@@ -1389,7 +1480,14 @@ reference "fig:sum_LowMass"
 \begin_inset Formula $\rho$
 \end_inset
 
- medium modifications in theoretical calculations (cite PRC [46,57]).
+ medium modifications in theoretical calculations 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "R.-Rapp:2013th,Heinz1991162"
+
+\end_inset
+
+.
  The enhancement factor and dielectron yields in the 
 \begin_inset Formula $\rho$
 \end_inset
@@ -2201,8 +2299,8 @@ Random
 \end_layout
 
 \begin_layout Standard
-Current measurement can distinguish the difference between the PYTHIA simulation
-s due to large statistical uncertainties.
+Current measurements can be distinguished by different PYTHIA simulations
+ due to large statistical uncertainties.
  
 \end_layout
 

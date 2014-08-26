@@ -107,8 +107,15 @@ The data set used in this analysis was minimum bias triggered event taken
  in year 2010 and year 2011 Au+Au 200 GeV collisions and central triggered
  date taken in year 2010 Au+Au 200 GeV collisions.
  For demonstration, the Au+Au data in year 2010 was analyzed by Bingchu
- Huang and Jie Zhao (cite) (My contribution in this data set is on consistency
- check and efficiency calculation).
+ Huang and Jie Zhao 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Zhao:2013vn,Huang:2011zl"
+
+\end_inset
+
+ (My contribution in this data set is on consistency check and efficiency
+ calculation).
  Only year 2011 data are used to demonstrate the analysis method for Au+Au
  200 GeV, and the analysis method for year 2010 and year 2011 are similar.
  The final results reported in this thesis are from the combined year 2010
@@ -2198,7 +2205,14 @@ The Like-sign method is used to calculate contributions of uncorrelated
 \begin_inset Formula $2\sqrt{N_{++}\times N_{--}}$
 \end_inset
 
- , because it is demonstrated in this paper (cited) that when the 
+ , because it is demonstrated in this paper 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevC.81.034911"
+
+\end_inset
+
+ that when the 
 \begin_inset Formula $e^{+}$
 \end_inset
 
@@ -2506,7 +2520,14 @@ Mixed event background is reproduced by mixing electron candidate tracks
  dropped to make space for the new coming events.
  Dr.
  Jie Zhao did very detailed study about the number of event pools and event
- buffer effect on mixed event background in (cite).
+ buffer effect on mixed event background in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Zhao:2013vn"
+
+\end_inset
+
+.
  Here we chosen the number of event pools and event buffer respecting to
  his study.
 \end_layout
@@ -2749,7 +2770,14 @@ In this analysis, we used
 \begin_inset Formula $\phi_{V}$
 \end_inset
 
- cut method which is similar to the method used by PHENIX (cite).
+ cut method which is similar to the method used by PHENIX 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevC.81.034911"
+
+\end_inset
+
+.
  Considering the zero opening angle of di-electron pairs from photon conversion,
  electron is bended inside the plate perpendicular to magnet direction.
  Therefore, 
@@ -2815,8 +2843,15 @@ reference "fig:phiV"
 
 \end_inset
 
-(left) (cite)).
- And the cut used in this analysis is shown as the red solid line (cite).
+(left) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key ":fv"
+
+\end_inset
+
+).
+ And the cut used in this analysis is shown as the red solid line.
  The conversion pairs were directly removed by this cut.
  This cut was only applied in very low mass (
 \begin_inset Formula $M_{ee}<0.2GeV/c^{2}$
@@ -4277,7 +4312,7 @@ reference "fig:eff acc"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -4327,8 +4362,14 @@ The event sample selection is required by a VPD coincidence and a valid
  primary vertex.
  Due to the inefficiency of the VPD detector in p+p collisions, we need
  correct the possible bias of trigger and vertex selection.
- In this analysis, trigger bias correction factor was taken from (cite pppaper),
- the number is 64% with 8% systematic uncertainty.
+ In this analysis, trigger bias correction factor was taken from 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevC.86.024906"
+
+\end_inset
+
+, the number is 64% with 8% systematic uncertainty.
 \end_layout
 
 \begin_layout Subsection
@@ -4427,12 +4468,25 @@ Hadronic cocktails
 \end_layout
 
 \begin_layout Standard
-The cocktail for p+p collision is taken from STAR published result (cite
- pp), and the charm cross section is updated to 
+The cocktail for p+p collision is taken from STAR published result 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevC.86.024906"
+
+\end_inset
+
+, and the charm cross section is updated to 
 \begin_inset Formula $797\pm210(stat.)_{-295}^{+208}(sys.)μb$
 \end_inset
 
- with respect to the newest published result from STAR (cite).
+ with respect to the newest published result from STAR 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevD.86.072013"
+
+\end_inset
+
+.
  Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -4457,7 +4511,14 @@ reference "fig:cocktailpp"
 
 \begin_layout Standard
 We used the similar cocktail simulation methods for Au+Au 200 GeV collision
- as we used in p+p collision (cite).
+ as we used in p+p collision 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevC.86.024906"
+
+\end_inset
+
+.
  The cocktail simulation only contains the hadron form-factor decays in
  the vacuum at freeze-out.
  For the 
@@ -4493,7 +4554,14 @@ reference "table:CK AuAuinput"
  (or cross-section), branching ratios, uncertainty and reference for all
  input sources.
  The hadron spectra measured by STAR and PHENIX were parameterized by the
- simultaneous Tsallis Blast-Wave (TBW) model fit (cite).
+ simultaneous Tsallis Blast-Wave (TBW) model fit 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevC.79.051901"
+
+\end_inset
+
+.
  Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -4511,7 +4579,14 @@ reference "fig: cocktail Input"
 \begin_inset Formula $J/\psi$
 \end_inset
 
- was taken from the measurement by the PHENIX collaboration (cite).
+ was taken from the measurement by the PHENIX collaboration 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevC.81.034911"
+
+\end_inset
+
+.
  For light hadrons, the TBW fit provides good parameterizations to these
  measure spectra.
  The same core TBW parameters was used to predicted the spectral shapes
@@ -4537,8 +4612,14 @@ reference "fig: cocktail Input"
 
 \begin_layout Standard
 The correlated charm, bottom and Drell-Yan contributions were studied by
- PYTHIA simulation (cite) and scaled by the number of binary collisions
- (
+ PYTHIA simulation 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Torbjorn-Sjostrand:2001ek"
+
+\end_inset
+
+ and scaled by the number of binary collisions (
 \begin_inset Formula $N_{bin}$
 \end_inset
 
@@ -4552,7 +4633,14 @@ The correlated charm, bottom and Drell-Yan contributions were studied by
 \end_inset
 
  and PARP(67) (parton shower level) = 1.0, which was tuned to match STAR
- measured charmed meson spectrum in p+p collisions (cite).
+ measured charmed meson spectrum in p+p collisions 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevD.86.072013"
+
+\end_inset
+
+.
  The input charm cross section was also taken from the charmed meson measurement.
 \end_layout
 
@@ -4616,7 +4704,7 @@ reference "table: scale cocktail"
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -4729,7 +4817,14 @@ Reference
 \begin_inset Text
 
 \begin_layout Plain Layout
-STAR [29, 30]
+STAR 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevLett.92.112301,PhysRevLett.97.152301"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4782,7 +4877,14 @@ STAR [29, 30]
 \begin_inset Text
 
 \begin_layout Plain Layout
-PHENIX [15]
+PHENIX 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevC.81.034911"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4835,7 +4937,14 @@ PHENIX [15]
 \begin_inset Text
 
 \begin_layout Plain Layout
-PHENIX [15]
+PHENIX 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevC.81.034911"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4888,7 +4997,14 @@ PHENIX [15]
 \begin_inset Text
 
 \begin_layout Plain Layout
-STAR [41]
+STAR 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevLett.92.092301"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -4994,7 +5110,14 @@ STAR [41]
 \begin_inset Text
 
 \begin_layout Plain Layout
-STAR [34]
+STAR 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "STAR-Collaboration:2012wq"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -5100,7 +5223,14 @@ STAR [34]
 \begin_inset Text
 
 \begin_layout Plain Layout
-STAR [35]
+STAR 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Adams2005181"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -5156,7 +5286,14 @@ STAR [35]
 \begin_inset Text
 
 \begin_layout Plain Layout
-PHENIX [36]
+PHENIX 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevLett.98.232301"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -5212,7 +5349,14 @@ PHENIX [36]
 \begin_inset Text
 
 \begin_layout Plain Layout
-PHENIX [38, 39]
+PHENIX 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "al.:kb,daSilva2009227c"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -5268,7 +5412,14 @@ PHENIX [38, 39]
 \begin_inset Text
 
 \begin_layout Plain Layout
-STAR[37]
+STAR 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevD.86.072013"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -5324,7 +5475,14 @@ STAR[37]
 \begin_inset Text
 
 \begin_layout Plain Layout
-Pythia[40]
+Pythia 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Torbjorn-Sjostrand:2001ek"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -5377,7 +5535,14 @@ Drell-Yan
 \begin_inset Text
 
 \begin_layout Plain Layout
-Pythia[40]
+Pythia 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Torbjorn-Sjostrand:2001ek"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -5762,10 +5927,17 @@ status collapsed
 
 \begin_layout Plain Layout
 Left panel: the invariant yields of measured mesons fit with the Tsallis
- functions in p+p 200 GeV collision (cite).
+ functions in p+p 200 GeV collision 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevC.86.024906"
+
+\end_inset
+
+.
  The solid lines represent the fit.
  Right panel: invariant yields of mesons in Au+Au collision at 
-\begin_inset Formula $\sqrt{S_{NN}}=200$
+\begin_inset Formula $\sqrt{s_{NN}}=200$
 \end_inset
 
  GeV.
@@ -5791,7 +5963,14 @@ Left panel: the invariant yields of measured mesons fit with the Tsallis
 \begin_inset Formula $\psi'$
 \end_inset
 
- spectrum as in (cite PHENIX diE).
+ spectrum as in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevC.81.034911"
+
+\end_inset
+
+.
 \end_layout
 
 \end_inset
@@ -5835,7 +6014,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Cocktails for p+p 200 GeV minimum bias collision (cite).
+Cocktails for p+p 200 GeV minimum bias collision.
 \end_layout
 
 \end_inset
@@ -6684,7 +6863,14 @@ Combine the Au+Au results from year 2010 and year 2011
 \begin_layout Standard
 To achieve better statistics, we combined the results from year 2010 and
  year 2011 together for Au+Au 200 GeV collisions.
- The year 2010 result has already published in PRL (cite).
+ The year 2010 result has already published in PRL 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevLett.113.022301"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
