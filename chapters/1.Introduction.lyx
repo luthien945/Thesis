@@ -505,7 +505,7 @@ key "PhysRevD.86.010001"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1377,7 +1377,7 @@ reference "fig:Meson_Medium"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center

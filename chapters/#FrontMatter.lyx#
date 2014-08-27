@@ -187,23 +187,23 @@ key "PhysRevC.86.024906"
 \begin_inset Formula $\rho$
 \end_inset
 
-介子在介质中质量谱展宽的模型计算可以很好的解释我们观测到的增强。同时本文也会讨论可能存在的相关量重味夸克在介质中的修正效应和对
+介子在介质中质量谱展宽的模型计算可以很好的解释我们观测到的增强。同时本文也会讨论可能存在的相关量重味夸克在介质中的修正效应，以及通过双轻子衰变道对
 \begin_inset Formula $\omega$
 \end_inset
 
-  
+介子和
 \begin_inset Formula $\phi$
 \end_inset
 
-
+介子产生的测量。
 \end_layout
 
 \begin_layout Abstract
 \begin_inset Flex Keywords
-status collapsed
+status open
 
 \begin_layout Plain Layout
-双轻子，
+双轻子，矢量介子，手征对称性恢复
 \end_layout
 
 \end_inset
@@ -221,11 +221,12 @@ status collapsed
 \begin_layout EnglishAbstract
 The mission of an ultra relativistic heavy ion program is to study QCD matter
  at finite temperature and density in the laboratory.
- Probes explored in experiments are mostly hadrons which have been used
- to demonstrate the formation of a strongly-coupled Quark Gluon Plasma (sQGP)
- in high energy heavy ion collision at RHIC and LHC.
+ Many experimental evidences have been found to demonstrate the formation
+ of a strongly-coupled Quark Gluon Plasma (sQGP).
+ These evidences are mostly from hadron measurements in high energy heavy
+ ion collision at RHIC and LHC.
  Dileptons as an electromagnetic probe, escape the interacting system without
- suffering further strong interactions after production.
+ suffering further strong interactions after their production.
  In additional, dilepton can be produced on the various stages of entire
  system evolution.
  They are therefore expected to be an outstanding probes to study the property
@@ -323,7 +324,7 @@ key "PhysRevC.86.024906"
 status open
 
 \begin_layout Plain Layout
-Dilepton，vector meson, 
+Dilepton，vector meson, chiral symmtry 
 \end_layout
 
 \end_inset
@@ -363,9 +364,7 @@ status open
 
 
 \backslash
-addcontentsline{toc}{chapter}{表
-\backslash
-hspace{1em}格}%加入目录
+addcontentsline{toc}{chapter}{List of Tables}%加入目录
 \end_layout
 
 \end_inset
@@ -389,9 +388,7 @@ status open
 
 
 \backslash
-addcontentsline{toc}{chapter}{插
-\backslash
-hspace{1em}图}%加入目录
+addcontentsline{toc}{chapter}{List of Figures}图}%加入目录
 \end_layout
 
 \end_inset

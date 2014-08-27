@@ -9,9 +9,12 @@
 \newif\ifustc@master\ustc@masterfalse
 \newif\ifustc@doctor\ustc@doctorfalse
 \newif\ifustc@adobefont\ustc@adobefontfalse
+\newif\ifustc@notchinese\ustc@notchinesefalse
+
 \DeclareOption{master}{\ustc@mastertrue}
 \DeclareOption{doctor}{\ustc@doctortrue}
 \DeclareOption{adobefont}{\ustc@adobefonttrue}
+\DeclareOption{notchinese}{\ustc@notchinesetrue}
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{ctexbook}}
 \ProcessOptions
@@ -34,7 +37,17 @@
 \RequirePackage{titlesec}
 \RequirePackage{subfig}
 \RequirePackage{titletoc}
-\RequirePackage[left=3.17cm,right=3.17cm,top=2.54cm,bottom=2.54cm]{geometry}%left=3.17cm,right=3.17cm,top=2.54cm,bottom=2.54cm,,headheight=0.5cm,
+%\RequirePackage[left=3.17cm,right=3.17cm,top=2.54cm,bottom=2.54cm]{geometry}%left=3.17cm,right=3.17cm,top=2.54cm,bottom=2.54cm,,headheight=0.5cm,
+\RequirePackage[
+	left=3.17cm,
+	right=3.17cm,
+	top=2.54cm,
+	bottom=2.54cm,
+	headsep=0.25cm,
+	headheight=1.5cm,
+	footskip=0.79cm,
+%	showframe%uncomment this if you want to check the page setup.
+	]{geometry}
 \RequirePackage{enumerate}
 \RequirePackage{multirow}
 \RequirePackage{subfig,epsfig}
@@ -130,6 +143,25 @@
     beforeskip={10pt},
     afterskip={6pt}
 ]{subsubsection}
+
+
+\ifustc@notchinese
+	\CTEXsetup[name={Part\space,}]{part}
+	\CTEXsetup[name={Chapter\space,}]{chapter}
+	\CTEXsetup[number={\Roman{part}}]{part}
+	\CTEXsetup[number={\arabic{chapter}}]{chapter}
+	\CTEXsetup[name={Appendix\space}]{appendix}
+	\CTEXoptions[contentsname={Table of Contents}]
+	\CTEXoptions[listfigurename={List of Figures}]
+	\CTEXoptions[listtablename={List of Tables}]
+	\CTEXoptions[figurename={Figure}]
+	\CTEXoptions[tablename={Table}]
+	\CTEXoptions[indexname={Indexes}]
+	\CTEXoptions[bibname={References}]
+\else
+	\relax
+\fi
+
 
  \captionsetup[figure]
 {
@@ -464,6 +496,16 @@
 {\titlerule*[0.5pc]{$\cdot$}\contentspage}
 
 
+\ifustc@notchinese
+\renewcommand{\bibsection}{
+    \chapter*{\bibname}
+    \markboth{Bibliography}{Bibliography}
+    \addcontentsline{toc}{chapter}{Bibliography}
+    \fontsize{10.5pt}{20pt}\selectfont
+    \@mkboth{\MakeUppercase\bibname}{\MakeUppercase\bibname}
+    \setlength{\bibsep}{0ex}
+}
+\else
 \renewcommand{\bibsection}{
     \chapter*{\bibname}
     \markboth{参考文献}{参考文献}
@@ -472,7 +514,18 @@
     \@mkboth{\MakeUppercase\bibname}{\MakeUppercase\bibname}
     \setlength{\bibsep}{0ex}
 }
+\fi
 
+
+\ifustc@notchinese
+\renewenvironment{thanks}
+{
+    \chapter*{ACKNOWLEDGMENTS}
+    \addcontentsline{toc}{chapter}{ACKNOWLEDGMENTS}  
+    \markboth{ACKNOWLEDGMENTS}{ACKNOWLEDGMENTS}
+}
+{}
+\else
 \renewenvironment{thanks}
 {
     \chapter*{致$\quad$谢}
@@ -480,6 +533,7 @@
     \markboth{致$\quad$谢}{致$\quad$谢}
 }
 {}
+\fi
 
 \newenvironment{denotation}[1][2.5cm]{
     \chapter{主要符号对照表} % no tocline
