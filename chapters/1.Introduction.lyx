@@ -1237,6 +1237,209 @@ name "fig:Phase_diagram"
 Restoration of the chiral symmetry
 \end_layout
 
+\begin_layout Standard
+Another feature of the hot and density strongly interacting matter is the
+ restoration of the chiral symmetry.
+ Considering the chiral quark-antiquark condensate 
+\begin_inset Formula $\left\langle \bar{\psi}\psi\right\rangle $
+\end_inset
+
+, figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ptxs"
+
+\end_inset
+
+ right panel shows 
+\begin_inset Formula $\left\langle \bar{\psi}\psi\right\rangle $
+\end_inset
+
+ as and its temperature derivative as a function of the lattice coupling
+ 
+\begin_inset Formula $\beta=6/g^{2}$
+\end_inset
+
+ (a value corresponding to the temperature).
+ The nonvanishing chiral condensate at T = 0 spontaneously breaks the chiral
+ symmetry and generates a dynamic mass of order 300 MeV for up and down
+ quarks.
+ With the temperature increasing, the dynamically generated mass melts away
+ at 
+\begin_inset Formula $T_{cr}$
+\end_inset
+
+, and the quarks mass become vanishing again above 
+\begin_inset Formula $T_{cr}$
+\end_inset
+
+, or in another word, the approximate chiral symmetry is restored.
+ Numerical computations of the lattice-discretized path integral for QCD
+ at finite temperature predict chiral symmetry restoration to happen at
+ a critical temperature of 
+\begin_inset Formula $T_{c}\approx160-190$
+\end_inset
+
+ MeV, corresponding to an energy density of about 
+\begin_inset Formula $\varepsilon_{c}\approx1{\rm GeV/fm^{3}}$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevD.74.054507,Aoki200646"
+
+\end_inset
+
+.
+ If considering the quark component in real world (two light quarks 
+\begin_inset Formula $u$
+\end_inset
+
+ and 
+\begin_inset Formula $d$
+\end_inset
+
+, and a much heavier strange quarks), this transition is more likely a rapid
+ cross-over.
+\end_layout
+
+\begin_layout Standard
+Chiral symmetry restoration can be characterized by the rapid decrease of
+ the 
+\begin_inset Formula $\bar{q}q$
+\end_inset
+
+ condensate, while in experiment, the key manifestations are its consequences
+ for the hadron spectrum.
+ Chiral partners must degenerate which lead to a massive medium modifications
+ of hadronic spectral functions as the transition is approached.
+ The 
+\begin_inset Formula $\rho$
+\end_inset
+
+ meson is a unique tool for characterizing the chiral properties of hot
+ and density medium, since its life time is much short (~1.3 fm) than the
+ medium (~10 fm).
+ Its spectral functions is expected to be significant modified (comparing
+ to other light mesons) during the interaction with medium.
+ There are two main scenarios on the in medium modification of the 
+\begin_inset Formula $\rho$
+\end_inset
+
+ meson.
+ Brown and Rho suggests that the 
+\begin_inset Formula $\rho$
+\end_inset
+
+-meson mass should drop to almost zero as a consequence of chiral symmetry
+ restoration 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevLett.66.2720,Brown1996333"
+
+\end_inset
+
+.
+ Subsequently, more medium modifications of the 
+\begin_inset Formula $\rho$
+\end_inset
+
+ meson were investigated based on its rescattering on constituents of a
+ hadronic medium, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "R.-Rapp:2000uq,Cassing199965,Gale:2003qv,Alam2000159"
+
+\end_inset
+
+.
+ These calculation based on hadronic many-body interactions predict a strong
+ broadening of the 
+\begin_inset Formula $\rho$
+\end_inset
+
+ spectral function, which when when extrapolated to the putative phase transitio
+n temperature, leading to a complete “melting” of the resonance structure.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Meson_Medium"
+
+\end_inset
+
+ right panel shows the scenarios for the effects of chiral symmetry restoration
+ on the in-medium vector- and axial-vector spectral functions.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../fig/1.Introduction/Vector_Mason_chiral.png
+	lyxscale 50
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Left panel: vector and axial-vector spectral functions as measured in hadronic
+ 
+\begin_inset Formula $\tau$
+\end_inset
+
+ decay 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Barate-et-al.:1998fk"
+
+\end_inset
+
+.
+ Right panel: scenarios for the effects of chiral symmetry restoration on
+ the in-medium vector- and axial-vector spectral functions.
+ Figure is taken from 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "R.-Rapp:hl"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Meson_Medium"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Dilepton production in high energy heavy ion collisions
 \end_layout

@@ -2355,6 +2355,16 @@ key ":2011qf"
 \end_inset
 
 .
+ 
+\emph default
+A brief review about the HLT and its future development can be find at 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ke:2013uq"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section

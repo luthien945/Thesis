@@ -102,21 +102,27 @@ Presentations and publication List
 \noindent
 
 \series bold
-Presentations:
+Presentations
 \end_layout
 
 \begin_layout Enumerate
 Oct.
- 2012, Centrality and 
-\begin_inset Formula $p_{T}$
-\end_inset
-
- Dependence Study of Di-electron Production in 
+ 2012, Centrality and pT Dependence Study of Di-electron Production in 
 \begin_inset Formula $\sqrt{s_{NN}}$
 \end_inset
 
  = 200 GeV Au+Au Collisions at STAR, oral presentation, American Physical
  Society's meeting of the Division of Nuclear Physics, CA, USA.
+\end_layout
+
+\begin_layout Enumerate
+Aug.
+ 2012, Centrality and pT Dependence Study of Di-electron Production in 
+\begin_inset Formula $\sqrt{s_{NN}}$
+\end_inset
+
+ = 200 GeV Au+Au Collisions at STAR, oral presentation, poster, Quark Matter
+ 2012 International Conference, Washington, DC, USA.
 \end_layout
 
 \begin_layout Enumerate
@@ -127,45 +133,9 @@ Apr.
 \end_layout
 
 \begin_layout Enumerate
-Apr.
- 2014, Dielectron production in 200 GeV p+p and Au+Au collisions at STAR，oral
- presentation, 中国物理学会高能物理分会 第九届全国会员代表大会暨学术年会, 武汉。
-\end_layout
-
-\begin_layout Enumerate
-Aug.
- 2014, Dielectron production at STAR, oral presentation, STAR Regional Meeting
- & a workshop on “high temperature and high density nuclear matter study”,
- Weihai, China.
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-Posters:
-\end_layout
-
-\begin_layout Enumerate
-Aug.
- 2012, Centrality and 
-\begin_inset Formula $p_{T}$
-\end_inset
-
- Dependence Study of Di-electron Production in 
-\begin_inset Formula $\sqrt{s_{NN}}$
-\end_inset
-
- = 200 GeV Au+Au Collisions at STAR, poster, Quark Matter 2012 International
- Conference, Washington, DC, USA.
-\end_layout
-
-\begin_layout Enumerate
 May.
- 2014, Dielectron production in p+p and Au+Au collisions at 
-\begin_inset Formula $\sqrt{s_{NN}}$
-\end_inset
-
- = 200 GeV at STAR, Quark Matter 2014, Darmstadt Germany.
+ 2014, Dielectron production in 200 GeV p+p and Au+Au collisions at STAR
+ Quark Matter 2014, Darmstadt Germany.
 \end_layout
 
 \begin_layout Standard
@@ -201,13 +171,8 @@ status open
 
 \end_layout
 
-\begin_layout Enumerate
-
-\series bold
-\emph on
-(Principal Author),
-\series default
-\emph default
+\begin_layout Standard
+1.
  
 \begin_inset ERT
 status open
@@ -217,23 +182,6 @@ status open
 
 \backslash
 bibentry{PhysRevLett.113.022301}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Proceeding for 30th Winter Workshop on Nuclear Dynamics (WWND 2014), 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bibentry{STAR-Collaboration:2014qo}
 \end_layout
 
 \end_inset
