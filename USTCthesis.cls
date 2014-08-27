@@ -124,7 +124,7 @@
 ]{chapter}
 
 \CTEXsetup[
-    format={\flushleft\hei\fontsize{14pt}{14pt}\linespread{1}\selectfont},
+    format={\flushleft\hei\fontsize{14pt}{14pt}\linespread{1}\selectfont\bfseries},
     aftername={\quad},
     beforeskip={24pt},
     afterskip={6pt}
@@ -480,12 +480,12 @@
     }
 %% tableofcontent
 \titlecontents{chapter}[0em]
-{\vspace{6bp}\hei\zihao{-4}}
+{\vspace{6bp}\hei\zihao{-4}\bfseries}
 {\thecontentslabel\hspace*{0.5em}}
 {}
 {\titlerule*[0.5pc]{$\cdot$}\contentspage}
 \titlecontents{section}[1.1\ccwd]
-{\vspace{1bp} \zihao{-4}}
+{\vspace{1bp} \zihao{-4}\bfseries}
 {\thecontentslabel\hspace*{0.5em}}
 {}
 {\titlerule*[0.5pc]{$\cdot$}\contentspage}
