@@ -17,7 +17,7 @@
     pdfsubject={Thesis,USTC,University of Science and Technology of China}
 }
 \end_preamble
-\options doctor,twoside,adobefont
+\options doctor,twoside,adobefont,notchinese
 \use_default_options false
 \begin_modules
 theorems-ams
