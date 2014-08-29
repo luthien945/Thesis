@@ -136,9 +136,10 @@ NoStyle	ChapterSpecial
 \end_layout
 
 \begin_layout Abstract
-相对论重离子碰撞实验的主要目的是研究有限温度和密度下QCD物质的性质。近年来，RHIC和LHC的实验通过对末态强子的测量结果表明，在高能重离子碰撞中形成了一种新
-的物质形态——强耦合的夸克胶子等离子体（sQGP)。双轻子作为一种电磁探针，由于其不参与强相互作用，因此在产生之后，它们能不受影响的穿过高能重离子碰撞形成的介质
-。同时，双轻子能够在系统演化的各个阶段产生，使它们成为研究高能重离子碰撞中产生的介质性质的优秀探针。
+相对论重离子碰撞实验的主要目的是研究QCD自由度下核物质的结构，包括有限温度和密度下QCD物质的性质，以及寻找QCD相变的临界点和一阶相变的边界。近年来，RHI
+C和LHC的实验通过对末态强子的测量结果表明，在高能重离子碰撞中形成了一种新的物质形态——强耦合的夸克胶子等离子体（sQGP)。双轻子作为一种电磁探针，由于其不
+参与强相互作用，因此在产生之后，它们能不受影响的穿过高能重离子碰撞形成的介质。同时，双轻子能够在系统演化的各个阶段产生，使它们成为研究高能重离子碰撞中产生的介质
+性质的优秀探针。
 \end_layout
 
 \begin_layout Abstract
@@ -171,7 +172,8 @@ key "PhysRevC.86.024906"
 
 \end_inset
 
-比较，统计量提高了7倍左右）。通过在200GeV金金碰撞中双轻子不变质量谱与强子衰变模拟和模型计算的比较，我们发现，在质量区间0.3~0.76 GeV/
+比较，统计量提高了7倍左右）。通过在200GeV金金MinBias（0-80%中心度）碰撞中双轻子不变质量谱与强子衰变模拟和模型计算的比较，我们发现，在质量区间
+0.3~0.76 GeV/
 \begin_inset Formula $c^{2}$
 \end_inset
 
@@ -183,7 +185,8 @@ key "PhysRevC.86.024906"
 \begin_inset Formula $1.66\text{\pm0.06(stat.)\pm0.24(sys.)\pm0.41(cocktail)}$
 \end_inset
 
- 倍的增强。这个增强因子比PHENIX实验观测到的结果要小。基于
+ 倍的增强。对于这个增强因子，我们并未观测到明显的中心度依赖性和横动量依赖性。在中心对撞中（0-10%中心度）这个增强因子比PHENIX实验观测到的结果要小。基
+于
 \begin_inset Formula $\rho$
 \end_inset
 
@@ -203,7 +206,7 @@ key "PhysRevC.86.024906"
 status open
 
 \begin_layout Plain Layout
-双轻子，矢量介子，手征对称性恢复
+双轻子，矢量介子，手征对称性
 \end_layout
 
 \end_inset
@@ -219,8 +222,10 @@ status open
 \end_layout
 
 \begin_layout EnglishAbstract
-The mission of an ultra relativistic heavy ion program is to study QCD matter
- at finite temperature and density in the laboratory.
+The mission of an ultra relativistic heavy ion program is to study the structure
+ of nuclear matter with the QCD degrees of freedom including QCD matter
+ at finite temperature and density in the laboratory and search for the
+ QCD critical point and first-order phase boundary.
  Many experimental evidences have been found to demonstrate the formation
  of a strongly-coupled Quark Gluon Plasma (sQGP).
  These evidences are mostly from hadron measurements in high energy heavy
@@ -300,7 +305,10 @@ key "PhysRevC.86.024906"
 \end_inset
 
  contribution.
- The enhancement is smaller than the PHENIX results.
+ This results is extracted from the 200 GeV minimum bias Au+Au collisions
+ and we do not observe strong centrality nor transverse momentum dependence.
+ In the most top 10% central collisions, this enhancement is smaller than
+ the PHENIX results.
  The model calculation based on in-medium broadening of 
 \begin_inset Formula $\rho$
 \end_inset
@@ -324,7 +332,7 @@ key "PhysRevC.86.024906"
 status open
 
 \begin_layout Plain Layout
-Dilepton，vector meson, chiral symmtry 
+Dilepton，vector meson, chiral symmetry 
 \end_layout
 
 \end_inset

@@ -363,7 +363,7 @@ status collapsed
 \end_layout
 
 \begin_layout 专业
-粒子物理与核物理 
+粒子物理与原子核物理 
 \begin_inset Note Note
 status collapsed
 
@@ -377,7 +377,11 @@ status collapsed
 \end_layout
 
 \begin_layout Major
-Your Major
+
+\size normal
+Particle Physics and Nuclear Physics
+\size default
+
 \begin_inset Note Note
 status collapsed
 
@@ -409,7 +413,7 @@ status collapsed
 \end_layout
 
 \begin_layout Advisor
-Xu Nu.
+Nu Xu.
 \begin_inset space \qquad{}
 \end_inset
 
@@ -469,7 +473,7 @@ status collapsed
 \end_layout
 
 \begin_layout 完成时间
-二○一四年十月
+二○一四年八月
 \begin_inset Note Note
 status collapsed
 
@@ -483,7 +487,7 @@ status collapsed
 \end_layout
 
 \begin_layout SubmitDate
-Oct, 2014
+Aug, 2014
 \begin_inset Note Note
 status collapsed
 

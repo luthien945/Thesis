@@ -99,7 +99,7 @@ Result and discussion
 \end_layout
 
 \begin_layout Section
-Dielectron production in p+p Collisions at 200 GeV at STAR
+Dielectron production in 200 GeV p+p collisions at STAR
 \end_layout
 
 \begin_layout Standard
@@ -203,7 +203,7 @@ name "fig:ppspectra"
 \end_layout
 
 \begin_layout Section
-Di-electron production in Au+Au Collisions at 200 GeV at STAR
+Di-electron production in 200 GeV Au+Au collisions at STAR
 \end_layout
 
 \begin_layout Standard
@@ -2328,7 +2328,7 @@ Current measurements can not be distinguished by different PYTHIA simulations
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -3115,7 +3115,7 @@ reference "fig:Teff"
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -3133,7 +3133,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Invariant transverse mass spec- tra in 0-80% minimum bias collisions.
+Invariant transverse mass spectra in 0-80% minimum bias collisions.
  The yields shown here were corrected for the STAR acceptance loss (
 \begin_inset Formula $p_{T}^{e}>0.2GeV/c$
 \end_inset
