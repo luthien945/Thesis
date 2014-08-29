@@ -505,7 +505,7 @@ key "PhysRevD.86.010001"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1349,11 +1349,28 @@ key "PhysRevLett.66.2720,Brown1996333"
  hadronic medium, 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "R.-Rapp:2000uq"
+key "R.-Rapp:2000uq,Cassing199965,Gale:2003qv,Alam2000159"
 
 \end_inset
 
+.
+ These calculation based on hadronic many-body interactions predict a strong
+ broadening of the 
+\begin_inset Formula $\rho$
+\end_inset
 
+ spectral function, which when when extrapolated to the putative phase transitio
+n temperature, leading to a complete “melting” of the resonance structure.
+ Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Meson_Medium"
+
+\end_inset
+
+ right panel shows the scenarios for the effects of chiral symmetry restoration
+ on the in-medium vector- and axial-vector spectral functions.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1393,7 +1410,25 @@ key "Barate-et-al.:1998fk"
 .
  Right panel: scenarios for the effects of chiral symmetry restoration on
  the in-medium vector- and axial-vector spectral functions.
+ Figure is taken from 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "R.-Rapp:hl"
+
+\end_inset
+
+.
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Meson_Medium"
 
 \end_inset
 
@@ -1615,7 +1650,7 @@ Dilepton measurements in heavy ion collisions have been pursued for decades
  in different collision system from low to relativistic energies
 \begin_inset CommandInset citation
 LatexCommand cite
-key "PhysRevLett.75.1272"
+key "PhysRevLett.75.1272,PhysRevLett.79.1229,PhysRevLett.98.052302,PhysRevC.84.014902,Angelis-et-al.:2000vn,PhysRevLett.91.042301"
 
 \end_inset
 

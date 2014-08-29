@@ -2348,12 +2348,16 @@ During year from 2010 to 2012, the STAR HLT has delivered several important
  This discovery has been published in 
 \emph on
 Nature 
+\emph default
+
 \begin_inset CommandInset citation
 LatexCommand cite
 key ":2011qf"
 
 \end_inset
 
+
+\emph on
 .
  
 \emph default
