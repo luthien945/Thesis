@@ -170,7 +170,7 @@ Z
  Gluons also carry color charge, so they can also interact with themselves.
  The strong interaction are described by the theory of quantum chromodynamics.
  The electric charged particles interact through the electromagnetic force
- mediated by Photons which is well-described by the theory of quantum electrodyn
+ mediated by photons which is well-described by the theory of quantum electrodyn
 amics.
  The weak force is carried by 
 \emph on
@@ -249,7 +249,7 @@ Quantum Chromodynamics (QCD)
 \begin_layout Standard
 In the 1950s, a large number of strongly interacting particles (hadrons)
  were discovered in particle physics experiments.
- To understand and explained the spectrum of these particles, in 1963, Gell-Mann
+ To understand and explain the spectrum of these particles, in 1963, Gell-Mann
  and Zweig proposed a model in terms of elementary constituents called 
 \emph on
 quarks.
@@ -394,8 +394,8 @@ f
 \begin_inset Formula $F_{a}^{\mu\nu}$
 \end_inset
 
- are the field strengths tensor which were introduced to describe the self
- interaction of the gluon fields.
+ are the field strengths tensor which were introduced to describe the self-inter
+action of the gluon fields.
  
 \begin_inset Formula $D^{\mu}$
 \end_inset
@@ -421,7 +421,7 @@ Running coupling
 
 \begin_layout Standard
 The effective QCD coupling constant 
-\begin_inset Formula $\alpha_{s}(\mu)$
+\begin_inset Formula $\alpha_{s}(Q)$
 \end_inset
 
  can be written as:
@@ -430,7 +430,7 @@ The effective QCD coupling constant
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\alpha_{s}(\mu)\equiv\frac{g_{s}^{2}(\mu)}{4\pi}\approx\frac{4\pi}{\beta_{0}\ln(\mu^{2}/\Lambda_{QCD}^{2})}
+\alpha_{s}(Q)\equiv\frac{g_{s}^{2}(Q)}{4\pi}\approx\frac{4\pi}{\beta_{0}\ln(Q^{2}/\Lambda_{QCD}^{2})}
 \end{equation}
 
 \end_inset
@@ -439,14 +439,14 @@ Where
 \begin_inset Formula $\beta_{0}$
 \end_inset
 
- is a constant larger than 0 which dependence on the number of quarks with
+ is a constant larger than 0 which depends on the number of quarks with
  mass less than the energy scale 
-\begin_inset Formula $\mu$
+\begin_inset Formula $Q$
 \end_inset
 
 .
  The coupling 
-\begin_inset Formula $\alpha_{s}(\mu)$
+\begin_inset Formula $\alpha_{s}(Q)$
 \end_inset
 
  shows a dependence on the renormalization scale.
@@ -484,16 +484,16 @@ key "PhysRevD.86.010001"
 ~200 MeV.
  With decreasing interaction distance and increasing momentum transfer,
  the coupling constant decreases, the interaction between quarks and gluons
- goes weaker.
+ becomes weaker.
  This is the major feature of QCD: asymptotic freedom.
  While the energy scale 
-\begin_inset Formula $\mu\ll\Lambda_{QCD}$
+\begin_inset Formula $Q\ll\Lambda_{QCD}$
 \end_inset
 
  (short distance and high momentum transfer), QCD can be described with
  perturbative method (perturbative QCD).
  On the other hand, pQCD breaks down when the 
-\begin_inset Formula $\mu\sim\Lambda_{QCD}$
+\begin_inset Formula $Q\sim\Lambda_{QCD}$
 \end_inset
 
  where QCD becomes strongly coupled.
@@ -735,7 +735,7 @@ Spontaneous breaking of chiral symmetry
 
 \begin_layout Standard
 The conservation of chiral symmetry leads to a direct deduction that the
- chiral partner which can be rotated into each other by the operation 
+ chiral partners which can be rotated into each other by the operation 
 \begin_inset Formula $\Lambda_{A}$
 \end_inset
 
@@ -817,7 +817,7 @@ To solve the contradiction discussed above, the spontaneous breakdown of
  due to the explicit asymmetry in the Lagrangian, i.e.
  the finite mass of quarks in QCD; spontaneous breaking, which means the
  symmetry is not realized in the ground state.
- We considering effective potentials shown in fig 
+ We consider effective potentials shown in fig 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:sbsc"
@@ -826,9 +826,9 @@ reference "fig:sbsc"
 
 .
  Panel (a) shows a potential with ground state just in the middle.
- The ground state plus potential are invariant under rotations.
+ The ground state plus potential are invariant under axial rotations.
  In panel (b), any points in the valley can be the ground state.
- If we chosen as one direction as the ground state, the axial rotation symmetry
+ If we chose one direction as the ground state, the axial rotation symmetry
  is obviously spontaneously broken, since the Lagrangian is invariant but
  the vacuum is not.
  
@@ -969,7 +969,7 @@ Another important feature of QCD is confinement which lead to the absence
  When the energy is enough, a new quark/anti-quark pair is created from
  the vacuum.
  As result of this, the quarks and gluons are confined inside hadrons, and
- when quarks is created in high energy experiment, instead of seeing the
+ when quarks are created in high energy experiment, instead of seeing the
  individual quarks, only cluster of color neutral hadrons are observed.
  This process is called hadronization.
  On the other hand, when the system is at extreme temperature or high energy
@@ -1010,7 +1010,7 @@ L=\frac{1}{3}{\rm tr}\left(\mathcal{P}e^{ig\intop_{0}^{\beta}A_{4}(x,\tau)d\tau}
 
 
 \emph default
-is believed as a observable for the phase transition.
+is believed as an observable for the phase transition.
  Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1018,7 +1018,7 @@ reference "fig:ptxs"
 
 \end_inset
 
- left shows the Polyakov loop operator expectation value 
+ left panel shows the Polyakov loop operator expectation value 
 \begin_inset Formula $\left\langle L\right\rangle $
 \end_inset
 
@@ -1255,8 +1255,7 @@ reference "fig:ptxs"
 \begin_inset Formula $\left\langle \bar{\psi}\psi\right\rangle $
 \end_inset
 
- as and its temperature derivative as a function of the lattice coupling
- 
+ and its temperature derivative as a function of the lattice coupling 
 \begin_inset Formula $\beta=6/g^{2}$
 \end_inset
 
@@ -1292,7 +1291,7 @@ key "PhysRevD.74.054507,Aoki200646"
 \end_inset
 
 .
- If considering the quark component in real world (two light quarks 
+ Considering the quark component in real world (two light quarks 
 \begin_inset Formula $u$
 \end_inset
 
@@ -1320,8 +1319,8 @@ Chiral symmetry restoration can be characterized by the rapid decrease of
 
  meson is a unique tool for characterizing the chiral properties of hot
  and density medium, since its life time is much short (~1.3 fm) than the
- medium (~10 fm).
- Its spectral functions is expected to be significant modified (comparing
+ medium (~10 fm) created in heavy energy heavy ion collisions.
+ Its spectral function is expected to be significant modified (comparing
  to other light mesons) during the interaction with medium.
  There are two main scenarios on the in medium modification of the 
 \begin_inset Formula $\rho$
@@ -1354,13 +1353,13 @@ key "R.-Rapp:2000uq,Cassing199965,Gale:2003qv,Alam2000159"
 \end_inset
 
 .
- These calculation based on hadronic many-body interactions predict a strong
+ These calculations based on hadronic many-body interactions predict a strong
  broadening of the 
 \begin_inset Formula $\rho$
 \end_inset
 
- spectral function, which when when extrapolated to the putative phase transitio
-n temperature, leading to a complete “melting” of the resonance structure.
+ spectral function, which when extrapolated to the putative phase transition
+ temperature, leading to a complete “melting” of the resonance structure.
  Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1448,7 +1447,7 @@ Dilepton production in high energy heavy ion collisions
 The heavy ion collision is believed to be the best way to study properties
  of QCD matter in laboratory, since increasing the mass number of the incident
  particles is more efficient than increasing beam energy.
- During the past 20 years, world wide effort has been dedicated in this
+ During the past 20 years, world wide efforts have been dedicated in this
  region.
  Several large-scale experiments have been conducted.
  Relativistic heavy ion collider (RHIC) built in Brookhaven National Laboratory
@@ -1471,8 +1470,8 @@ Probes explored in experiments are mostly hadrons which have been used to
  in high energy heavy ion collision at RHIC and LHC.
  Dileptons as an electromagnetic probe, escape the interacting system without
  suffering further strong interactions after production.
- In additional, dilepton can be produced on the various stages of entire
- system evolution.
+ In addition, dilepton can be produced on the various stages of entire system
+ evolution.
  They are therefore expected to be an outstanding probes to study the property
  of the medium created in high energy heavy ion collisions.
  
@@ -1504,7 +1503,7 @@ At the initial stage of the system, the initial hard pQCD process Drell-Yan
 
 ) can produce high mass dilepton and is thus expected to dominate in the
  HMR.
- Moreover, direct photons form the initial hard scattering can allow for
+ Moreover, direct photons from the initial hard scattering can allow for
  bremsstrahlung emission of soft virtual photons which convert into low
  mass and high transverse momentum (
 \begin_inset Formula $p_{T}$
@@ -1567,7 +1566,7 @@ key "Deng2011581,PhysRevC.75.054909,Shuryak:qy"
 \end_layout
 
 \begin_layout Standard
-The system expands, cools and enters into the hadronic phase.
+As the fire ball expands and cools, the system enters the hadronic phase.
  Dileptons emitted from the hadronic medium are governed by the coupling
  of vector mesons (
 \begin_inset Formula $\rho,\:\omega,\:\phi$
@@ -1591,8 +1590,8 @@ key "R.-Rapp:2000uq"
 \begin_inset Formula $\rho$
 \end_inset
 
- meson is expected to most modified, due to its short life time ~ 1.3 fm
- comparing to the lift time of hadronic medium (~ 10 fm) 
+ meson is expected to be most modified, due to its short life time ~ 1.3
+ fm comparing to the life time of hadronic medium (~ 10 fm) 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Pisarski1982155"
@@ -1664,9 +1663,9 @@ CERES/NA45
 \end_layout
 
 \begin_layout Standard
-NA45 collaboration a fixed-target heavy ion collisions experiment at the
- CERN Super Proton Synchrotron (SPS).
- It is also well know by the number of the detector - Cherenkov Ring Electron
+NA45 is a fixed-target heavy ion collisions experiment at the CERN Super
+ Proton Synchrotron (SPS).
+ It is also well known by the name of the detector - Cherenkov Ring Electron
  Spectrometer (CERES).
  A detailed description of the CERES/NA45 experiment can be found in 
 \begin_inset CommandInset citation
@@ -1698,10 +1697,10 @@ key "PhysRevLett.75.1272"
 \end_inset
 
 .
- The results from the S-Au collision system, however, shows a statistically
- significant enhancement w.r.t the hadronic cocktail simulation.
- Further measurements in 40 and 158 AGeV Pb-Au collisions shows similar
- results 
+ The results from the S-Au collision system, however, show a statistically
+ significant enhancement w.r.t the hadronic cocktail simulations.
+ Further measurements in 40 and 158 AGeV Pb-Au collisions show similar results
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Agakichiev1998405,PhysRevLett.91.042301"
@@ -1717,7 +1716,7 @@ key "Agakichiev1998405,PhysRevLett.91.042301"
 \end_inset
 
  region and shows a strong centrality dependence.
- These observation of the enhancement has risen great interests in theorists.
+ The observation of the enhancement has risen great interests among theorists.
  A common agreement is that one observes direct thermal radiation from the
  fireball, dominated by two pion annihilation 
 \begin_inset Formula $\pi^{+}\pi^{-}\rightarrow\rho\rightarrow e^{+}e^{-}$
@@ -1931,8 +1930,8 @@ NA60 is another experiment on SPS at CERN.
 \end_inset
 
 .
- Benefited from the new vertex detectors, NA60 can identify the offset the
- muon tracks with respect to the collision vertex.
+ Benefited from the new vertex detectors, NA60 can identify the offset of
+ the muon tracks with respect to the collision vertex.
  The dimuon contributed from charmed meson decay thus can be separated from
  prompt muon pairs.
 \end_layout
@@ -2080,7 +2079,7 @@ reference "fig:NA60_Teff"
 \end_inset
 
  pole mass, which is a strong indication for radial flow of a hadronic source.
- The measurements from hadrons also conforms this conclusion.
+ The measurements from hadrons also confirms this conclusion.
  Around the 
 \begin_inset Formula $\phi$
 \end_inset
@@ -2114,8 +2113,8 @@ key "PhysRevLett.100.162301,vanHees2008339,PhysRevC.80.014902"
 
 \end_inset
 
-, which provide further support the conclusion of the transition from hadronic
- source to partonic source from low mass to intermediate mass.
+, which provide further support of the conclusion of the transition from
+ hadronic source to partonic source from low mass to intermediate mass.
  In the region above 1 GeV, all three models explicitly differentiate between
  partonic and hadronic processes.
  In case of 
@@ -2200,7 +2199,7 @@ PHENIX
 \begin_layout Standard
 PHENIX (Pioneering High Energy Nuclear Interaction Experiment) is one of
  the two major detector system at RHIC.
- It is designed to mainly study leptons and photon production from heavy
+ It is designed to mainly study leptons and photons production from heavy
  ion collisions.
  The PHENIX systems consists of two central arm spectrometers, each arm
  covers the pseudo-rapidity range 

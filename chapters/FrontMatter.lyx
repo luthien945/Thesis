@@ -164,8 +164,8 @@ C和LHC的实验通过对末态强子的测量结果表明，在高能重离子�
 \end_inset
 
  = 200 GeV下得质子质子对撞和金金对撞中对双电子产生的测量。STAR实验在2010至2012年间积累了大量的实验数据，同时桶部飞行时间探测器（TOF）的
-安装完成大大增强了STAR探测器鉴别电子（正电子）的能力，使得在STAR实验中测量双轻子成为可能。通过分析2012年采集数据的到的双电子质量普极大地提高了质子质
-子对撞中双轻子不变质量谱的精度（与STAR实验之前的测量
+安装完成大大增强了STAR探测器鉴别电子（正电子）的能力，使得在STAR实验中测量双轻子成为可能。通过分析2012年采集数据得到的双电子不变质量谱极大地提高了质
+子质子对撞中双轻子不变质量谱的精度（与STAR实验之前的测量
 \begin_inset CommandInset citation
 LatexCommand cite
 key "PhysRevC.86.024906"
@@ -232,8 +232,8 @@ The mission of an ultra relativistic heavy ion program is to study the structure
  ion collision at RHIC and LHC.
  Dileptons as an electromagnetic probe, escape the interacting system without
  suffering further strong interactions after their production.
- In additional, dilepton can be produced on the various stages of entire
- system evolution.
+ In addition, dilepton can be produced on the various stages of entire system
+ evolution.
  They are therefore expected to be an outstanding probes to study the property
  of the medium created in high energy heavy ion collisions.
  
@@ -269,7 +269,7 @@ In this thesis, I will report the measurement on dielectron production in
 \end_inset
 
  = 200 GeV for the STAR experiment.
- The large data set collected during year 2010~2012, as well as the complication
+ The large data set collected during year 2010~2012, as well as the completion
  of barrel Time-Of-Flight (TOF) installation in year 2010, provides electron/pos
 ition samples with high statistics and purity which makes it possible for
  dielectron measurement at the STAR experiment.
@@ -323,7 +323,7 @@ key "PhysRevC.86.024906"
 \begin_inset Formula $\phi$
 \end_inset
 
- production though their dielectron decay channel.
+ production through their dielectron decay channel.
  
 \end_layout
 
