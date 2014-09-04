@@ -103,9 +103,9 @@ Data set and event selection
 \end_layout
 
 \begin_layout Standard
-The data set used in this analysis was minimum bias triggered event taken
+The data set used in this analysis was minimum bias triggered events taken
  in year 2010 and year 2011 Au+Au 200 GeV collisions and central triggered
- date taken in year 2010 Au+Au 200 GeV collisions.
+ data taken in year 2010 Au+Au 200 GeV collisions.
  For demonstration, the Au+Au data in year 2010 was analyzed by Bingchu
  Huang and Jie Zhao 
 \begin_inset CommandInset citation
@@ -155,12 +155,12 @@ reference "fig:vertex"
  The clean diagonal correlation band indicate the correct vertices which
  fire the VPDMB trigger.
  Random distributions could also be see in a wide region which typically
- indicate the vertex found be TPC is a pile-up vertex (the wrong vertex
+ indicate the vertex found by TPC is a pile-up vertex (the wrong vertex
  from different bunch crossing collisions).
  The cross like distribution in the random correlation regions is due to
- the online vertexZ cut in the trigger definition.To suppress the pile up
- events and to ensure that the selected event is firing the trigger, the
- difference between event vertex z-coordinate (
+ the online vertexZ cut in the trigger definition.
+ To suppress the pile up events and to ensure that the selected event is
+ firing the trigger, the difference between event vertex z-coordinate (
 \begin_inset ERT
 status collapsed
 
@@ -641,7 +641,7 @@ The centrality in Au+Au 200 GeV collisions was defined using the uncorrected
 \end_inset
 
  ( also called reference multiplicity).
- A Monte Carlo Clauber calculation was used to compared with the 
+ A Monte Carlo Glauber calculation was used to compared with the 
 \begin_inset Formula $dN/d\eta$
 \end_inset
 
@@ -682,7 +682,7 @@ reference "fig:refmult"
 \end_inset
 
  (bottom panel) to account for the VPD inefficiency.
- Finally, the centrality bins are defined according to the MC Glauder distributi
+ Finally, the centrality bins are defined according to the MC Glauber distributi
 on to determine the cut on the measured multiplicity.
  Table 
 \begin_inset CommandInset ref
@@ -1074,10 +1074,6 @@ n\sigma_{e}=\frac{1}{R_{dE/dx}}ln\frac{\langle dE/dx\text{\rangle}{}^{Mea}}{\lan
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 in the Eq.
  
 \begin_inset CommandInset ref
@@ -1578,7 +1574,7 @@ reference "fig:PID"
 \begin_inset Formula $n\sigma_{e}$
 \end_inset
 
- vs momentum.
+ vs momentum distribution plot.
  We selected pure hadron (
 \begin_inset Formula $\pi$
 \end_inset
@@ -1615,7 +1611,7 @@ reference "fig: pure sample"
 \end_inset
 
  (right)).
- This sample was also used laterly in the efficiency study.
+ This sample was also used in the efficiency study.
  Gaussian functions were used to parameterize the 
 \begin_inset Formula $n\sigma_{e}$
 \end_inset
@@ -1645,11 +1641,11 @@ reference "fig:muli fit ex"
 \begin_inset Formula $\pi$
 \end_inset
 
- component which is from that the merging of two closed 
+ component which is from the merging of two closed 
 \begin_inset Formula $\pi$
 \end_inset
 
- tracks, and has a doubled 
+ tracks, and thus has a doubled 
 \emph on
 dE/dx
 \emph default
@@ -2075,10 +2071,6 @@ M_{ee}=\sqrt{(E_{+}+E_{-})^{2}-(\overset{\rightarrow}{p_{+}}+\overset{\rightarro
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 where 
 \begin_inset Formula $E_{\pm}=\sqrt{(\overset{\rightarrow}{p_{\pm}})^{2}+m_{e}^{2}}$
 \end_inset
@@ -2113,8 +2105,8 @@ where
 \end_layout
 
 \begin_layout Enumerate
-Combinatorial background: background come from randomly pairing, which is
- uncorrelated.
+Combinatorial background: background comes from randomly pairing, which
+ is uncorrelated.
 \end_layout
 
 \begin_layout Enumerate

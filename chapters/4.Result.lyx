@@ -370,7 +370,15 @@ key "PhysRevC.81.034911"
 \end_inset
 
 .
- 
+ And the new results with Hadron Blind Detector (HBD) from PHENIX group
+ comfirm this difference is mainly from central collisions 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Atomssa:2013fk"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -386,7 +394,7 @@ d charm pair decays based on PYTHIA simulations.
 \begin_inset Formula $d\sigma^{c\bar{c}}/dy$
 \end_inset
 
- at mid-rapidity which meed to be used for normalization is around 40%.
+ at mid-rapidity which need to be used for normalization is around 40%.
  More precise measurements on both the total charm cross section as well
  as the correlation in Au+Au collisions are needed to conclude any other
  source contribution, such as QGP thermal radiation, in this mass region.
@@ -436,7 +444,7 @@ key "Rapp:1999kx,PhysRevC.64.035202"
 \begin_inset Formula $\rho$
 \end_inset
 
- mass compared to the spectral function in vacuum.
+ mass when comparing to the spectral function in vacuum.
  High precision data from NA60 suggested that the enhancement in the low
  mass dilepton spectrum is consistent with in-medium broadening of the 
 \begin_inset Formula $\rho$
@@ -642,8 +650,8 @@ key "Cassing199965,Bratkovskaya1997413"
 
 ).
  Dilepton production in these partonic channels is calculated with off-shell
- partons using the phenomenological parametrizations for the quark and gluon
- propagators and their interaction strength in QGP.
+ partons using the phenomenological parameterizations for the quark and
+ gluon propagators and their interaction strength in QGP.
 \end_layout
 
 \begin_layout Standard
@@ -1153,8 +1161,8 @@ To gain more insight on the underlining physics, we also studied the
 \begin_inset Formula $p_{T}$
 \end_inset
 
- dependence as will as the centrality of dielectron yields and compared
- them to the hadronic cocktail simulations and model calculations.
+ dependence as will as the centrality dependence of dielectron yields and
+ compared them to the hadronic cocktail simulations and model calculations.
  Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1194,7 +1202,7 @@ reference "fig:pT_mass"
 \end_inset
 
 .
- Please note that the correlated charm contributions, which becomes to has
+ Please note that the correlated charm contributions, which becomes to have
  sizable contribution from 0.5 GeV/
 \begin_inset Formula $c^{2}$
 \end_inset
@@ -1372,11 +1380,11 @@ reference "fig:sum_LowMass"
 
 \end_inset
 
- upper plot panel (a) (for 
+ upper plot panel (a) (for centrality) and (b) (for 
 \begin_inset Formula $p_{T}$
 \end_inset
 
-) and (b) (for centrality).
+).
  One can see that the hadronic cocktail can reproduce the dielectron yield
  in the 
 \begin_inset Formula $\omega$
@@ -1395,7 +1403,7 @@ reference "fig:sum_LowMass"
 \begin_inset Formula $p_{T}$
 \end_inset
 
- and centrality bins and the ratios of date w.r.t hadronic cocktail 
+ and centrality bins and the ratios of data w.r.t hadronic cocktail 
 \begin_inset Formula $ $
 \end_inset
 
@@ -2115,7 +2123,7 @@ reference "fig:eeRCP"
 
 ) and are plotted in the upper panel, and the ratio between them is plotted
  in the bottom panel.
- In the upper plot, charm contribution based on difference assumption on
+ In the upper plot, charm contribution based on different assumptions on
  the correlations are also include as two dash lines.
  The dashed line depicts the correlated charm from PYTHIA, while the dot-dashed
  line assumes a fully randomized azimuthal correlation between charm pairs
@@ -2445,7 +2453,7 @@ Firstly we used Method I and Method II to fit the data distributions with
 
  mesons are much longer than the typical lifetime of the medium created
  in high energy heavy ion collision, the observed signals from the detector
- are dominant by thr freeze-out 
+ are dominant by the freeze-out 
 \begin_inset Formula $\omega$
 \end_inset
 
@@ -2454,7 +2462,7 @@ Firstly we used Method I and Method II to fit the data distributions with
 \end_inset
 
 .
- Therefore, although vector meson could be modified in the hot medium due
+ Therefore, although vector mesons can be modified in the hot medium due
  to the interactions with the medium, the observed 
 \begin_inset Formula $\omega$
 \end_inset
@@ -2472,8 +2480,9 @@ Firstly we used Method I and Method II to fit the data distributions with
 \begin_inset Formula $\phi$
 \end_inset
 
- signals from Method I with the values from PDG as well as from our full
- GEANT simulations (from the cocktail distributions), shown in Fig 
+ signals from Method I with the values from PDG, as well as those from our
+ full GEANT simulations (from the cocktail distributions), shown in Fig
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:meson_MW"
@@ -2517,7 +2526,7 @@ reference "fig:meson_MW"
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2587,7 +2596,7 @@ name "fig:meson_Allpt"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2667,8 +2676,8 @@ reference "fig:meson_pt_fit"
 \end_inset
 
  region.
- We used Method I with fixed widths and mass positions according our full
- GEANT simulations to extracted the raw yields.
+ We used Method I with fixed widths and mass positions according to our
+ full GEANT simulations to extracted the raw yields.
  The systematic uncertainty of the raw yields is estimated by changing backgroun
 d function and fit range.
  The difference between the free parameter fit by Method I and Method II
@@ -2742,7 +2751,7 @@ key "PhysRevC.79.051901"
 \begin_inset Formula $\omega$
 \end_inset
 
- spectrum with the same set if parameters obtained from the simultaneous
+ spectrum with the same set of parameters obtained from the simultaneous
  fit to all available light hadrons (Sec 3.6).
  The TBW prediction describes the measured 
 \begin_inset Formula $\omega$
@@ -2871,7 +2880,7 @@ name "fig:meson_pt_fit"
 placement h
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
