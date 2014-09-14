@@ -203,7 +203,7 @@ name "fig:ppspectra"
 \end_layout
 
 \begin_layout Section
-Di-electron production in 200 GeV Au+Au collisions at STAR
+Dielectron production in 200 GeV Au+Au collisions at STAR
 \end_layout
 
 \begin_layout Standard
@@ -344,7 +344,7 @@ name "fig:AuAuMB"
 
 \begin_layout Standard
 In the LMR region, an enhancement of 
-\begin_inset Formula $1.66\pm0.06(stat.)\pm0.24(sys.)\pm0.41(cocktail)$
+\begin_inset Formula $1.66\pm0.06(stat.)\pm0.24(sys.)\pm0.33(cocktail)$
 \end_inset
 
  is observed with respect to the cocktail without vacuum 
@@ -371,7 +371,8 @@ key "PhysRevC.81.034911"
 
 .
  And the new results with Hadron Blind Detector (HBD) from PHENIX group
- comfirm this difference is mainly from central collisions 
+ confirm the enhancements between STAR and PHENIX in 20-80% centrality bins
+ are consistent 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Atomssa:2013fk"
@@ -487,7 +488,14 @@ key "PhysRevLett.64.2242"
 \begin_inset Formula $M>1.5\, GeV/c^{2}$
 \end_inset
 
- at the top RHIC energy due to the well established partonic phase.
+ at the top RHIC energy due to the well established partonic phase 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevC.63.054907"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -1087,7 +1095,7 @@ reference "fig:Full_Rapp_PHSD"
 
 -test mentioned previously.
  In the IMR, the correlated charm contribution is dominant.
- However, we still do not have a clearly understand about the correlated
+ However, we still do not have a clearly understanding about the correlated
  charm contribution.
  It is a bit early to argue the consistency between data and models.
  
@@ -3371,7 +3379,7 @@ We also reported the measurement of
 \end_layout
 
 \begin_layout Standard
-In the intermedia mass region (1.1~3 GeV/
+In the intermediate mass region (1.1~3 GeV/
 \begin_inset Formula $c^{2}$
 \end_inset
 

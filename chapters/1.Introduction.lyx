@@ -487,7 +487,7 @@ key "PhysRevD.86.010001"
  becomes weaker.
  This is the major feature of QCD: asymptotic freedom.
  While the energy scale 
-\begin_inset Formula $Q\ll\Lambda_{QCD}$
+\begin_inset Formula $Q\gg\Lambda_{QCD}$
 \end_inset
 
  (short distance and high momentum transfer), QCD can be described with
@@ -1039,13 +1039,13 @@ reference "fig:ptxs"
 
  increase rapidly to a nonzero value, its derivative shows a sharp peak
  at a critical coupling 
-\begin_inset Formula $\beta_{cr}$
+\begin_inset Formula $\beta_{c}$
 \end_inset
 
 .
  This indicates that quark is deconfined at the corresponding critical temperatu
 re 
-\begin_inset Formula $T_{cr}$
+\begin_inset Formula $T_{c}$
 \end_inset
 
 .
@@ -1097,7 +1097,7 @@ key "PhysRevD.78.074507,PhysRevC.79.015202"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1265,11 +1265,11 @@ reference "fig:ptxs"
  quarks.
  With the temperature increasing, the dynamically generated mass melts away
  at 
-\begin_inset Formula $T_{cr}$
+\begin_inset Formula $T_{c}$
 \end_inset
 
 , and the quarks mass become vanishing again above 
-\begin_inset Formula $T_{cr}$
+\begin_inset Formula $T_{c}$
 \end_inset
 
 , or in another word, the approximate chiral symmetry is restored.
@@ -1299,8 +1299,11 @@ key "PhysRevD.74.054507,Aoki200646"
 \begin_inset Formula $d$
 \end_inset
 
-, and a much heavier strange quarks), this transition is more likely a rapid
- cross-over.
+, and a much heavier strange quark 
+\begin_inset Formula $s$
+\end_inset
+
+), this transition is more likely a rapid cross-over.
 \end_layout
 
 \begin_layout Standard

@@ -182,7 +182,7 @@ key "PhysRevC.86.024906"
 \end_inset
 
 介子贡献的强子衰变模拟结果有 
-\begin_inset Formula $1.66\text{\pm0.06(stat.)\pm0.24(sys.)\pm0.41(cocktail)}$
+\begin_inset Formula $1.66\text{\pm0.06(stat.)\pm0.24(sys.)\pm0.33(cocktail)}$
 \end_inset
 
  倍的增强。对于这个增强因子，我们并未观测到明显的中心度依赖性和横动量依赖性。在中心对撞中（0-10%中心度）这个增强因子比PHENIX实验观测到的结果要小。基
@@ -190,7 +190,7 @@ key "PhysRevC.86.024906"
 \begin_inset Formula $\rho$
 \end_inset
 
-介子在介质中质量谱展宽的模型计算可以很好的解释我们观测到的增强。同时本文也会讨论可能存在的相关量重味夸克在介质中的修正效应，以及通过双轻子衰变道对
+介子在介质中质量谱展宽的模型计算可以很好的解释我们观测到的增强。同时本文也会讨论可能存在的相关联的重味夸克在介质中的修正效应，以及通过双轻子衰变道对
 \begin_inset Formula $\omega$
 \end_inset
 
@@ -222,25 +222,25 @@ status open
 \end_layout
 
 \begin_layout EnglishAbstract
-The mission of an ultra relativistic heavy ion program is to study the structure
+The mission of a ultra-relativistic heavy ion program is to study the structure
  of nuclear matter with the QCD degrees of freedom including QCD matter
  at finite temperature and density in the laboratory and search for the
  QCD critical point and first-order phase boundary.
  Many experimental evidences have been found to demonstrate the formation
- of a strongly-coupled Quark Gluon Plasma (sQGP).
+ of a strongly-coupled Quark-Gluon Plasma (sQGP).
  These evidences are mostly from hadron measurements in high energy heavy
- ion collision at RHIC and LHC.
+ ion collisions at RHIC and LHC.
  Dileptons as an electromagnetic probe, escape the interacting system without
  suffering further strong interactions after their production.
  In addition, dilepton can be produced on the various stages of entire system
  evolution.
- They are therefore expected to be an outstanding probes to study the property
+ They are therefore expected to be outstanding probes to study the property
  of the medium created in high energy heavy ion collisions.
  
 \end_layout
 
 \begin_layout EnglishAbstract
-Traditionally, due to different physics of interest, dielectron kinematic
+Traditionally, due to different physics of interest, dilepton kinematic
  phase space is divided into 3 mass regions.
  In the Low Mass Region - LMR (
 \begin_inset Formula $M_{ll}<M_{\phi}$
@@ -252,8 +252,8 @@ Traditionally, due to different physics of interest, dielectron kinematic
 \begin_inset Formula $M_{\phi}<M_{ll}<M_{J/\psi}$
 \end_inset
 
-), dilepton production are dominated by contributions from the thermal radiation
- and contributions from semilepton decay of the correlated charmed meson.
+), dilepton production is dominated by contributions from the thermal radiation
+ and semilepton decay of the correlated charmed meson.
  Drell-Yan process and the decay heavy quarkonia contribute mainly for the
  dilepton source in the High mass Region - HMR (
 \begin_inset Formula $M_{ll}>M_{J/\psi}$
@@ -265,7 +265,7 @@ Traditionally, due to different physics of interest, dielectron kinematic
 \begin_layout EnglishAbstract
 In this thesis, I will report the measurement on dielectron production in
  p+p and Au+Au collisions at 
-\begin_inset Formula $\sqrt{s}$
+\begin_inset Formula $\sqrt{s_{NN}}$
 \end_inset
 
  = 200 GeV for the STAR experiment.
@@ -273,7 +273,7 @@ In this thesis, I will report the measurement on dielectron production in
  of barrel Time-Of-Flight (TOF) installation in year 2010, provides electron/pos
 ition samples with high statistics and purity which makes it possible for
  dielectron measurement at the STAR experiment.
- The dielectron results from 200 GeV p+p collision has greatly improved
+ The dielectron results from 200 GeV p+p collisions have greatly improved
  (~7 times more) statistics comparing to the previous published result from
  STAR 
 \begin_inset CommandInset citation
@@ -291,7 +291,7 @@ key "PhysRevC.86.024906"
  We observed an enhancement factor of 
 \lang american
 
-\begin_inset Formula $1.66\pm0.06(stat.)\pm0.24(sys.)\pm0.41(cocktail)$
+\begin_inset Formula $1.66\pm0.06(stat.)\pm0.24(sys.)\pm0.33(cocktail)$
 \end_inset
 
 
@@ -305,10 +305,17 @@ key "PhysRevC.86.024906"
 \end_inset
 
  contribution.
- This results is extracted from the 200 GeV minimum bias Au+Au collisions
+ This result is extracted from the 200 GeV minimum bias Au+Au collisions
  and we do not observe strong centrality nor transverse momentum dependence.
  In the most top 10% central collisions, this enhancement is smaller than
- the PHENIX results.
+ the PHENIX results 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevC.81.034911,Atomssa:2013fk"
+
+\end_inset
+
+.
  The model calculation based on in-medium broadening of 
 \begin_inset Formula $\rho$
 \end_inset
@@ -323,7 +330,7 @@ key "PhysRevC.86.024906"
 \begin_inset Formula $\phi$
 \end_inset
 
- production through their dielectron decay channel.
+ production through their dielectron decay channels.
  
 \end_layout
 

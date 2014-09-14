@@ -119,19 +119,19 @@ key "Zhao:2013vn,Huang:2011zl"
  Only year 2011 data are used to demonstrate the analysis method for Au+Au
  200 GeV, and the analysis method for year 2010 and year 2011 are similar.
  The final results reported in this thesis are from the combined year 2010
- and year 2011 data for Au+Au 200GeV collisions.
+ and year 2011 data for Au+Au 200 GeV collisions.
  For the p+p analysis, the data set was taken in year 2012 p+p 200 GeV minimum
  bias collision.
  The minimum bias trigger was defined as a coincidence in the east and west
- VPD detectors, and an online vertex cut was applied to select the collision
- happening in the center of the detector.
+ VPDs, and an online vertex cut was applied to select the collision happening
+ in the center of the detector.
  For the central trigger, a small signal in the ZDC detectors was required
  as well as a large multiplicity from the barrel TOF.
  This trigger corresponds to 0-10% of the total hadronic cross section.
 \end_layout
 
 \begin_layout Standard
-Events used in this analysis were selection by the following event selection
+Events used in this analysis were selected by the following event selection
  criteria.
  To insure the TPC performance, events were required to have a valid reconstruct
 ed collision vertex (primary vertex, defined by primary tracks) within 30cm
@@ -154,7 +154,7 @@ reference "fig:vertex"
  (b) shows correlation between TPC vertexZ and VPD vertexZ.
  The clean diagonal correlation band indicate the correct vertices which
  fire the VPDMB trigger.
- Random distributions could also be see in a wide region which typically
+ Random distributions could also be seen in a wide region which typically
  indicate the vertex found by TPC is a pile-up vertex (the wrong vertex
  from different bunch crossing collisions).
  The cross like distribution in the random correlation regions is due to
@@ -185,7 +185,8 @@ $V_{z}$
  calculated from the VPD timing was required to be within 3cm (for Au+Au
  200 GeV collisions) and 6cm (for p+p 200GeV collisions).
  In order to remove the events from the Au beam hitting the Beam pipe, 2cm
- of the vertex radius cut was also applied in the data selection.
+ of the vertex radius cut in transverse plane was also applied in the data
+ selection.
  The vertex criteria is also shown in table 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -213,7 +214,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="2">
+<lyxtabular version="3" rows="5" columns="2">
 <features rotate="0" tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -251,27 +252,7 @@ First primary vertex
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-ranking > 0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-ranking > 0
+First primary vertex
 \end_layout
 
 \end_inset
@@ -601,9 +582,28 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-(a) TPC vertexR distribution, (b) TPC vertexZ and the VPD vertexZ correlation,
- (c) TPC primary vertexX distribution, (d) difference between TPC vertexZ
- and the VPD vertexZ in Au+Au 200 GeV minimum bias collisions.
+(a) TPC vertex distributions in transverse plane, (b) TPC vertex in Z direction
+ (
+\begin_inset Formula $V_{z}$
+\end_inset
+
+) and the VPD 
+\begin_inset Formula $V_{z}$
+\end_inset
+
+ correlation, (c) 
+\begin_inset Formula $V_{z}$
+\end_inset
+
+ distribution of TPC primary vertex, (d) difference between TPC 
+\begin_inset Formula $V_{Z}$
+\end_inset
+
+ and the VPD 
+\begin_inset Formula $V_{Z}$
+\end_inset
+
+ in Au+Au 200 GeV minimum bias collisions.
 \end_layout
 
 \end_inset
@@ -669,9 +669,18 @@ reference "fig:refmult"
 \end_inset
 
  and extrapolated to zero ZDC coincidence rate for the VPDMB triggered events
- for Au+Au 200 GeV collision in year 2010 as well as the MC Glauber simulation.
+ for Au+Au 200 GeV collision in year 2010 as well as the MC Glauber simulation
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Miller:2007fk"
+
+\end_inset
+
+.
  The discrepancy at the low multiplicity is because the VPD trigger efficiency
- starts getting lower while fewer particles are produced.
+ starts getting lower while fewer particles are produced in peripheral collision
+s.
  The difference in low multiplicity region has been taken as a weight with
  the ration shown in Fig.
  
@@ -682,8 +691,8 @@ reference "fig:refmult"
 \end_inset
 
  (bottom panel) to account for the VPD inefficiency.
- Finally, the centrality bins are defined according to the MC Glauber distributi
-on to determine the cut on the measured multiplicity.
+ Finally, the centrality bins are determined by the cut on the measured
+ multiplicity according to the MC Glauber distribution.
  Table 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -700,10 +709,34 @@ reference "table:Npart Nbin Cen"
 \end_inset
 
  from the Glauber model simulation at 
-\begin_inset Formula $\sqrt{S_{NN}}=200GeV$
+\begin_inset Formula $\sqrt{S_{NN}}=200$
 \end_inset
 
- Au+Au.
+ 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+GeV
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ Au+Au collisions.
 \end_layout
 
 \begin_layout Standard
@@ -983,8 +1016,8 @@ Track selection
 \end_layout
 
 \begin_layout Standard
-Electron (including positrons if not specified) candidates are selected
- from good tracks satisfied the flowing selection: 
+Electron (including positron if not specified) candidates are selected from
+ good tracks satisfied the flowing selection: 
 \end_layout
 
 \begin_layout Enumerate
@@ -992,7 +1025,7 @@ number of fit points (
 \emph on
 nHitsFit
 \emph default
-) in the TPC greater than 20 ( maximum 45) to ensure good tracking quality
+) in the TPC greater than 19 ( maximum 45) to ensure good tracking quality
  and momentum resolution;
 \end_layout
 
@@ -1019,7 +1052,7 @@ points used for calculation average
 \emph on
 dE/dx 
 \emph default
-greater than 16 to ensure good 
+greater than 15 to ensure good 
 \emph on
 dE/dx
 \emph default
@@ -1111,7 +1144,7 @@ Bichsel
 With TPC only, however, it is difficult to separate electron from hadrons
  because the electron band crosses with hadron bands in higher momentum.
  With the flight timing information measured by TOF and the track path-length
- measured from TPC, we can calculate the velocity (β).
+ measured by TPC, we can calculate the velocity (β).
  Due to the very small electron mass, electron can be separated from the
  slow hadron by the velocity cut.
  Combining the velocity (β) information from TOF and energy loss(
@@ -1132,7 +1165,7 @@ reference "fig:PID"
 \end_inset
 
  vs momentum distribution after TOF velocity cut is shown in right panel.
- The detailed eID cuts are listed in Table 
+ The detailed electron identification cuts are listed in Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "table:track and pid cut"
@@ -1525,7 +1558,7 @@ Left panel: inverse velocity
 \end_inset
 
  vs momentum distribution in 200GeV Au+Au collisions.
- Right panel: 
+ Right panels: 
 \begin_inset Formula $n\sigma_{e}$
 \end_inset
 
@@ -1534,7 +1567,7 @@ Left panel: inverse velocity
 \end_inset
 
  in 200GeV Au+Au collisions.
- The red lines in both panel show the PID cuts.
+ The red lines in both panels show the PID cuts.
 \end_layout
 
 \end_inset
@@ -2018,7 +2051,7 @@ MinBias
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Electron purity for different data samples.
+Electron average purity for different data samples.
 \end_layout
 
 \end_inset
@@ -2056,7 +2089,7 @@ unlike-sign pairs
 \emph default
 ) were reconstructed by randomly combining electron and position from the
  high purity electron (position) sample from the same event.
- The invariant mass of di-electron pairs 
+ The invariant mass of dielectron pairs 
 \begin_inset Formula $M_{ee}$
 \end_inset
 
@@ -2159,7 +2192,7 @@ photon.
 \begin_layout Enumerate
 Photon conversion.
  The invariant mass of dielectron pairs from real photon conversion should
- be 0.
+ be close to 0.
  However, due to the primary track reconstruction algorithm, the momentum
  of these electrons from conversion which happened away from the primary
  vertex are biased, which lead to a finite pair invariant mass.
@@ -2217,9 +2250,8 @@ key "PhysRevC.81.034911"
 \end_layout
 
 \begin_layout Standard
-The TPC detector has de-active zones, (e.g the gap between TPC sectors),
- and in magnet field, different charged particles are bended into opposite
- direction.
+The TPC has de-active zones, (e.g the gap between TPC sectors), and in magnet
+ field, different charged particles are bended into opposite direction.
  Therefore, the acceptance of different charged particle is different.
  Figure 
 \begin_inset CommandInset ref
@@ -2247,8 +2279,8 @@ reference "fig:pmaccTPC"
 
 , it can be clearly seen that the acceptance effect is different for negative
  and positive charged tracks.
- So due to the acceptance effect, the acceptance of unlike-sign pairs and
- like-sign pairs are different (Fig 
+ Therefore, the acceptance of unlike-sign pairs and like-sign pairs are
+ different (Fig 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:accdiff"
@@ -2261,7 +2293,7 @@ reference "fig:accdiff"
 
 \begin_layout Standard
 To address this difference, mixed event method was used in this analysis.
- Due to it does not include correlated pairs, mixed event method can be
+ Because it does not include correlated pairs, mixed event method can be
  used to study the detector acceptance effect.
  The like-sign background was calculated by Eq.
  
@@ -2272,11 +2304,22 @@ reference "eq:LSacc"
 \end_inset
 
 , and the acceptance correction factor also defined there.
- The 
+ In principle, the acceptance difference should be studied in several dimensions
+, such like 
 \begin_inset Formula $p_{T}$
 \end_inset
 
- dependence was also considered by applying a 2D (
+, electron decay angles, 
+\begin_inset Formula $\theta$
+\end_inset
+
+ and 
+\begin_inset Formula $\phi$
+\end_inset
+
+ etc.
+ But due to the limited statistics, we now only calculated the acceptance
+ factor in 2D (
 \begin_inset Formula $ $
 \end_inset
 
@@ -2284,8 +2327,9 @@ mass vs
 \begin_inset Formula $p_{T}$
 \end_inset
 
-) acceptance factor correction, and the difference between 2D and 1D was
- included in systematic uncertainty.
+).
+ And the difference between 2D and 1D (mass) was used to estimate the systematic
+ uncertainty due to the statistical fluctuation.
  Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2456,8 +2500,8 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-(left) Acceptance correction factor in Au+Au 200 GeV collision.
- (right) Acceptance correction factor in p+p 200GeV collision.
+Acceptance correction factor in Au+Au (left) and p+p (right) collisions
+ at 200 GeV.
 \end_layout
 
 \end_inset
@@ -2487,9 +2531,18 @@ Mixed event method
 \begin_layout Standard
 Like-sign method as mentioned in section 3.4.1 can fully reproduce combinatorial
  background and correlated background.
- However, the like-sign background is leak of statistics.
+ However, the like-sign background is lack of statistics.
  In this analysis, the like-sign background was used in low mass region
- where we have better statistics.
+ (
+\begin_inset Formula $M_{ee}<0.75$
+\end_inset
+
+ GeV/
+\begin_inset Formula $c^{2}$
+\end_inset
+
+) where we have better statistics and also the sizable contribution from
+ correlated pairs.
  For higher mass region, event mixing technique was used to achieve better
  statistical accuracy.
  
@@ -2497,7 +2550,7 @@ Like-sign method as mentioned in section 3.4.1 can fully reproduce combinatorial
 
 \begin_layout Standard
 Mixed event background is reproduced by mixing electron candidate tracks
- from different event.
+ from different events.
  Since the two tracks are uncorrelated, mixed event method is only able
  to reconstruct combinatorial background.
  To ensure events mixed together have similar structure, we classified event
@@ -2520,8 +2573,8 @@ key "Zhao:2013vn"
 \end_inset
 
 .
- Here we chosen the number of event pools and event buffer respecting to
- his study.
+ Here we chose the number of event pools and size of event buffer according
+ to his study.
 \end_layout
 
 \begin_layout Standard
@@ -2770,7 +2823,7 @@ key "PhysRevC.81.034911"
 \end_inset
 
 .
- Considering the zero opening angle of di-electron pairs from photon conversion,
+ Considering the zero opening angle of dielectron pairs from photon conversion,
  electron is bended inside the plate perpendicular to magnet direction.
  Therefore, 
 \begin_inset Formula $\phi_{V}$
@@ -2805,6 +2858,7 @@ reference "eq:phiV"
 \end_inset
 
  is the direction of magnet.
+ 
 \begin_inset Formula 
 \begin{align}
 \hat{\mu} & =\frac{\vec{p}_{+}+\vec{p}_{-}}{|\vec{p}_{+}+\vec{p}_{-}|}\,,\:\hat{\nu}=\vec{p}_{+}\times\vec{p}_{-}\nonumber \\
@@ -2821,9 +2875,15 @@ reference "eq:phiV"
 \begin_inset Formula $\phi_{V}$
 \end_inset
 
- should be zero, if the di-electron pair is originated from photon conversions.
+ should be zero (by consistently ordering positive and negative tracks within
+ the pair we avoid 
+\begin_inset Formula $\phi_{V}=\pi$
+\end_inset
+
+ as a solution for photon conversions), if the dielectron pair is originated
+ from photon conversions.
  While, there is no preferred orientation for combinatorial pairs, and very
- weak dependence for di-electron pairs from hadron decays.
+ weak dependence for dielectron pairs from hadron decays.
  A Geant simulation was done to study the distribution of 
 \begin_inset Formula $\phi_{V}$
 \end_inset
@@ -2890,9 +2950,9 @@ status collapsed
 vs mass
 \emph default
  distribution from Geant simulation, the solid line depicts the cut.
- (right) Di-electron mass spectra with photon rejection, without photon
- rejection and conversion pairs distribution from 200GeV Au+Au data.
- The conversion peaks from left to right are came from conversion happened
+ (right) Dielectron mass spectra with photon rejection, without photon rejection
+ and conversion pairs distribution from 200GeV Au+Au data.
+ The conversion peaks from left to right are come from conversion happened
  at beam pipe (r~4cm), TPC supporting structure (r~20cm) and TPC inner field
  cage (r~46cm) ,  respectively.
 \end_layout
@@ -2926,7 +2986,7 @@ Centrality and
 \end_layout
 
 \begin_layout Standard
-In this analysis, for the Au+Au collision data, we also measured the di-electron
+In this analysis, for the Au+Au collision data, we also measured the dielectron
  mass spectra in different centrality bins and 
 \begin_inset Formula $p_{T}^{ee}$
 \end_inset
@@ -2967,7 +3027,7 @@ gn pairs and like-sign pairs ) in different centrality and
 \end_inset
 
 .
- The correlation background residue distribution were also studied by using
+ The correlated background residual distributions were also studied by using
  function 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3018,7 +3078,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Acceptance factor in different centrality (left) and 
+Acceptance factors in different centrality (left) and 
 \begin_inset Formula $p_{T}$
 \end_inset
 
@@ -3102,7 +3162,7 @@ name "fig:LMR cen pT"
 \end_layout
 
 \begin_layout Subsection
-Di-electron signal
+Dielectron signal
 \end_layout
 
 \begin_layout Standard
@@ -3112,7 +3172,7 @@ The follow tactics was used to subtract the background from the unlike-sign
 
 \begin_layout Itemize
 Considering the correlated component, we subtracted the like-sign background
- with a acceptance factor correction in mass region (
+ with an acceptance factor correction in mass region (
 \begin_inset Formula $M_{ee}<M_{th}$
 \end_inset
 
@@ -3146,7 +3206,7 @@ reference "eq:LSresidue"
 \end_layout
 
 \begin_layout Standard
-After the background subtraction, we got the raw di-electron spectra without
+After the background subtraction, we got the raw dielectron spectra without
  efficiency correction.
  Figure 
 \begin_inset CommandInset ref
@@ -3155,7 +3215,7 @@ reference "fig:RYandSBratio"
 
 \end_inset
 
- shows di-electron signal, foreground and background, as well as the signal
+ shows dielectron signal, foreground and background, as well as the signal
  over background ratio.
 \end_layout
 
@@ -3254,9 +3314,9 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Unlike-sign foreground, background, raw di-electron spectra and signal over
- background ratio for Au+Au minimum bias (left), central (middle) collision
- and p+p minimum bias (collision).
+Unlike-sign foreground, background, raw dielectron spectra and signal over
+ background ratio for Au+Au minimum bias (left), central (middle) collisions
+ and p+p minimum bias collisions (right).
  
 \end_layout
 
@@ -3285,7 +3345,7 @@ Efficiency and acceptance correction
 \end_layout
 
 \begin_layout Standard
-The di-electron raw signal yields was corrected for efficiency within STAR
+The dielectron raw signal yields was corrected for efficiency within STAR
  acceptance of 
 \begin_inset Formula $|y_{ee}|<1$
 \end_inset
@@ -3295,7 +3355,7 @@ The di-electron raw signal yields was corrected for efficiency within STAR
 \end_inset
 
  and 
-\begin_inset Formula $p_{T}^{e}<0.2GeV/c$
+\begin_inset Formula $p_{T}^{e}>0.2GeV/c$
 \end_inset
 
 .
@@ -3352,7 +3412,7 @@ TPC tracking efficiency
 
 \begin_layout Standard
 The TPC tracking efficiency includes the track reconstruction efficiency
- and the TPC acceptance loss.
+ and the TPC acceptance.
  Also the track quality cut (nHitFits, dca) efficiency are also combined
  into TPC tracking efficiency.
  The TPC tracking efficiency was obtained via the standard STAR embedding
@@ -3367,8 +3427,8 @@ The TPC tracking efficiency includes the track reconstruction efficiency
  The embedding sample were reconstructed by the same offline reconstruction
  chain used to produce real data.
  The tracking efficiency is defined by number of reconstructed MC tracks
- which is satisfied the track quality cut divided by number of input MC
- tracks, also see Eq.
+ which satisfy the track quality cut divided by number of input MC tracks,
+ also see Eq.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3401,8 +3461,8 @@ nHitsFit, dca
 \begin_inset Formula $\pi^{0}$
 \end_inset
 
- Daliza decay.
- The difference was included into the systematic uncertainty.
+ Dalitz decay.
+ The difference was included in the systematic uncertainty.
 \end_layout
 
 \begin_layout Paragraph
@@ -3425,12 +3485,12 @@ The track is projected to the radius of TOF, and there is a valid hit in
 \end_layout
 
 \begin_layout Itemize
-The distance between the projection position to the TOF cell center in y
- coordinate (Localy) is smaller than 1.8 cm.
+The distance between the projection position to the TOF cell center in local
+ y coordinate (Localy) is smaller than 1.8 cm.
 \end_layout
 
 \begin_layout Standard
-The definition of TOF matching efficiency is also shown as Eq.
+The definition of TOF matching efficiency is shown as Eq.
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3491,7 +3551,7 @@ cut (
 \begin_inset Formula $\pi^{0}$
 \end_inset
 
- Dalitz decay was served as a standard.
+ Dalitz decay was served as a standard of the absolute value of the efficiency.
  A weight on 
 \begin_inset Formula $\eta$
 \end_inset
@@ -3535,14 +3595,15 @@ f(x)=\frac{1+ax+bx^{2}}{c+\exp\{(x-d)/f\}}\label{eq:eff tof diff}
 
 \end_inset
 
-The fit result is shown in figure 
+The fit result is shown in Fig.
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig: TOF diff"
 
 \end_inset
 
- and the difference was also included in to the systematic uncertainty.
+ and the difference was also included in the systematic uncertainty.
 \end_layout
 
 \begin_layout Standard
@@ -3645,12 +3706,13 @@ The TPC efficiency and TOF matching efficiency were both studied and applied
 \end_inset
 
  bin.
- The centrality dependence was also taken into account for Au+Au collision
+ The centrality dependence was also taken into account for Au+Au collisions
  by comparing the 
 \begin_inset Formula $p_{T}$
 \end_inset
 
- distribution from different centrality with minimum bias.
+ distribution of TPC and TOF efficiency from different centralities with
+ minimum bias.
 \end_layout
 
 \begin_layout Paragraph
@@ -3658,7 +3720,7 @@ PID efficiency
 \end_layout
 
 \begin_layout Standard
-The PID efficiency included efficiency loss from 
+The PID efficiency included efficiencies of 
 \begin_inset Formula $1/\beta$
 \end_inset
 
@@ -3679,7 +3741,7 @@ cut.
 \emph on
 ndEdxFits
 \emph default
- efficiency was studied by the pure 
+ efficiencies were studied by the pure 
 \begin_inset Formula $\pi$
 \end_inset
 
@@ -3713,7 +3775,7 @@ reference "fig:single eff pp"
 
 \end_inset
 
- are summary of the single tracking efficiency for Au+Au and p+p data sample.
+ summarize the single electron efficiency for Au+Au and p+p data sample.
 \end_layout
 
 \begin_layout Standard
@@ -3805,12 +3867,12 @@ name "fig:single eff pp"
 \end_layout
 
 \begin_layout Subsection
-Momentum resolution
+Momentum resolution and energy loss
 \end_layout
 
 \begin_layout Standard
-The momentum resolution for TPC tracks was studied by embedding sample with
- the full detector simulation.
+The momentum resolution and energy loss for TPC tracks was studied by embedding
+ sample with the full detector simulation.
  Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -4028,7 +4090,8 @@ Pair efficiency and acceptance
 \begin_layout Standard
 The pair efficiency was evaluated by Monte Carlo folding method from the
  single track efficiency.
- We used two method folding the pair efficiency in Au+Au analysis: 
+ We used two methods for folding the pair efficiency in Au+Au analysis:
+ 
 \end_layout
 
 \begin_layout Enumerate
@@ -4065,7 +4128,7 @@ In relativistic heavy-ion collision, we have difficulties in separating
  the electrons from heavy flavor quark decay and those produced from medium.
  Furthermore, the contribution from heavy flavor decays remains unclear
  due to the possible medium modification effect in heavy-ion collision.
- This two method served as two extreme approaches of decay kinematics in
+ The two methods served as two extreme approaches of decay kinematics in
  the Au+Au collision : virtual photon method is close to the decay kinematics
  of medium; cocktail method handles the heavy flavor decays through PYTHIA
  model which is similar to the process in p+p collision.
@@ -4087,8 +4150,8 @@ The single electron efficiency was folded in for each daughter track in
 \end_inset
 
 ) momentum space.
- Their momentum were smeared by the momentum resolution and energy loss
- effect (see section 3.5.2).
+ Their momenta were smeared by the momentum resolution and energy loss effect
+ (see section 3.5.2).
  The pair efficiency was calculated and applied in 2 dimension (
 \begin_inset Formula $M_{ee}$
 \end_inset
@@ -4110,13 +4173,13 @@ The single electron efficiency was folded in for each daughter track in
 \end_inset
 
 ).
- The difference between the two method is small and we included it into
- systematic uncertainty.
+ The difference between the two methods is small and we included it in systemati
+c uncertainty.
  The photon conversion rejection cut efficiency was calculated by 
-\begin_inset Formula $\pi_{0}$
+\begin_inset Formula $\pi^{0}$
 \end_inset
 
- Dalitz decay embedding sample and included into the pair efficiency, shown
+ Dalitz decay embedding sample and included in the pair efficiency, shown
  in Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -4132,7 +4195,7 @@ reference "fig:pair eff"
 
 \end_inset
 
- is a summary of the pair efficiencies as a function of 
+ summarizes the pair efficiencies as a function of 
 \begin_inset Formula $M_{ee}$
 \end_inset
 
@@ -4257,7 +4320,7 @@ name "fig:pair eff"
 \end_layout
 
 \begin_layout Standard
-In this analysis, the di-electron transverse mass (
+In this analysis, the dielectron transverse mass (
 \begin_inset Formula $m_{T}$
 \end_inset
 
@@ -4283,17 +4346,17 @@ reference "fig:eff acc"
 
 , the acceptance correction was calculated by the two methods mentioned
  previously for Au+Au 200 GeV minimum bias collisions.
- There is huge difference between the two method, especially in intermedia
+ There is a huge difference between the two method, especially in intermediate
  mass region (IMR).
- It is because di-electrons are mainly come from charm contribution in this
- mass region.
+ It is because dielectrons mainly come from charm contribution in this mass
+ region.
  The two methods treat the correlation between the daughter pairs quite
  differently.
  In virtual photon method, the correlation between the decay daughters is
  come from decay kinematics itself.
  While in cocktail method, since the charm component is simulated by PYTHIA,
  the daughter pairs carry the strong correlation inherited from charm pairs.
- Therefore, it leads to large difference in the acceptance for di-electron
+ Therefore, it leads to some difference in the acceptance for dielectron
  pairs.
  We took the difference between the two methods as systematic uncertainty
  in inverse slope parameters of transverse mass spectra due to leak of knowledge
@@ -4346,7 +4409,7 @@ name "fig:eff acc"
 \end_layout
 
 \begin_layout Subsection
-Trigger efficiency and trigger bias
+Trigger efficiency, trigger bias and vertexing bias
 \end_layout
 
 \begin_layout Standard
@@ -4365,12 +4428,12 @@ key "PhysRevC.86.024906"
 \end_layout
 
 \begin_layout Subsection
-The total correction factors for di-electron spectra
+The total correction factors for dielectron spectra
 \end_layout
 
 \begin_layout Standard
-Finally, the di-electron continuum raw yield within STAR acceptance are
- corrected as following:
+Finally, the dielectron continuum raw yield within STAR acceptance are corrected
+ as following:
 \end_layout
 
 \begin_layout Standard
@@ -4385,7 +4448,7 @@ Y(M_{ee},p_{T})=\frac{N_{raw}(M_{ee},p_{T})}{dM_{ee}dy\times\varepsilon_{pair}(M
 \begin_inset Formula $N_{raw}$
 \end_inset
 
- is the di-electron raw yields within STAR acceptance, 
+ is the dielectron raw yields within STAR acceptance, 
 \begin_inset Formula $\varepsilon_{pair}$
 \end_inset
 
@@ -4401,10 +4464,10 @@ Hadronic cocktails
 \end_layout
 
 \begin_layout Standard
-The di-electron signals observed in experiment are produced from various
+The dielectron signals observed in experiment are produced from various
  sources during the system evolution.
- After chemical freeze out, di-electron pairs from long life meson and hadron
- decays contribute mainly to the di-electron signal.
+ After chemical freeze out, dielectron pairs from long life meson and hadron
+ decays contribute mainly to the dielectron signal.
  These components, which is usually called 
 \begin_inset Quotes eld
 \end_inset
@@ -4468,13 +4531,13 @@ key "PhysRevC.86.024906"
 \end_inset
 
 , and the charm cross section is updated to 
-\begin_inset Formula $797\pm210(stat.)_{-295}^{+208}(sys.)μb$
+\begin_inset Formula $d\sigma/dy|_{y=0}=171\pm26\:\mu{\rm b}$
 \end_inset
 
  with respect to the newest published result from STAR 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "PhysRevD.86.072013"
+key "STAR-Collaboration:qd"
 
 \end_inset
 
@@ -4639,8 +4702,8 @@ key "PhysRevD.86.072013"
 \begin_layout Standard
 The detector resolution was also taken into account by smearing the daughter
  electron's momentum with the method discussed in section 3.5.
- Finally, the di-electron pair mass distributions from the sources are normalize
-d by branching ratios and the measured 
+ Finally, the dielectron pair mass distributions from the sources are normalized
+ by branching ratios and the measured 
 \begin_inset Formula $dN/dy$
 \end_inset
 
@@ -4696,7 +4759,7 @@ reference "table: scale cocktail"
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -5383,7 +5446,7 @@ key "al.:kb,daSilva2009227c"
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $d\sigma^{c\bar{c}}/dy=170\mu b$
+\begin_inset Formula $d\sigma^{c\bar{c}}/dy=171\mu b$
 \end_inset
 
 
@@ -5395,7 +5458,7 @@ key "al.:kb,daSilva2009227c"
 \begin_inset Text
 
 \begin_layout Plain Layout
-35%
+15%
 \end_layout
 
 \end_inset
@@ -5407,7 +5470,7 @@ key "al.:kb,daSilva2009227c"
 STAR 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "PhysRevD.86.072013"
+key "STAR-Collaboration:qd"
 
 \end_inset
 
@@ -6194,7 +6257,7 @@ reference "fig:h/e ratio"
 
 ).
  The particles in the mixed sample were randomly paired with each other.
- There are three condition: e-e pairs, this is di-electron signal; e-h and
+ There are three condition: e-e pairs, this is dielectron signal; e-h and
  h-h contamination pairs.
  Then the same background subtraction was done to the mixed sample.
  Finally, we used function 
@@ -6724,7 +6787,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Yields of di-electron signal pairs, e-h and h-h contamination pairs.
+Yields of dielectron signal pairs, e-h and h-h contamination pairs.
 \end_layout
 
 \end_inset

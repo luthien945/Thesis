@@ -103,9 +103,9 @@ Data set and event selection
 \end_layout
 
 \begin_layout Standard
-The data set used in this analysis was minimum bias triggered event taken
+The data set used in this analysis was minimum bias triggered events taken
  in year 2010 and year 2011 Au+Au 200 GeV collisions and central triggered
- date taken in year 2010 Au+Au 200 GeV collisions.
+ data taken in year 2010 Au+Au 200 GeV collisions.
  For demonstration, the Au+Au data in year 2010 was analyzed by Bingchu
  Huang and Jie Zhao 
 \begin_inset CommandInset citation
@@ -119,19 +119,19 @@ key "Zhao:2013vn,Huang:2011zl"
  Only year 2011 data are used to demonstrate the analysis method for Au+Au
  200 GeV, and the analysis method for year 2010 and year 2011 are similar.
  The final results reported in this thesis are from the combined year 2010
- and year 2011 data for Au+Au 200GeV collisions.
+ and year 2011 data for Au+Au 200 GeV collisions.
  For the p+p analysis, the data set was taken in year 2012 p+p 200 GeV minimum
  bias collision.
  The minimum bias trigger was defined as a coincidence in the east and west
- VPD detectors, and an online vertex cut was applied to select the collision
- happening in the center of the detector.
+ VPDs, and an online vertex cut was applied to select the collision happening
+ in the center of the detector.
  For the central trigger, a small signal in the ZDC detectors was required
  as well as a large multiplicity from the barrel TOF.
  This trigger corresponds to 0-10% of the total hadronic cross section.
 \end_layout
 
 \begin_layout Standard
-Events used in this analysis were selection by the following event selection
+Events used in this analysis were selected by the following event selection
  criteria.
  To insure the TPC performance, events were required to have a valid reconstruct
 ed collision vertex (primary vertex, defined by primary tracks) within 30cm
@@ -154,13 +154,13 @@ reference "fig:vertex"
  (b) shows correlation between TPC vertexZ and VPD vertexZ.
  The clean diagonal correlation band indicate the correct vertices which
  fire the VPDMB trigger.
- Random distributions could also be see in a wide region which typically
- indicate the vertex found be TPC is a pile-up vertex (the wrong vertex
+ Random distributions could also be seen in a wide region which typically
+ indicate the vertex found by TPC is a pile-up vertex (the wrong vertex
  from different bunch crossing collisions).
  The cross like distribution in the random correlation regions is due to
- the online vertexZ cut in the trigger definition.To suppress the pile up
- events and to ensure that the selected event is firing the trigger, the
- difference between event vertex z-coordinate (
+ the online vertexZ cut in the trigger definition.
+ To suppress the pile up events and to ensure that the selected event is
+ firing the trigger, the difference between event vertex z-coordinate (
 \begin_inset ERT
 status collapsed
 
@@ -185,7 +185,8 @@ $V_{z}$
  calculated from the VPD timing was required to be within 3cm (for Au+Au
  200 GeV collisions) and 6cm (for p+p 200GeV collisions).
  In order to remove the events from the Au beam hitting the Beam pipe, 2cm
- of the vertex radius cut was also applied in the data selection.
+ of the vertex radius cut in transverse plane was also applied in the data
+ selection.
  The vertex criteria is also shown in table 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -213,7 +214,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="2">
+<lyxtabular version="3" rows="5" columns="2">
 <features rotate="0" tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -251,27 +252,7 @@ First primary vertex
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-ranking > 0
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-ranking > 0
+First primary vertex
 \end_layout
 
 \end_inset
@@ -601,9 +582,28 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-(a) TPC vertexR distribution, (b) TPC vertexZ and the VPD vertexZ correlation,
- (c) TPC primary vertexX distribution, (d) difference between TPC vertexZ
- and the VPD vertexZ in Au+Au 200 GeV minimum bias collisions.
+(a) TPC vertex distributions in transverse plane, (b) TPC vertex in Z direction
+ (
+\begin_inset Formula $V_{z}$
+\end_inset
+
+) and the VPD 
+\begin_inset Formula $V_{z}$
+\end_inset
+
+ correlation, (c) 
+\begin_inset Formula $V_{z}$
+\end_inset
+
+ distribution of TPC primary vertex, (d) difference between TPC 
+\begin_inset Formula $V_{Z}$
+\end_inset
+
+ and the VPD 
+\begin_inset Formula $V_{Z}$
+\end_inset
+
+ in Au+Au 200 GeV minimum bias collisions.
 \end_layout
 
 \end_inset
@@ -641,7 +641,7 @@ The centrality in Au+Au 200 GeV collisions was defined using the uncorrected
 \end_inset
 
  ( also called reference multiplicity).
- A Monte Carlo Clauber calculation was used to compared with the 
+ A Monte Carlo Glauber calculation was used to compared with the 
 \begin_inset Formula $dN/d\eta$
 \end_inset
 
@@ -669,9 +669,18 @@ reference "fig:refmult"
 \end_inset
 
  and extrapolated to zero ZDC coincidence rate for the VPDMB triggered events
- for Au+Au 200 GeV collision in year 2010 as well as the MC Glauber simulation.
+ for Au+Au 200 GeV collision in year 2010 as well as the MC Glauber simulation
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Miller:2007fk"
+
+\end_inset
+
+.
  The discrepancy at the low multiplicity is because the VPD trigger efficiency
- starts getting lower while fewer particles are produced.
+ starts getting lower while fewer particles are produced in peripheral collision
+s.
  The difference in low multiplicity region has been taken as a weight with
  the ration shown in Fig.
  
@@ -682,8 +691,8 @@ reference "fig:refmult"
 \end_inset
 
  (bottom panel) to account for the VPD inefficiency.
- Finally, the centrality bins are defined according to the MC Glauder distributi
-on to determine the cut on the measured multiplicity.
+ Finally, the centrality bins are determined by the cut on the measured
+ multiplicity according to the MC Glauber distribution.
  Table 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -700,10 +709,34 @@ reference "table:Npart Nbin Cen"
 \end_inset
 
  from the Glauber model simulation at 
-\begin_inset Formula $\sqrt{S_{NN}}=200GeV$
+\begin_inset Formula $\sqrt{S_{NN}}=200$
 \end_inset
 
- Au+Au.
+ 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+GeV
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ Au+Au collisions.
 \end_layout
 
 \begin_layout Standard
@@ -983,8 +1016,8 @@ Track selection
 \end_layout
 
 \begin_layout Standard
-Electron (including positrons if not specified) candidates are selected
- from good tracks satisfied the flowing selection: 
+Electron (including positron if not specified) candidates are selected from
+ good tracks satisfied the flowing selection: 
 \end_layout
 
 \begin_layout Enumerate
@@ -992,7 +1025,7 @@ number of fit points (
 \emph on
 nHitsFit
 \emph default
-) in the TPC greater than 20 ( maximum 45) to ensure good tracking quality
+) in the TPC greater than 19 ( maximum 45) to ensure good tracking quality
  and momentum resolution;
 \end_layout
 
@@ -1019,7 +1052,7 @@ points used for calculation average
 \emph on
 dE/dx 
 \emph default
-greater than 16 to ensure good 
+greater than 15 to ensure good 
 \emph on
 dE/dx
 \emph default
@@ -1074,10 +1107,6 @@ n\sigma_{e}=\frac{1}{R_{dE/dx}}ln\frac{\langle dE/dx\text{\rangle}{}^{Mea}}{\lan
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 in the Eq.
  
 \begin_inset CommandInset ref
@@ -1115,7 +1144,7 @@ Bichsel
 With TPC only, however, it is difficult to separate electron from hadrons
  because the electron band crosses with hadron bands in higher momentum.
  With the flight timing information measured by TOF and the track path-length
- measured from TPC, we can calculate the velocity (β).
+ measured by TPC, we can calculate the velocity (β).
  Due to the very small electron mass, electron can be separated from the
  slow hadron by the velocity cut.
  Combining the velocity (β) information from TOF and energy loss(
@@ -1136,7 +1165,7 @@ reference "fig:PID"
 \end_inset
 
  vs momentum distribution after TOF velocity cut is shown in right panel.
- The detailed eID cuts are listed in Table 
+ The detailed electron identification cuts are listed in Table 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "table:track and pid cut"
@@ -1529,7 +1558,7 @@ Left panel: inverse velocity
 \end_inset
 
  vs momentum distribution in 200GeV Au+Au collisions.
- Right panel: 
+ Right panels: 
 \begin_inset Formula $n\sigma_{e}$
 \end_inset
 
@@ -1578,7 +1607,7 @@ reference "fig:PID"
 \begin_inset Formula $n\sigma_{e}$
 \end_inset
 
- vs momentum.
+ vs momentum distribution plot.
  We selected pure hadron (
 \begin_inset Formula $\pi$
 \end_inset
@@ -1615,7 +1644,7 @@ reference "fig: pure sample"
 \end_inset
 
  (right)).
- This sample was also used laterly in the efficiency study.
+ This sample was also used in the efficiency study.
  Gaussian functions were used to parameterize the 
 \begin_inset Formula $n\sigma_{e}$
 \end_inset
@@ -1645,11 +1674,11 @@ reference "fig:muli fit ex"
 \begin_inset Formula $\pi$
 \end_inset
 
- component which is from that the merging of two closed 
+ component which is from the merging of two closed 
 \begin_inset Formula $\pi$
 \end_inset
 
- tracks, and has a doubled 
+ tracks, and thus has a doubled 
 \emph on
 dE/dx
 \emph default
@@ -2022,7 +2051,7 @@ MinBias
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Electron purity for different data samples.
+Electron average purity for different data samples.
 \end_layout
 
 \end_inset
@@ -2075,10 +2104,6 @@ M_{ee}=\sqrt{(E_{+}+E_{-})^{2}-(\overset{\rightarrow}{p_{+}}+\overset{\rightarro
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 where 
 \begin_inset Formula $E_{\pm}=\sqrt{(\overset{\rightarrow}{p_{\pm}})^{2}+m_{e}^{2}}$
 \end_inset
@@ -2113,8 +2138,8 @@ where
 \end_layout
 
 \begin_layout Enumerate
-Combinatorial background: background come from randomly pairing, which is
- uncorrelated.
+Combinatorial background: background comes from randomly pairing, which
+ is uncorrelated.
 \end_layout
 
 \begin_layout Enumerate
@@ -2167,7 +2192,7 @@ photon.
 \begin_layout Enumerate
 Photon conversion.
  The invariant mass of dielectron pairs from real photon conversion should
- be 0.
+ be close to 0.
  However, due to the primary track reconstruction algorithm, the momentum
  of these electrons from conversion which happened away from the primary
  vertex are biased, which lead to a finite pair invariant mass.
@@ -2225,9 +2250,8 @@ key "PhysRevC.81.034911"
 \end_layout
 
 \begin_layout Standard
-The TPC detector has de-active zones, (e.g the gap between TPC sectors),
- and in magnet field, different charged particles are bended into opposite
- direction.
+The TPC has de-active zones, (e.g the gap between TPC sectors), and in magnet
+ field, different charged particles are bended into opposite direction.
  Therefore, the acceptance of different charged particle is different.
  Figure 
 \begin_inset CommandInset ref
@@ -2255,8 +2279,8 @@ reference "fig:pmaccTPC"
 
 , it can be clearly seen that the acceptance effect is different for negative
  and positive charged tracks.
- So due to the acceptance effect, the acceptance of unlike-sign pairs and
- like-sign pairs are different (Fig 
+ Therefore, the acceptance of unlike-sign pairs and like-sign pairs are
+ different (Fig 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:accdiff"
@@ -2269,7 +2293,7 @@ reference "fig:accdiff"
 
 \begin_layout Standard
 To address this difference, mixed event method was used in this analysis.
- Due to it does not include correlated pairs, mixed event method can be
+ Because it does not include correlated pairs, mixed event method can be
  used to study the detector acceptance effect.
  The like-sign background was calculated by Eq.
  
@@ -2440,7 +2464,7 @@ name "fig:accdiff"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -2464,8 +2488,8 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-(left) Acceptance correction factor in Au+Au 200 GeV collision.
- (right) Acceptance correction factor in p+p 200GeV collision.
+Acceptance correction factor in Au+Au (left) and p+p (right) collisions
+ at 200 GeV.
 \end_layout
 
 \end_inset
@@ -2495,9 +2519,18 @@ Mixed event method
 \begin_layout Standard
 Like-sign method as mentioned in section 3.4.1 can fully reproduce combinatorial
  background and correlated background.
- However, the like-sign background is leak of statistics.
+ However, the like-sign background is lack of statistics.
  In this analysis, the like-sign background was used in low mass region
- where we have better statistics.
+ (
+\begin_inset Formula $M_{ee}<0.75$
+\end_inset
+
+ GeV/
+\begin_inset Formula $c^{2}$
+\end_inset
+
+) where we have better statistics and also the sizable contribution from
+ correlated pairs.
  For higher mass region, event mixing technique was used to achieve better
  statistical accuracy.
  
@@ -2505,7 +2538,7 @@ Like-sign method as mentioned in section 3.4.1 can fully reproduce combinatorial
 
 \begin_layout Standard
 Mixed event background is reproduced by mixing electron candidate tracks
- from different event.
+ from different events.
  Since the two tracks are uncorrelated, mixed event method is only able
  to reconstruct combinatorial background.
  To ensure events mixed together have similar structure, we classified event
@@ -2528,8 +2561,8 @@ key "Zhao:2013vn"
 \end_inset
 
 .
- Here we chosen the number of event pools and event buffer respecting to
- his study.
+ Here we chose the number of event pools and size of event buffer according
+ to his study.
 \end_layout
 
 \begin_layout Standard
@@ -2813,6 +2846,7 @@ reference "eq:phiV"
 \end_inset
 
  is the direction of magnet.
+ 
 \begin_inset Formula 
 \begin{align}
 \hat{\mu} & =\frac{\vec{p}_{+}+\vec{p}_{-}}{|\vec{p}_{+}+\vec{p}_{-}|}\,,\:\hat{\nu}=\vec{p}_{+}\times\vec{p}_{-}\nonumber \\
@@ -2829,7 +2863,13 @@ reference "eq:phiV"
 \begin_inset Formula $\phi_{V}$
 \end_inset
 
- should be zero, if the di-electron pair is originated from photon conversions.
+ should be zero (by consistently ordering positive and negative tracks within
+ the pair we avoid 
+\begin_inset Formula $\phi=π$
+\end_inset
+
+ as a solution for pho- ton conversions.), if the di-electron pair is originated
+ from photon conversions.
  While, there is no preferred orientation for combinatorial pairs, and very
  weak dependence for di-electron pairs from hadron decays.
  A Geant simulation was done to study the distribution of 
@@ -4354,7 +4394,7 @@ name "fig:eff acc"
 \end_layout
 
 \begin_layout Subsection
-Trigger efficiency and trigger bias
+Trigger efficiency, trigger bias and vertexing bias
 \end_layout
 
 \begin_layout Standard
@@ -5352,7 +5392,7 @@ key "PhysRevLett.98.232301"
 PHENIX 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "al.:kb"
+key "al.:kb,daSilva2009227c"
 
 \end_inset
 
@@ -5412,7 +5452,14 @@ key "al.:kb"
 \begin_inset Text
 
 \begin_layout Plain Layout
-STAR[37]
+STAR 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PhysRevD.86.072013"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -5468,7 +5515,14 @@ STAR[37]
 \begin_inset Text
 
 \begin_layout Plain Layout
-Pythia[40]
+Pythia 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Torbjorn-Sjostrand:2001ek"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -5521,7 +5575,14 @@ Drell-Yan
 \begin_inset Text
 
 \begin_layout Plain Layout
-Pythia[40]
+Pythia 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Torbjorn-Sjostrand:2001ek"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
